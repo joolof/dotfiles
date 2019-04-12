@@ -1,0 +1,471 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+[colors]
+background = ${xrdb:background}
+background-alt = ${xrdb:color0}
+foreground = ${xrdb:foreground}
+foreground-alt = ${xrdb:color1}
+highlight = ${xrdb:color8}
+primary = ${xrdb:color10}
+secondary = ${xrdb:color11}
+alert = ${xrdb:color3}
+
+; background = #151615
+; background-alt = #444
+; foreground = #e0dbcf
+; foreground-alt = #87907e
+; highlight = #87907e
+; primary = #ffb52a
+; secondary = #e60053
+; alert = #bd2c40
+
+; >> wm
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; >> mainbar
+[bar/mainbar]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 32
+offset-x = 0
+offset-y = 0
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+overline-size = 0
+overline-color = #f00
+underline-size = 0
+underline-color = #00f
+
+border-bottom-size = 0
+border-bottom-color = ${colors.background}
+
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+
+; >> Font
+font-0 = ShureTechMono Nerd Font:pixelsize=24
+font-1 = FontAwesome:pixelsize=24;1
+font-2 = siji:pixelsize=10
+
+; >> Modules
+modules-left = i3
+modules-center = date
+modules-right = volume wireless-network battery powermenu
+fixed-center = true
+
+
+tray-position = right
+tray-padding = 2
+tray-transparent = false
+tray-background = ${colors.background}
+
+;wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+
+[bar/bottom]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+bottom = true
+height = 40
+offset-x = 20
+offset-y = 30
+; wm-restack = i3
+; override-redirect = true
+background = #1B1B19
+foreground = ${colors.foreground}
+
+overline-size = 10
+overline-color = #ff0000
+underline-size = 10
+underline-color = #ff0000
+
+border-top-size = 0
+border-top-color = ${colors.background}
+; border-bottom-size = 1
+; border-bottom-color = 
+
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+
+; >> Font
+font-0 = ShureTechMono Nerd Font:pixelsize=24
+font-1 = FontAwesome:pixelsize=2;1
+font-2 = siji:pixelsize=1
+
+; >> Modules
+modules-left = mpd
+; modules-center = date
+; modules-right = volume wireless-network battery powermenu
+
+; tray-position = right
+; tray-padding = 2
+; tray-transparent = false
+; tray-background = ${colors.background}
+
+
+
+
+; >> xwindow
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+; >> xkeyboard
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+label-layout = %{F#55}%{F-} %layout%
+label-layout-underline = ${colors.secondary}
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
+
+; >> filesystem
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+mount-1 = /home
+mount-2 = /invalid/mountpoint
+
+label-mounted = %mountpoint%: %percentage_free%%
+
+label-unmounted = %mountpoint%: not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+; >> bspwm
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %index%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+; >> i3
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+ws-icon-default = ♟
+
+label-mode-padding = 2
+label-mode-foreground = ${colors.foreground}
+label-mode-background = ${colors.background}
+
+; focused = Active workspace on focused monitor
+label-focused = %icon%
+label-focused-foreground = ${colors.foreground-alt}
+label-focused-background = ${colors.background-alt}
+;label-focused-underline = ${module/bspwm.label-focused-underline}
+label-focused-padding = ${self.label-mode-padding}
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+;label-unfocused-foreground = ${colors.highlight}
+label-unfocused-padding = ${self.label-mode-padding}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon%
+label-visible-background = ${self.label-focused-background}
+;label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-mode-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %icon%
+label-urgent-background = ${self.label-mode-foreground}
+label-urgent-foreground = ${self.label-mode-background}
+label-urgent-padding = ${self.label-mode-padding}
+
+; >> mpd
+[module/mpd]
+type = internal/mpd
+
+format-offline = <label-offline>
+format-online = <label-song> <bar-progress>
+label-offline = ---
+label-song = %artist%  %album%  %title%
+
+label-song-maxlen = 100
+label-song-ellipsis = true
+
+icon-prev = 
+icon-seekb = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+icon-seekf = 
+
+icon-random = 
+icon-repeat = 
+
+toggle-on-foreground = ${colors.foreground}
+toggle-off-foreground = ${colors.background}
+
+bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
+bar-progress-width = 5
+bar-progress-indicator = 
+bar-progress-indicator-foreground = ${colors.foreground-alt}
+bar-progress-indicator-font = 1
+bar-progress-fill = 
+bar-progress-fill-foreground = ${colors.foreground-alt}
+bar-progress-fill-font = 1
+bar-progress-empty = 
+bar-progress-empty-font = 1
+bar-progress-empty-foreground = #44
+
+
+; >> xbacklight
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = BL
+
+bar-width = 10
+bar-indicator = │
+bar-indicator-foreground = #ff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.foreground-alt}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
+; >> wifi
+[module/wireless-network]
+type = internal/network
+interface = wlp58s0
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+label-connected = %essid%
+ramp-signal-0 = 
+
+
+; >> cpu
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #f90000
+label = %percentage%%
+
+; >> memory
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #4bffdc
+label = %percentage_used%%
+
+; >> wlan
+[module/wlan]
+type = internal/network
+interface = net1
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = #9f78e1
+format-disconnected-underline = ${self.format-connected-underline}
+
+label-connected = %essid%
+label-disconnected = %ifname% disconnected
+label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.foreground-alt}
+
+; >> eth
+[module/eth]
+type = internal/network
+interface = eth0
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-foreground-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = %ifname% disconnected
+label-disconnected-foreground = ${colors.foreground-alt}
+
+; >> date
+[module/date]
+type = internal/date
+interval = 5
+
+date = "%a %d %b"
+; date = "%a %d/%m"
+
+time = %H:%M
+;time-alt = %H:%M:%S
+
+;format-prefix =  
+;format-prefix-foreground = ${colors.foreground}
+;format-underline = #0a6cf5
+
+label =  %date%     %time%
+
+; >> volume
+[module/volume]
+type = internal/volume
+format-volume = <ramp-volume>
+format-muted-foreground = ${colors.foreground-alt}
+label-muted = muted
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.foreground}
+
+
+; >> battery
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.foreground}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-foreground = ${colors.foreground}
+animation-charging-framerate = 750
+
+; >> weather
+[module/weather]
+type = custom/script
+exec = /usr/local/bin/weather.py
+click-left = /usr/local/bin/weather.py
+label = %output% 
+interval = 1800
+
+; >> temperature
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-underline = #f50a4d
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperature%
+label-warn = %temperature%
+label-warn-foreground = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+; >> power
+[module/powermenu]
+type = custom/menu
+
+format-spacing = 1
+
+label-open = 
+label-open-foreground = ${colors.foreground}
+label-close =  cancel
+label-close-foreground = ${colors.foreground}
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = cancel
+menu-1-0-exec = menu-open-0
+menu-1-1 = reboot
+menu-1-1-exec = sudo reboot
+
+menu-2-0 = power off
+menu-2-0-exec = sudo poweroff
+menu-2-1 = cancel
+menu-2-1-exec = menu-open-0
+
+; syntax: ssSemi

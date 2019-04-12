@@ -1,0 +1,79 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.4,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 4,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 828,
+               "width": 1260,
+               "x": 0,
+               "y": 0
+            },
+            "name": "i3-save-tree --workspace 3 > ~/.config/i3/workspace-3.json",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 3\\ \\>\\ \\~\\/\\.config\\/i3\\/workspace\\-3\\.json$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 4,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 828,
+               "width": 1260,
+               "x": 0,
+               "y": 0
+            },
+            "name": "joo@joo-XPS-13-9360: ~/SPHERE/HR4796",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               // "title": "^joo\\@joo\\-XPS\\-13\\-9360\\:\\ \\~\\/SPHERE\\/HR4796$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 4,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1660,
+       "width": 1557,
+       "x": 1607,
+       "y": 64
+    },
+    "name": "~/SPHERE/HR4796/Radial.py (HR4796) - Sublime Text (UNREGISTERED)",
+    "percent": 0.6,
+    "swallows": [
+       {
+       "class": "^URxvt$$",
+       "instance": "^urxvt$"
+       // "title": "^\\~\\/SPHERE\\/HR4796\\/Radial\\.py\\ \\(HR4796\\)\\ \\-\\ Sublime\\ Text\\ \\(UNREGISTERED\\)$",
+       // "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
+

@@ -1,0 +1,272 @@
+[colors]
+wallpaper = #1B1B19
+foreground = #81a2be
+background = #2f2f38
+; background = #81a2be
+; foreground = #2f2f38
+background-alt = #688486
+foreground-alt = #788ea0
+highlight = ${xrdb:color8}
+primary = ${xrdb:color10}
+secondary = ${xrdb:color11}
+alert = ${xrdb:color3}
+
+; >> wm
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; >> mainbar
+[bar/mainbar]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 36
+offset-x = 0
+offset-y = 0
+background = ${colors.wallpaper}
+foreground = ${colors.foreground}
+
+overline-size = 0
+overline-color = #ff0000
+underline-size = 0
+underline-color = #ff0000
+
+border-bottom-size = 0
+border-bottom-color = ${colors.background}
+
+padding-left = 1
+padding-right = 1
+module-margin-left = 0
+module-margin-right = 0
+
+; >> Font
+; font-0 = DejaVu Sans Mono:pixelsize=24
+font-0 = ShureTechMono Nerd Font:pixelsize=28
+font-1 = FontAwesome:pixelsize=24;1
+font-2 = siji:pixelsize=10
+
+; >> Modules
+; modules-left = i3
+; modules-center = date
+modules-right = volume wireless-network battery date
+; fixed-center = true
+
+; tray-position = right
+; tray-padding = 2
+; tray-transparent = false
+; tray-background = ${colors.background}
+
+;wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+
+[bar/bottom]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+bottom = true
+height = 40
+offset-x = 20
+offset-y = 30
+background = ${colors.wallpaper}
+foreground = ${colors.foreground-alt}
+
+overline-size = 10
+overline-color = #ff0000
+underline-size = 10
+underline-color = #ff0000
+
+border-top-size = 0
+border-top-color = ${colors.background}
+
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+
+; >> Font
+font-0 = ShureTechMono Nerd Font:pixelsize=24
+font-1 = FontAwesome:pixelsize=2;1
+font-2 = siji:pixelsize=1
+
+; >> Modules
+modules-left = mpd
+; modules-center = date
+; modules-right = volume wireless-network battery powermenu
+
+; tray-position = right
+; tray-padding = 2
+; tray-transparent = false
+; tray-background = ${colors.background}
+
+
+; >> mpd
+[module/mpd]
+type = internal/mpd
+
+format-offline = <label-offline>
+format-online = <label-song> <bar-progress>
+label-offline = ---
+label-song = %artist%  %album%  %title%
+
+label-song-maxlen = 150
+label-song-ellipsis = true
+
+toggle-on-foreground = ${colors.foreground}
+toggle-off-foreground = ${colors.foreground}
+label-song-foreground = ${colors.foreground}
+
+bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
+bar-progress-width = 5
+bar-progress-indicator = 
+bar-progress-indicator-foreground = ${colors.foreground-alt}
+bar-progress-indicator-font = 1
+bar-progress-fill = 
+bar-progress-fill-foreground = ${colors.foreground-alt}
+bar-progress-fill-font = 1
+bar-progress-empty = 
+bar-progress-empty-font = 1
+bar-progress-empty-foreground = #44
+
+
+; >> wifi
+[module/wireless-network]
+type = internal/network
+interface = wlp58s0
+interval = 3.0
+
+format-connected = <label-connected>
+label-connected =  %essid%
+label-connected-padding = 1
+; ramp-signal-0 = 
+label-connected-background = ${colors.background}
+label-connected-foreground = ${colors.foreground}
+ramp-signal-background = ${colors.background}
+ramp-signal-foreground = ${colors.foreground}
+
+
+; >> eth
+[module/eth]
+type = internal/network
+interface = eth0
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-foreground-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = %ifname% disconnected
+label-disconnected-foreground = ${colors.foreground-alt}
+
+; >> date
+[module/date]
+type = internal/date
+interval = 5
+date = "%d/%m"
+time = %H:%M
+label = %date% %time% 
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
+label-padding = 1
+
+; >> volume
+[module/volume]
+type = internal/volume
+format-volume = <ramp-volume>
+format-muted-foreground = ${colors.foreground}
+format-muted-background = ${colors.background}
+format-muted-padding = 1
+label-muted = 
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-foreground = ${colors.foreground}
+ramp-volume-background = ${colors.background}
+ramp-volume-padding = 1
+
+
+; >> battery
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+label-charging = %percentage%%
+label-discharging = %percentage%%
+
+label-charging-background = ${colors.background}
+label-charging-foreground = ${colors.foreground}
+label-discharging-background = ${colors.background}
+label-discharging-foreground = ${colors.foreground}
+
+label-charging-padding = 1
+label-discharging-padding = 1
+
+
+
+
+
+
+
+; >> i3
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+ws-icon-default = ♟
+
+label-mode-padding = 2
+label-mode-foreground = ${colors.foreground}
+label-mode-background = ${colors.background}
+
+; focused = Active workspace on focused monitor
+label-focused = %icon%
+label-focused-foreground = ${colors.foreground-alt}
+label-focused-background = ${colors.background-alt}
+;label-focused-underline = ${module/bspwm.label-focused-underline}
+label-focused-padding = ${self.label-mode-padding}
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+label-unfocused-background = ${colors.background}
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding = ${self.label-mode-padding}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon%
+label-visible-background = ${self.label-focused-background}
+;label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-mode-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %icon%
+label-urgent-background = ${self.label-mode-foreground}
+label-urgent-foreground = ${self.label-mode-background}
+label-urgent-padding = ${self.label-mode-padding}
+
+
+; syntax: ssSemi
