@@ -1,4 +1,27 @@
-Xft.dpi: 192
+#ifdef SRVR_joo_XPS_13_9360
+    #ifndef FIXED_DPI
+        #define FIXED_DPI 192
+    #endif
+    #ifndef FIXED_FONT
+        FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+    #endif
+    #ifndef BOLD_FIXED_FONT
+        BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+    #endif
+#else
+    #ifndef FIXED_DPI
+        #define FIXED_DPI 92
+    #endif
+    #ifndef FIXED_FONT
+        FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+    #endif
+    #ifndef BOLD_FIXED_FONT
+        BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+    #endif
+#endif
+
+
+Xft.dpi: FIXED_DPI
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
@@ -62,8 +85,8 @@ URxvt.background: [95]termbg
 URxvt*internalBorder: 30
 
 !! Font preferences
-URxvt.font: xft:Iosevka Term:pixelsize=30:weight=Semibold
-URxvt.boldFont: xft:Iosevka Term:pixelsize=30:weight=Semibold
+URxvt.font: FIXED_FONT
+URxvt.boldFont: BOLD_FIXED_FONT
 
 !! Larger history limit
 URxvt.saveLines: 5000
