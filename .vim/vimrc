@@ -23,6 +23,8 @@ colorscheme angr
 
 " Shortucts
 map <leader>o :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen = 1
+
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
 map <C-b> :w! \| !compiler <c-r>%<CR>
