@@ -6,7 +6,7 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 ! -----------------------------------------
-!! Colors
+! Colors
 ! -----------------------------------------
 *.foreground:   #c5c8c6
 *.background:   #1d1f21
@@ -39,23 +39,6 @@ Xft.rgba: rgb
 
 #define termbg #1d1f21
 #define termfg #c5c8c6
-! -----------------------------------------
-! *.color0: #1b281d
-! *.color1: #917354
-! *.color2: #C57544
-! *.color3: #7D8178
-! *.color4: #A98F69
-! *.color5: #C7A26F
-! *.color6: #B8BBA5
-! *.color7: #e2e8e0
-! *.color8: #9ea29c
-! *.color9: #917354
-! *.color10: #C57544
-! *.color11: #7D8178
-! *.color12: #A98F69
-! *.color13: #C7A26F
-! *.color14: #B8BBA5
-! *.color15: #e2e8e0
 !-------------------------------------------------------------------------------
 ! ROFI Color theme - Alley
 !-------------------------------------------------------------------------------
@@ -66,10 +49,6 @@ rofi.color-window: #111111, #111111, #111111
 rofi.color-normal: #111111, #e8e8e8, #111111, #111111, #5f819d
 rofi.color-active: #111111, #aaaaaa, #363b36, #111111, #151615
 rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
-! rofi.color-window: #363b36, #363b36, #363b36
-! rofi.color-normal: #363b36, #e1d8cb, #363b36, #87907e, #151615
-! rofi.color-active: #363b36, #e1d8cb, #363b36, #87907e, #151615
-! rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
 
 !-------------------------------------------------------------------------------
 ! URxvt
@@ -86,9 +65,6 @@ URxvt*internalBorder: 30
 URxvt.font: xft:Iosevka Term:pixelsize=30:weight=Semibold
 URxvt.boldFont: xft:Iosevka Term:pixelsize=30:weight=Semibold
 
-!URxvt.font: xft:ShureTechMono Nerd Font:pixelsize=28
-!URxvt.boldFont: xft:ShureTechMono Nerd Font:pixelsize=28:weight=bold
-!URxvt.letterSpace: -1
 !! Larger history limit
 URxvt.saveLines: 5000
 
@@ -103,5 +79,3 @@ URxvt.keysym.Control-0x2d: perl:font-size:decrease
 
 URxvt.dynamicColors: on
 
-
-! floatingRanger.scrollBar: false
