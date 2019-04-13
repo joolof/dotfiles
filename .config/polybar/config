@@ -1,7 +1,7 @@
 [colors]
 wallpaper = #1B1B19
-fg = #c9dff2
-bg = #2f2f38
+fg = #c5c8c6
+bg = #1d1f21
 background-alt = #688486
 foreground-alt = #81a2be
 highlight = ${xrdb:color8}
