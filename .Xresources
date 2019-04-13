@@ -1,22 +1,22 @@
 #ifdef SRVR_joo_XPS_13_9360
     #ifndef FIXED_DPI
-        #define FIXED_DPI 192
+        #define FIXED_DPI 196
     #endif
     #ifndef FIXED_FONT
-        FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+        #define FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
     #endif
     #ifndef BOLD_FIXED_FONT
-        BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+        #define BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
     #endif
 #else
     #ifndef FIXED_DPI
         #define FIXED_DPI 92
     #endif
     #ifndef FIXED_FONT
-        FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+        #define FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
     #endif
     #ifndef BOLD_FIXED_FONT
-        BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+        #define BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
     #endif
 #endif
 
@@ -87,6 +87,8 @@ URxvt*internalBorder: 30
 !! Font preferences
 URxvt.font: FIXED_FONT
 URxvt.boldFont: BOLD_FIXED_FONT
+!URxvt.font: xft:Iosevka Term:pixelsize=30:weight=Semibold 
+!URxvt.boldFont: xft:Iosevka Term:pixelsize=30:weight=Semibold 
 
 !! Larger history limit
 URxvt.saveLines: 5000
