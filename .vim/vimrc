@@ -64,4 +64,14 @@ set showcmd             " show (partial) command in status line
 "  Latex
 "  -----------------------------------------
 autocmd FileType tex inoremap ,bf \textbf{}<Esc>T{i
-
+"  -----------------------------------------
+" Some switch for the background
+"  -----------------------------------------
+"function! Switch_background()
+    "if &background == "light"
+        "set background=dark
+    "else
+        "set background=light
+    "endif
+"endfunction
+"map <leader>n :call Switch_background()<CR>

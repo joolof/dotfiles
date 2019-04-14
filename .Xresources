@@ -94,7 +94,7 @@ URxvt.boldFont: BOLD_FIXED_FONT
 URxvt.saveLines: 5000
 
 !! Perl extensions
-URxvt.perl-ext-common: default,matcher,font-size 
+URxvt.perl-ext-common: default,matcher,font-size,urxvt-colors 
 !! Open urls in browser with Control-Click
 URxvt.urlLauncher: /usr/bin/google-chrome
 URxvt.matcher.button: C1
@@ -103,4 +103,7 @@ URxvt.keysym.Control-0x2b: perl:font-size:increase
 URxvt.keysym.Control-0x2d: perl:font-size:decrease
 
 URxvt.dynamicColors: on
+
+URxvt.perl-lib: /home/joo/.scripts/
+URxvt.keysym.F12: perl:urxvt-colors
 
