@@ -11,8 +11,8 @@ alert = ${xrdb:color3}
 
 ; >> wm
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 0
+margin-bottom = 0
 
 ; >> mainbar
 [bar/mainbar]
@@ -29,79 +29,36 @@ overline-color = #ff0000
 underline-size = 0
 underline-color = ${colors.fg}
 
-border-bottom-size = 0
-border-bottom-color = ${colors.fg}
+border-color = #00000000
+border-top-size = 0.5%
+border-left-size = 0.3%
+border-right-size = 0.3%
+border-bottom-size = 0.2%
+radius = 12
 
-padding-left = 1
-padding-right = 0
-module-margin-left = 0
-module-margin-right = 0
+padding-left = 3%
+padding-right = 3%
+;module-margin-left = 0
+;module-margin-right = 0
 
 ; >> Font
-font-0 = Iosevka Term Semibold:pixelsize=20
-font-1 = FontAwesome:pixelsize=18;1
-font-2 = siji:pixelsize=10
+font-0 = Iosevka Term Semibold:pixelsize=20;4
+font-1 = FontAwesome:pixelsize=18;4
+;font-2 = siji:pixelsize=10
 
 ; >> Modules
 modules-left = i3
 modules-center = spotify
 modules-right = volume wireless-network battery date
-; fixed-center = true
+;fixed-center = true
 
-tray-position = right
-tray-padding = 2
-tray-transparent = false
-tray-background = ${colors.bg}
-
-;wm-restack = bspwm
-; wm-restack = i3
+;tray-position = right
+;tray-padding = 2
+;tray-transparent = false
+;tray-background = ${colors.bg}
 
 ; override-redirect = true
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-
-[bar/bottom]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-bottom = true
-height = 50
-offset-x = 20
-offset-y = 30
-background = [0]${colors.wallpaper}
-foreground = ${colors.fg}
-
-overline-size = 10
-overline-color = #ff0000
-underline-size = 10
-underline-color = #ff0000
-
-border-top-size = 0
-border-top-color = ${colors.bg}
-
-padding-left = 0
-padding-right = 0
-module-margin-left = 0
-module-margin-right = 0
-
-; >> Font
-font-0 = Iosevka Term Semibold:pixelsize=24
-font-1 = FontAwesome:pixelsize=24;1
-font-2 = siji:pixelsize=1
-
-; >> Modules
-modules-left = mpd
-modules-center = i3
-; modules-right = volume wireless-network battery powermenu
-
-; tray-position = right
-; tray-padding = 2
-; tray-transparent = false
-; tray-background = ${colors.bg}
 
 
 [module/spotify]
@@ -301,4 +258,3 @@ label-urgent-foreground = ${colors.fg}
 label-urgent-padding = ${self.label-mode-padding}
 
 
-; syntax: ssSemi
