@@ -188,7 +188,8 @@ assign [instance="floatingNcm"] $ws10
 # >> Exec softwares
 bindsym $mod+Return exec --no-startup-id urxvt
 bindsym $mod+i exec --no-startup-id urxvt -name "floatingTerminal" -e "/home/joo/anaconda2/bin/ipython"
-bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
+#bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
+bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e vifm
 #bindsym $mod+j exec --no-startup-id urxvt -name "floatingTerminal" -e zsh -c "/home/joo/anaconda2/bin/jrnl -n 20 && zsh"
 #bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
 

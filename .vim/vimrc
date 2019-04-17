@@ -37,13 +37,12 @@ set display+=lastline
 " --------------------------------------------------------------------------------
 " Color scheme
 " --------------------------------------------------------------------------------
+"colorscheme angr
+colorscheme nord
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
-colorscheme angr
-"color scheme afterglow
 
-"highlight CursorLineNr ctermfg=LightGray
 
 " --------------------------------------------------------------------------------
 " Shortcuts
@@ -119,5 +118,14 @@ inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-Tab> <C-n>
 
 
+" --------------------------------------------------------------------------------
+"  Spell checking stuff
+" --------------------------------------------------------------------------------
 :map <F6> :setlocal spell! spelllang=en_us<CR>
+
+" --------------------------------------------------------------------------------
+"  Autoreload stuff
+" --------------------------------------------------------------------------------
+map <leader>vimrc :tabe $MYVIMRC<cr>
+autocmd bufwritepost .vimrc source $MYVIMRC
 
