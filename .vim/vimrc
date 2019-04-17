@@ -26,7 +26,7 @@ set backspace=indent,eol,start " make backspaces more powerful
 set cursorline
 "set ruler                           " show line and column number
 set showcmd             " show (partial) command in status line
-set number
+set number relativenumber
 set numberwidth=5
 set noshowmode
 set laststatus=2
@@ -70,6 +70,11 @@ au BufRead,BufNewFile *.py set expandtab
 au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
+
+" --------------------------------------------------------------------------------
+"  Python
+" --------------------------------------------------------------------------------
+"autocmd FileType py inoremap ,imp import numpy as np<Enter>from astropy.io import fits<Enter>import matplotlib.pyplot as plt<Enter>#-----------------------------------------------------------<Enter><Esc>
 
 " --------------------------------------------------------------------------------
 "  Latex
@@ -128,4 +133,9 @@ inoremap <S-Tab> <C-n>
 " --------------------------------------------------------------------------------
 map <leader>vimrc :tabe $MYVIMRC<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC
+" --------------------------------------------------------------------------------
+"  Copy and paste from clipboard
+" --------------------------------------------------------------------------------
+vnoremap <C-c> "*y :let @+=@*<CR>
+map <C-x> "+P
 
