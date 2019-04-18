@@ -17,7 +17,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -29,6 +29,9 @@ r2
 d/home/joo
 	Desktop
 7
+d/home/joo/Desktop
+	Kennedy_HD98800.pdf
+13
 d
 
 # Right window history (oldest to newest):
@@ -54,8 +57,8 @@ D/home/joo
 	Papers
 22
 D/home/joo/Papers
-	HR4796-SPHERE
-15
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -72,10 +75,17 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/joo/.local/share/vifm/Trash/000_HR4796_v1.pdf
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/home/joo/.local/share/vifm/Trash/000_phase_function.pdf
+	/home/joo/Desktop/phase_function.pdf
+t/home/joo/.local/share/vifm/Trash/000_polar_deg.pdf
+	/home/joo/Desktop/polar_deg.pdf
+t/home/joo/.local/share/vifm/Trash/000_HR4796_v1.pdf
+	/home/joo/Desktop/HR4796_v1.pdf
 
 # State:
 f

@@ -6,6 +6,7 @@ call pathogen#helptags()
 
 filetype plugin indent on
 runtime! config/**/*.vim
+runtime snippets.vim
 
 " --------------------------------------------------------------------------------
 " For finding files more easily
@@ -27,7 +28,7 @@ set cursorline
 "set ruler                           " show line and column number
 set showcmd             " show (partial) command in status line
 set number relativenumber
-set numberwidth=5
+set numberwidth=6
 set noshowmode
 set laststatus=2
 set wrap
@@ -71,16 +72,7 @@ au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
 
-" --------------------------------------------------------------------------------
-"  Python
-" --------------------------------------------------------------------------------
-"autocmd FileType py inoremap ,imp import numpy as np<Enter>from astropy.io import fits<Enter>import matplotlib.pyplot as plt<Enter>#-----------------------------------------------------------<Enter><Esc>
-runtime snippets.vim
 
-" --------------------------------------------------------------------------------
-"  Latex
-" --------------------------------------------------------------------------------
-autocmd FileType tex inoremap ,bf \textbf{}<Esc>T{i
 
 " --------------------------------------------------------------------------------
 " Search settings
