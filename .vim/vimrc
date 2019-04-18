@@ -12,7 +12,7 @@ runtime! config/**/*.vim
 " --------------------------------------------------------------------------------
 set path+=**
 set wildmenu
-
+set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when completing
 " --------------------------------------------------------------------------------
 " configure editor with tabs and nice stuff...
 " --------------------------------------------------------------------------------
@@ -75,6 +75,7 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 "  Python
 " --------------------------------------------------------------------------------
 "autocmd FileType py inoremap ,imp import numpy as np<Enter>from astropy.io import fits<Enter>import matplotlib.pyplot as plt<Enter>#-----------------------------------------------------------<Enter><Esc>
+runtime snippets.vim
 
 " --------------------------------------------------------------------------------
 "  Latex
@@ -99,6 +100,16 @@ augroup vimrcEx
     \ endif
 
   " Set syntax highlighting for specific file types
+  "
+  "
+  "
+  "
+  "
+  "
+  "
+  "
+  "
+  "
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
   autocmd BufRead,BufNewFile aliases.local,zshrc.local,*/zsh/configs/* set filetype=sh
@@ -126,8 +137,7 @@ inoremap <S-Tab> <C-n>
 " --------------------------------------------------------------------------------
 "  Spell checking stuff
 " --------------------------------------------------------------------------------
-:map <F6> :setlocal spell! spelllang=en_us<CR>
-
+map <F6> :setlocal spell! spelllang=en_us<CR>
 " --------------------------------------------------------------------------------
 "  Autoreload stuff
 " --------------------------------------------------------------------------------

@@ -193,7 +193,7 @@ bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128
 #bindsym $mod+j exec --no-startup-id urxvt -name "floatingTerminal" -e zsh -c "/home/joo/anaconda2/bin/jrnl -n 20 && zsh"
 #bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
 
-bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x16 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
+bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x30 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
 
 bindsym $mod+o exec --no-startup-id ~/.scripts/switch_theme.py
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
