@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+# This is because polybar needs to wait for 
+# wal to finish starting up, otherwise it may not show up.
+while pgrep -x wal > /dev/null; do sleep 1; done
 
 # Terminate already running bar instances
 killall -q polybar

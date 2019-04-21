@@ -134,6 +134,7 @@ bindsym $mod+r mode "resize"
 
 # >> Exec boot
 # Start polybar
+exec --no-startup-id wal -R
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
 #exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/alena-aenami-quiet-1px.jpg
@@ -143,7 +144,6 @@ exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id compton
-exec --no-startup-id wall -R
 
 # >> Media keys
 #bindsym XF86AudioPlay exec --no-startup-id mpc toggle
