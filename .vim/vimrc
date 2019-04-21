@@ -24,7 +24,7 @@ set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set backspace=indent,eol,start " make backspaces more powerful
-set cursorline
+"set cursorline
 "set ruler                           " show line and column number
 set showcmd             " show (partial) command in status line
 set number relativenumber
@@ -40,10 +40,14 @@ set scrolloff=5
 " Color scheme
 " --------------------------------------------------------------------------------
 "colorscheme angr
-colorscheme nord
+"colorscheme nord
+colorscheme wal
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
+"hi CursorLine ctermbg=7 ctermfg=0
+"hi CursorLineNr ctermbg=7 ctermfg=0
+
 
 
 " --------------------------------------------------------------------------------
