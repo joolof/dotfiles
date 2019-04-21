@@ -52,10 +52,10 @@ modules-center = spotify
 modules-right = volume wireless-network battery date
 ;fixed-center = true
 
-;tray-position = right
-;tray-padding = 1
-;tray-transparent = false
-;tray-background = ${colors.bg}
+tray-position = right
+tray-padding = 2
+tray-transparent = false
+tray-background = ${colors.bg}
 
 ; override-redirect = true
 

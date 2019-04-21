@@ -35,6 +35,7 @@ set wrap
 set textwidth=0 wrapmargin=0
 set display+=lastline
 
+"set scrolloff=999
 " --------------------------------------------------------------------------------
 " Color scheme
 " --------------------------------------------------------------------------------
@@ -58,6 +59,9 @@ map <C-b> :w! \| !compiler <c-r>%<CR>
 map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
 
+map <C-j> :tabp<CR>
+map <C-k> :tabn<CR>
+
 nnoremap k gk
 nnoremap j gj
 nnoremap 0 g0
@@ -72,8 +76,6 @@ au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
 
-
-
 " --------------------------------------------------------------------------------
 " Search settings
 " --------------------------------------------------------------------------------
@@ -82,7 +84,6 @@ set incsearch           " search as characters are entered
 
 augroup vimrcEx
   autocmd!
-
   " When editing a file, always jump to the last known cursor position.
   " Don't do it for commit messages, when the position is invalid, or when
   " inside an event handler (happens when dropping a file on gvim).
@@ -92,16 +93,6 @@ augroup vimrcEx
     \ endif
 
   " Set syntax highlighting for specific file types
-  "
-  "
-  "
-  "
-  "
-  "
-  "
-  "
-  "
-  "
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
   autocmd BufRead,BufNewFile aliases.local,zshrc.local,*/zsh/configs/* set filetype=sh
