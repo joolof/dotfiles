@@ -8,16 +8,23 @@
     #ifndef BOLD_FIXED_FONT
         #define BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
     #endif
+    #ifndef ROFI_FONT
+        #define ROFI_FONT Iosevka Term Semibold 22
+    #endif
 #else
     #ifndef FIXED_DPI
         #define FIXED_DPI 92
     #endif
     #ifndef FIXED_FONT
-        #define FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+        #define FIXED_FONT xft:Iosevka Term:pixelsize=14:weight=Semibold 
     #endif
     #ifndef BOLD_FIXED_FONT
-        #define BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=30:weight=Semibold 
+        #define BOLD_FIXED_FONT xft:Iosevka Term:pixelsize=14:weight=Semibold 
     #endif
+    #ifndef ROFI_FONT
+        #define ROFI_FONT Iosevka Term Semibold 12
+    #endif
+
 #endif
 
 
@@ -65,7 +72,7 @@ Xft.rgba: rgb
 !-------------------------------------------------------------------------------
 ! ROFI Color theme - Alley
 !-------------------------------------------------------------------------------
-rofi.font: Iosevka Term Semibold 22
+rofi.font: ROFI_FONT
 rofi.color-enabled: true
 rofi.fullscreen: false
 !rofi.color-window: #111111, #111111, #111111
