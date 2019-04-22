@@ -199,6 +199,8 @@ bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x
 #bindsym $mod+o exec --no-startup-id ~/.scripts/switch_theme.py
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
 
+workspace 1 output DVI-I-1
+workspace 3 output DVI-I-1
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
 
 

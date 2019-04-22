@@ -18,9 +18,9 @@ margin-bottom = 0
 
 ; >> mainbar
 [bar/mainbar]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = DVI-I-1
 width = 100%
-height = 55 
+height = 28
 offset-x = 0
 offset-y = 0
 background = ${colors.bg}
@@ -32,11 +32,11 @@ underline-size = 0
 underline-color = ${colors.fg}
 
 border-color = #00000000
-border-top-size = 0.5%
-border-left-size = 0.9%
-border-right-size = 0.9%
+border-top-size = 4%
+border-left-size = 9%
+border-right-size = 9%
 border-bottom-size = 0.2%
-radius = 8
+radius = 6
 
 padding-left = 3%
 padding-right = 3%
@@ -44,8 +44,8 @@ padding-right = 3%
 ;module-margin-right = 0
 
 ; >> Font
-font-0 = Iosevka Term Semibold:pixelsize=20;4
-font-1 = FontAwesome:pixelsize=18;4
+font-0 = Iosevka Term Semibold:pixelsize=12;4
+font-1 = FontAwesome:pixelsize=12;4
 ;font-2 = siji:pixelsize=10
 
 ; >> Modules
@@ -68,7 +68,7 @@ type = custom/script
 interval = 2
 format-prefix = " "
 format = <label>
-exec = python /home/joo/.scripts/spotify_status.py -f '{artist}: {song}'
+exec = /home/joo/anaconda2/bin/python /home/joo/.scripts/spotify_status.py -f '{artist}: {song}'
 format-underline = #1db954
 
 [module/system-usb-udev]
@@ -246,7 +246,7 @@ label-unfocused-foreground = ${colors.fg}
 label-unfocused-padding = ${self.label-mode-padding}
 
 ; visible = Active workspace on unfocused monitor
-;label-visible = %icon%
+label-visible = %icon%
 ;label-visible-background = ${self.label-focused-background}
 ;label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-mode-padding}

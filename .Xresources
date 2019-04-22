@@ -24,7 +24,6 @@
     #ifndef ROFI_FONT
         #define ROFI_FONT Iosevka Term Semibold 12
     #endif
-
 #endif
 
 
@@ -37,7 +36,7 @@ Xft.antialias: 1
 Xft.rgba: rgb
 !Xcursor.size: FIXED_CURSOR
 ! -----------------------------------------
-! Colors This is a test
+! Colors 
 ! -----------------------------------------
 !*.foreground:   #c5c8c6
 !*.background:   #1d1f21
