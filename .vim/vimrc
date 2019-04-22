@@ -26,7 +26,7 @@ set autoindent          " copy indent from current line when starting a new line
 set backspace=indent,eol,start " make backspaces more powerful
 "set cursorline
 "set ruler                           " show line and column number
-set showcmd             " show (partial) command in status line
+"set showcmd             " show (partial) command in status line
 set number relativenumber
 set numberwidth=6
 set noshowmode
@@ -128,7 +128,7 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 " --------------------------------------------------------------------------------
 "  Autoreload stuff
 " --------------------------------------------------------------------------------
-map <leader>vimrc :tabe $MYVIMRC<cr>
+map <leader>vi :tabe $MYVIMRC<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC
 " --------------------------------------------------------------------------------
 "  Copy and paste from clipboard
