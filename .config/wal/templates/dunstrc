@@ -5,15 +5,15 @@
 
 [global]
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    geometry = "1000x20+29+97"
+    geometry = "1000x20+11+42"
     shrink = yes
-    corner_radius = 10
+    corner_radius = 4
 
     # Show multiple notifications in the same box
-    separator_height = 0
+    separator_height = 2
 
     # Add vertical padding to the inside of the notification
-    padding = 20
+    padding = 8
 
     # Add horizontal padding for when the text gets long enough
     horizontal_padding = 20
@@ -45,20 +45,14 @@
 
 # Set the background and foreground (text) color for all notifications
 [urgency_low]
-    #background = "{foreground}"
-    #foreground = "{background}"
     background = "{background}"
     foreground = "{foreground}"
 
 [urgency_normal]
-    #background = "{foreground}"
-    #foreground = "{background}"
     background = "{background}"
     foreground = "{foreground}"
 
 [urgency_critical]
-    #background = "{foreground}"
-    #foreground = "{background}"
     background = "{background}"
     foreground = "{foreground}"
 

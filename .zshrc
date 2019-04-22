@@ -120,7 +120,7 @@ export PATH="/home/joo/gasgano/bin:/home/joo/Codes/Packages/ESO/pipelines/bin:$P
 # For MCFOST
 export MCFOST_UTILS=/home/joo/IRS/mcfost/utils
 
-export READER='evince'
+export READER='zathura'
 
 TZ='America/Santiago'; 
 export TZ
