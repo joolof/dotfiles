@@ -1,0 +1,37 @@
+Xft.dpi: 92
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+!-------------------------------------------------------------------------------
+! ROFI Color theme - Alley
+!-------------------------------------------------------------------------------
+rofi.font: Iosevka Term Semibold 12
+rofi.color-enabled: true
+rofi.fullscreen: false
+
+!-------------------------------------------------------------------------------
+! URxvt
+!-------------------------------------------------------------------------------
+!! Appearance
+URxvt.termName: rxvt-unicode
+URxvt.scrollBar: false
+URxvt*internalBorder: 40
+
+!! Font preferences
+URxvt.font: xft:Iosevka Term:pixelsize=14:weight=Semibold 
+URxvt.boldFont: xft:Iosevka Term:pixelsize=14:weight=Semibold 
+
+!! Larger history limit
+URxvt.saveLines: 5000
+
+!! Perl extensions
+URxvt.perl-ext-common: default,matcher,font-size
+!! Open urls in browser with Control-Click
+URxvt.urlLauncher: /usr/bin/google-chrome
+URxvt.matcher.button: C1
+!! Change font size on Control-Plus/Minus
+URxvt.keysym.Control-0x2b: perl:font-size:increase
+URxvt.keysym.Control-0x2d: perl:font-size:decrease

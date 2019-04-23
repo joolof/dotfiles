@@ -136,7 +136,6 @@ bindsym $mod+r mode "resize"
 # Start polybar
 exec --no-startup-id wal -R
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-#exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
 #exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/alena-aenami-quiet-1px.jpg
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 # exec --no-startup-id mpd
@@ -153,8 +152,6 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 4 +5% #i
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 4 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 4 toggle # mute sound
 
-#bindsym --release Print exec --no-startup-id "scrot -m '/home/joo/Pictures/screenshots/%H-%M-%S_%d.%m.%Y.png'"
-#bindsym --release Shift+Print exec --no-startup-id "scrot -s '/home/joo/Pictures/screenshots/%H-%M-%S_%d.%m.%Y.png'"
 bindsym --release Print exec --no-startup-id "scrot -m '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'"
 bindsym --release Shift+Print exec --no-startup-id "scrot -s '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'"
 
