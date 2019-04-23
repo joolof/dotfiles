@@ -138,19 +138,22 @@ exec --no-startup-id wal -R
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/alena-aenami-quiet-1px.jpg
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
-# exec --no-startup-id mpd
+exec --no-startup-id mpd
 #exec --no-startup-id mopidy
 exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id compton
 
 # >> Media keys
-bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindsym XF86AudioNext exec --no-startup-id playerctl next
-bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 4 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 4 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 4 toggle # mute sound
+#bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+#bindsym XF86AudioNext exec --no-startup-id playerctl next
+#bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym XF86AudioNext exec --no-startup-id mpc next
+bindsym XF86AudioPrev exec --no-startup-id mpc previous
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume bluez_sink.04_5D_4B_53_64_C6.a2dp_sink +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume bluez_sink.04_5D_4B_53_64_C6.a2dp_sink -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute bluez_sink.04_5D_4B_53_64_C6.a2dp_sink toggle # mute sound
 
 bindsym --release Print exec --no-startup-id "scrot -m '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'"
 bindsym --release Shift+Print exec --no-startup-id "scrot -s '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'"
@@ -159,6 +162,7 @@ bindsym --release Shift+Print exec --no-startup-id "scrot -s '/home/joo/Pictures
 # >> for_window
 for_window [title="Figure"] floating enable
 for_window [title="Write"] floating enable
+for_window [class="Blueman-manager"] floating enable
 for_window [class="Eog"] floating enable
 for_window [class="gui.py"] floating enable
 for_window [class="Lutris"] floating enable
@@ -182,7 +186,7 @@ bindsym $mod+i exec --no-startup-id urxvt -name "floatingTerminal" -e "/home/joo
 bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
 #bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e vifm
 #bindsym $mod+j exec --no-startup-id urxvt -name "floatingTerminal" -e zsh -c "/home/joo/anaconda2/bin/jrnl -n 20 && zsh"
-#bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
+bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
 
 bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x30 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
 
