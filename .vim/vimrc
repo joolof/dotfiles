@@ -59,7 +59,7 @@ let NERDTreeQuitOnOpen = 1
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
 "map <C-b> :w! \| !compiler <c-r>%<CR>
-map <C-b> :w! \| !latexmk -pdf -silent %<cr><cr>
+map <C-b> :w! \| !latexmk -pdf %<cr><cr>
 " Open corresponding .pdf/.html or preview
 map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
