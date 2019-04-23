@@ -132,8 +132,8 @@ VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 # For dynamic colors
 # https://github.com/sos4nt/dynamic-colors
-export PATH="$HOME/.dynamic-colors/bin:$PATH"
-source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
+#export PATH="$HOME/.dynamic-colors/bin:$PATH"
+#source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
 #dynamic-colors init
 (cat ~/.cache/wal/sequences &)
 

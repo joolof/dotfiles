@@ -14,7 +14,7 @@ cd "$dir" || exit
 
 textype() { \
 	command="pdflatex"
-	( sed 5q "$file" | grep -i -q 'pdflatex' ) && command="pdflatex"
+	( sed 5q "$file" | grep -i -q 'xelatex' ) && command="xelatex"
 	$command --output-directory="$dir" "$base" &&
 	grep -i addbibresource "$file" >/dev/null &&
 	biber --input-directory "$dir" "$base" &&
@@ -30,9 +30,8 @@ case "$file" in
 	*\.md) pandoc "$file" --pdf-engine=xelatex -o "$base".pdf ;;
 	*config.h) sudo make install ;;
         *\.c) cc "$file" -o "$base" && "$base" ;;
-	*\.py) /home/joo/anaconda2/bin/python "$file" ;;
+	*\.py) python "$file" ;;
 	*\.go) go run "$file" ;;
 	*\.sent) setsid sent "$file" 2>/dev/null & ;;
 	*) sed 1q "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
 esac
-
