@@ -5288,3 +5288,73 @@ Apr 23 15:00 : client: [10] closed
 Apr 23 15:00 : client: [3] closed
 Apr 23 15:00 : client: [11] opened from 127.0.0.1:45398
 Apr 23 15:02 : player: played "DJ Krush/KI-OKU/03 - dj krush & toshinori kondo - mu-getsu.mp3"
+Apr 23 15:08 : player: played "Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/19 - I'm free.mp3"
+Apr 23 15:08 : client: [12] opened from 127.0.0.1:45478
+Apr 23 15:08 : client: [12] closed
+Apr 23 15:09 : client: [13] opened from 127.0.0.1:45488
+Apr 23 15:09 : client: [13] closed
+Apr 23 15:12 : player: played "Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/17 - Lorena's Butterfly.mp3"
+Apr 23 15:13 : client: [14] opened from 127.0.0.1:45498
+Apr 23 15:13 : client: [14] closed
+Apr 23 15:13 : client: [15] opened from 127.0.0.1:45500
+Apr 23 15:13 : client: [15] closed
+Apr 23 15:13 : client: [16] opened from 127.0.0.1:45502
+Apr 23 15:13 : client: [16] closed
+Apr 23 15:14 : client: [17] opened from 127.0.0.1:45504
+Apr 23 15:14 : client: [17] closed
+Apr 23 15:15 : client: [18] opened from 127.0.0.1:45508
+Apr 23 15:15 : client: [18] closed
+Apr 23 15:16 : player: played "Grammatik/Gramatik - Beatz & Pieces Vol1/04 So Much For Love.mp3"
+Apr 23 15:20 : client: [11] closed
+Apr 23 15:20 : client: [19] opened from 127.0.0.1:45708
+Apr 23 15:21 : client: [20] opened from 127.0.0.1:45710
+Apr 23 15:23 : player: played "Eric Lau - Quadrivium/01 - Star Trekking.mp3"
+Apr 23 15:24 : client: [21] opened from 127.0.0.1:45820
+Apr 23 15:24 : client: [21] closed
+Apr 23 15:26 : player: played "Eric Lau - Quadrivium/03 - Chant & Bounce.mp3"
+Apr 23 15:29 : player: played "Eric Lau - Quadrivium/09 - Orchid.mp3"
+Apr 23 15:31 : player: played "Eric Lau - Quadrivium/19 - Wee Deep.mp3"
+Apr 23 15:31 : client: [22] opened from 127.0.0.1:45884
+Apr 23 15:31 : client: [22] closed
+Apr 23 16:02 : client: [23] opened from 127.0.0.1:46066
+Apr 23 16:02 : client: [23] closed
+Apr 23 16:04 : player: played "Eric Lau - Quadrivium/07 - Cloud Burst.mp3"
+Apr 23 16:07 : player: played "Eric Lau - Quadrivium/14 - The Garden.mp3"
+Apr 23 16:09 : player: played "Eric Lau - Quadrivium/08 - In Paradise.mp3"
+Apr 23 16:11 : player: played "Eric Lau - Quadrivium/16 - Gold En.mp3"
+Apr 23 16:14 : player: played "Eric Lau - Quadrivium/17 - Proceed With Caution.mp3"
+Apr 23 16:17 : player: played "Eric Lau - Quadrivium/12 - It's Time.mp3"
+Apr 23 16:19 : player: played "Eric Lau - Quadrivium/20 - 4U.mp3"
+Apr 23 16:21 : player: played "Eric Lau - Quadrivium/10 - In The Air.mp3"
+Apr 23 16:24 : player: played "Eric Lau - Quadrivium/06 - Can You Say Yeah.mp3"
+Apr 23 16:27 : player: played "Eric Lau - Quadrivium/11 - Vu Ja De.mp3"
+Apr 23 16:29 : player: played "Eric Lau - Quadrivium/05 - Low On The Treble.mp3"
+Apr 23 16:31 : player: played "Eric Lau - Quadrivium/18 - Water.mp3"
+Apr 23 16:32 : client: [24] opened from 127.0.0.1:46390
+Apr 23 16:32 : client: [24] closed
+Apr 23 16:59 : player: played "Eric Lau - Quadrivium/13 - Lzy.mp3"
+Apr 23 16:59 : client: [20] closed
+Apr 23 16:59 : client: [25] opened from 127.0.0.1:46692
+Apr 23 16:59 : client: [25] closed
+Apr 23 16:59 : client: [26] opened from 127.0.0.1:46694
+Apr 23 17:09 : client: [27] opened from 127.0.0.1:46726
+Apr 23 17:09 : client: [27] closed
+Apr 23 17:25 : client: [28] opened from 127.0.0.1:47078
+Apr 23 17:25 : client: [28] closed
+Apr 23 17:29 : client: [19] closed
+Apr 23 17:29 : exception: "My pulse EQ" [pulse] failed to pause: failed to connect the stream: Connection terminated
+Apr 23 17:29 : player: played "Godspeed You Black Emperor discography/Godspeed You Black Emperor - F# A# (Infinity)/03 - Providence.mp3"
+Apr 23 18:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 23 18:05 : config: option 'auto_resample' on line 14 was not recognized
+Apr 23 18:05 : config: option 'use_mmap' on line 15 was not recognized
+Apr 23 18:05 : config: option 'device' on line 16 was not recognized
+Apr 23 18:05 : config: option 'mixer_device' on line 18 was not recognized
+Apr 23 18:05 : config: option 'mixer_control' on line 19 was not recognized
+Apr 23 18:05 : config: option 'mixer_index' on line 20 was not recognized
+Apr 23 18:05 : avahi: Service 'Music Player' successfully established.
+Apr 23 18:05 : client: [0] opened from 127.0.0.1:44514
+Apr 23 18:05 : client: [1] opened from 127.0.0.1:44516
+Apr 23 18:06 : client: [1] closed
+Apr 23 18:07 : client: [2] opened from 127.0.0.1:44696
+Apr 23 18:07 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 23 18:07 : client: [2] closed

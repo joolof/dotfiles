@@ -1,9 +1,9 @@
 sw_volume: 98
 audio_device_state:1:My pulse EQ
 audio_device_state:1:FIFO
-state: play
-current: 74
-time: 1.590000
+state: pause
+current: 2
+time: 287.114000
 random: 1
 repeat: 0
 single: 0
@@ -12,80 +12,11 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Grammatik/Gramatik - Beatz & Pieces Vol1/01 DreamBIG.mp3
-1:Grammatik/Gramatik - Beatz & Pieces Vol1/02 On The Boardwalk.mp3
-2:Grammatik/Gramatik - Beatz & Pieces Vol1/03 While I Was Playin' Fair.mp3
-3:Grammatik/Gramatik - Beatz & Pieces Vol1/04 So Much For Love.mp3
-4:Grammatik/Gramatik - Beatz & Pieces Vol1/05 Good Evening Mr. Hitchcock.mp3
-5:Grammatik/Gramatik - Beatz & Pieces Vol1/06 Skylight.mp3
-6:Grammatik/Gramatik - Beatz & Pieces Vol1/07 Like You Do.mp3
-7:Grammatik/Gramatik - Beatz & Pieces Vol1/08 Portorose In July.mp3
-8:Grammatik/Gramatik - Beatz & Pieces Vol1/09 Somebody.mp3
-9:Grammatik/Gramatik - Beatz & Pieces Vol1/10 Break Loose.mp3
-10:Grammatik/Gramatik - Beatz & Pieces Vol1/11 The Drink Is Called Rakija.mp3
-11:Grammatik/Gramatik - Beatz & Pieces Vol1/12 Make You Better.mp3
-12:Grammatik/Gramatik - Beatz & Pieces Vol1/13 Is It Over.mp3
-13:Grammatik/Gramatik - Beatz & Pieces Vol1/14 Happiness On A Leash.mp3
-14:Grammatik/Gramatik - Beatz & Pieces Vol1/15 Moar Jive.mp3
-15:Grammatik/Gramatik - Beatz & Pieces Vol1/16 Friday.mp3
-16:Grammatik/Gramatik - Beatz & Pieces Vol1/17 The Monolith.mp3
-17:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/01 - Doin' it.mp3
-18:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/02 - In my Hood.mp3
-19:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/03 - Don't Get Weary.mp3
-20:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/04 - Sumthin'.mp3
-21:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/05 - Just Chillin'.mp3
-22:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/06 - New Nautilus.mp3
-23:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/07 - The Prophet.mp3
-24:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/08 - Itz Over.mp3
-25:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/09 - To Follow.mp3
-26:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/10 - Shaft Funk.mp3
-27:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/11 - Funk it Down.mp3
-28:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/12 - Ass Kickin' Bass.mp3
-29:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/13 - Now I Know.mp3
-30:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/14 - Road Trip.mp3
-31:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/15 - Bring it Fast.mp3
-32:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/16 - Loungin'.mp3
-33:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/17 - Lorena's Butterfly.mp3
-34:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/18 - Brother.mp3
-35:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/19 - U R the One.mp3
-36:Grammatik/Gramatik - Street Bangerz Volume 1 (2008)/20 - I Love the Way.mp3
-37:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/01 - The Culture.mp3
-38:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/02 - I'm doin' my thang.mp3
-39:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/03 - Tearin' it up.mp3
-40:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/04 - Deal with the real.mp3
-41:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/05 - Street soul 101.mp3
-42:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/06 - Smooth while raw.mp3
-43:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/07 - Boom bap reinstated.mp3
-44:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/08 - Chillaxin' by the sea.mp3
-45:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/09 - Still here.mp3
-46:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/10 - Just jammin'.mp3
-47:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/11 - Orchestrated incident.mp3
-48:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/12 - What more can I say.mp3
-49:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/13 - Mkes me wonder.mp3
-50:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/14 - A bright day.mp3
-51:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/15 - Lonely and cold.mp3
-52:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/16 - Hit that jive.mp3
-53:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/17 - Indigo child.mp3
-54:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/18 - Don't you know.mp3
-55:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/19 - I'm free.mp3
-56:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/01 - The Culture.mp3
-57:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/02 - I'm doin' my thang.mp3
-58:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/03 - Tearin' it up.mp3
-59:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/04 - Deal with the real.mp3
-60:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/05 - Street soul 101.mp3
-61:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/06 - Smooth while raw.mp3
-62:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/07 - Boom bap reinstated.mp3
-63:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/08 - Chillaxin' by the sea.mp3
-64:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/09 - Still here.mp3
-65:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/10 - Just jammin'.mp3
-66:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/11 - Orchestrated incident.mp3
-67:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/12 - What more can I say.mp3
-68:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/13 - Mkes me wonder.mp3
-69:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/14 - A bright day.mp3
-70:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/15 - Lonely and cold.mp3
-71:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/16 - Hit that jive.mp3
-72:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/17 - Indigo child.mp3
-73:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/18 - Don't you know.mp3
-74:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/19 - I'm free.mp3
-75:Grammatik/Gramatik - Street Bangerz Volume 2 (2009)/20 - The prophet (version 2.0).mp3
+0:Godspeed You Black Emperor discography/Godspeed You Black Emperor - F# A# (Infinity)/01 - The Dead Flag Blues.mp3
+1:Godspeed You Black Emperor discography/Godspeed You Black Emperor - F# A# (Infinity)/02 - East Hastings.mp3
+2:Godspeed You Black Emperor discography/Godspeed You Black Emperor - F# A# (Infinity)/03 - Providence.mp3
+3:Godspeed You Black Emperor discography/Godspeed You Black Emperor - Lift Your Skinny Fists Like Antennas To Heaven/Disc 1/01 - Storm.mp3
+4:Godspeed You Black Emperor discography/Godspeed You Black Emperor - Lift Your Skinny Fists Like Antennas To Heaven/Disc 1/02 - Static.mp3
+5:Godspeed You Black Emperor discography/Godspeed You Black Emperor - Lift Your Skinny Fists Like Antennas To Heaven/Disc 2/01 - Sleep.mp3
+6:Godspeed You Black Emperor discography/Godspeed You Black Emperor - Lift Your Skinny Fists Like Antennas To Heaven/Disc 2/02 - Antennas To Heaven.mp3
 playlist_end

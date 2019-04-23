@@ -49,7 +49,8 @@ font-1 = FontAwesome:pixelsize=10;3
 
 ; >> Modules
 modules-left = i3
-modules-center = spotify
+modules-center = mpd
+;modules-center = spotify
 modules-right = volume date
 ;fixed-center = true
 
