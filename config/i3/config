@@ -138,8 +138,8 @@ exec --no-startup-id wal -R
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/alena-aenami-quiet-1px.jpg
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
-exec --no-startup-id mpd
-#exec --no-startup-id mopidy
+#exec --no-startup-id mpd
+exec --no-startup-id mopidy
 exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id compton
@@ -186,7 +186,8 @@ bindsym $mod+i exec --no-startup-id urxvt -name "floatingTerminal" -e "/home/joo
 bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
 #bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e vifm
 #bindsym $mod+j exec --no-startup-id urxvt -name "floatingTerminal" -e zsh -c "/home/joo/anaconda2/bin/jrnl -n 20 && zsh"
-bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
+#bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
+bindsym $mod+m exec --no-startup-id urxvt -e ncmpcpp
 
 bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x30 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
 
