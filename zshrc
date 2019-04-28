@@ -124,7 +124,6 @@ export READER='zathura'
 
 TZ='America/Santiago'; 
 export TZ
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
 
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
@@ -137,3 +136,5 @@ VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 #dynamic-colors init
 (cat ~/.cache/wal/sequences &)
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

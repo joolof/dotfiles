@@ -24,9 +24,6 @@ set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set backspace=indent,eol,start " make backspaces more powerful
-"set cursorline
-"set ruler                           " show line and column number
-"set showcmd             " show (partial) command in status line
 set number relativenumber
 set numberwidth=6
 set noshowmode
@@ -34,36 +31,33 @@ set laststatus=2
 set wrap
 set textwidth=0 wrapmargin=0
 set display+=lastline
-
 set scrolloff=5
+"set autochdir
+"set cursorline
+"set ruler                           " show line and column number
+"set showcmd             " show (partial) command in status line
 " --------------------------------------------------------------------------------
 " Color scheme
 " --------------------------------------------------------------------------------
-"colorscheme angr
-"colorscheme nord
 colorscheme wal
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
-"hi CursorLine ctermbg=7 ctermfg=0
-"hi CursorLineNr ctermbg=7 ctermfg=0
-
-
-
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
-map <leader>o :NERDTreeToggle<CR>
+"map <leader>o :NERDTreeToggle<CR>
+map <leader>h :History!<CR>
+map <leader>o :Files!<CR>
 let NERDTreeQuitOnOpen = 1
+"command! -bang -nargs=? -complete=dir Files
+  "\ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
-"map <C-b> :w! \| !compiler <c-r>%<CR>
 map <C-b> :w! \| !latexmk -pdf %<cr><cr>
-" Open corresponding .pdf/.html or preview
 map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
-set autochdir
 
 map <C-j> :tabp<CR>
 map <C-k> :tabn<CR>
@@ -81,12 +75,10 @@ au BufRead,BufNewFile *.py set expandtab
 au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
-
 " --------------------------------------------------------------------------------
 " Search settings
 " --------------------------------------------------------------------------------
 set incsearch           " search as characters are entered
-"set hlsearch            " highlight matches
 
 augroup vimrcEx
   autocmd!
@@ -122,7 +114,6 @@ endfunction
 inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-Tab> <C-n>
 
-
 " --------------------------------------------------------------------------------
 "  Spell checking stuff
 " --------------------------------------------------------------------------------
@@ -136,5 +127,9 @@ autocmd bufwritepost .vimrc source $MYVIMRC
 "  Copy and paste from clipboard
 " --------------------------------------------------------------------------------
 vnoremap <C-c> "*y :let @+=@*<CR>
-map <C-x> "+P
+map <C-z> "+P
+map <C-x> "+p
+
+let g:vimwiki_list = [{'path': '~/.notes/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
