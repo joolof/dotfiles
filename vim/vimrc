@@ -1,21 +1,15 @@
 let mapleader = ","
-
+" --------------------------------------------------------------------------------
+" General settings for plugins and such
+" --------------------------------------------------------------------------------
 set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
-
 filetype plugin indent on
 runtime! config/**/*.vim
 runtime snippets.vim
-
 " --------------------------------------------------------------------------------
-" For finding files more easily
-" --------------------------------------------------------------------------------
-set path+=**
-set wildmenu
-set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when completing
-" --------------------------------------------------------------------------------
-" configure editor with tabs and nice stuff...
+" General behavior
 " --------------------------------------------------------------------------------
 syntax on               " syntax highlighting
 set expandtab           " enter spaces when tab is pressed
@@ -37,39 +31,7 @@ set scrolloff=5
 "set ruler                           " show line and column number
 "set showcmd             " show (partial) command in status line
 " --------------------------------------------------------------------------------
-" Color scheme
-" --------------------------------------------------------------------------------
-colorscheme wal
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
-" --------------------------------------------------------------------------------
-" Shortcuts
-" --------------------------------------------------------------------------------
-"map <leader>o :NERDTreeToggle<CR>
-map <leader>h :History!<CR>
-map <leader>o :Files!<CR>
-let NERDTreeQuitOnOpen = 1
-"command! -bang -nargs=? -complete=dir Files
-  "\ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
-
-inoremap <C-e> <C-o>$
-inoremap <C-a> <C-o>0
-map <C-b> :w! \| !latexmk -pdf %<cr><cr>
-map <leader>p :!opout <c-r>%<CR><CR>
-command! MakeTags !ctags -R .
-
-map <C-j> :tabp<CR>
-map <C-k> :tabn<CR>
-
-nnoremap k gk
-nnoremap j gj
-nnoremap 0 g0
-nnoremap $ g$
-nnoremap ^ g^
-
-" --------------------------------------------------------------------------------
-" configure expanding of tabs for various file types
+" Configure expanding of tabs for various file types
 " --------------------------------------------------------------------------------
 au BufRead,BufNewFile *.py set expandtab
 au BufRead,BufNewFile *.c set noexpandtab
@@ -79,7 +41,43 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 " Search settings
 " --------------------------------------------------------------------------------
 set incsearch           " search as characters are entered
-
+set ignorecase
+" --------------------------------------------------------------------------------
+" For finding files more easily
+" --------------------------------------------------------------------------------
+set path+=**
+set wildmenu
+set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when completing
+" --------------------------------------------------------------------------------
+" Color scheme
+" --------------------------------------------------------------------------------
+colorscheme wal
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+" --------------------------------------------------------------------------------
+" Shortcuts
+" --------------------------------------------------------------------------------
+map <leader>h :History!<CR>
+map <leader>o :Files!<CR>
+map <C-b> :w! \| !latexmk -pdf %<cr><cr>
+map <leader>p :!opout <c-r>%<CR><CR>
+command! MakeTags !ctags -R .
+" --------------------------------------------------------------------------------
+" Navigation
+" --------------------------------------------------------------------------------
+nnoremap k gk
+nnoremap j gj
+nnoremap 0 g0
+nnoremap $ g$
+nnoremap ^ g^
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>0
+map <C-j> :tabp<CR>
+map <C-k> :tabn<CR>
+" --------------------------------------------------------------------------------
+" Jump to last known position
+" --------------------------------------------------------------------------------
 augroup vimrcEx
   autocmd!
   " When editing a file, always jump to the last known cursor position.
@@ -129,7 +127,9 @@ autocmd bufwritepost .vimrc source $MYVIMRC
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-z> "+P
 map <C-x> "+p
-
+" --------------------------------------------------------------------------------
+" Vim Wiki configuration 
+" --------------------------------------------------------------------------------
 let g:vimwiki_list = [{'path': '~/.notes/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
