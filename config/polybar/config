@@ -1,3 +1,4 @@
+; vim:ft=dosini
 [colors]
 wallpaper = #1B1B19
 ;fg = #c5c8c6
@@ -6,7 +7,7 @@ fg = ${xrdb:color7}
 bg = ${xrdb:color0}
 background-alt = #688486
 foreground-alt = #81a2be
-highlight = ${xrdb:color8}
+highlight = ${xrdb:color7}
 primary = ${xrdb:color10}
 secondary = ${xrdb:color11}
 alert = ${xrdb:color3}
@@ -28,8 +29,8 @@ foreground = ${colors.fg}
 
 overline-size = 0
 overline-color = #ff0000
-underline-size = 0
-underline-color = ${colors.fg}
+underline-size = 6
+;underline-color = #ffa71a
 
 border-color = #00000000
 border-top-size = 0.5%
@@ -135,7 +136,7 @@ label-connected-background = ${colors.bg}
 label-connected-foreground = ${colors.fg}
 ramp-signal-background = ${colors.bg}
 ramp-signal-foreground = ${colors.fg}
-
+format-connected-underline = ${colors.highlight}
 
 ; >> eth
 [module/eth]
@@ -162,6 +163,7 @@ label = %date% %time%
 label-foreground = ${colors.fg}
 label-background = ${colors.bg}
 label-padding = 1
+format-underline = ${colors.highlight}
 
 ; >> volume
 [module/volume]
@@ -177,6 +179,8 @@ ramp-volume-1 = 
 ramp-volume-foreground = ${colors.fg}
 ramp-volume-background = ${colors.bg}
 ramp-volume-padding = 1
+format-muted-underline = ${colors.highlight}
+format-volume-underline = ${colors.highlight}
 
 
 ; >> battery
@@ -199,6 +203,9 @@ label-full-padding = 1
 label-charging-padding = 1
 label-discharging-padding = 1
 
+format-charging-underline = ${colors.highlight}
+format-full-underline = ${colors.highlight}
+format-discharging-underline = ${colors.highlight}
 
 
 
@@ -236,6 +243,7 @@ label-mode-background = ${colors.bg}
 label-focused = %icon%
 label-focused-foreground = ${colors.bg}
 label-focused-background = ${colors.fg}
+;label-focused-underline = ${xrdb:color1}
 ;label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${self.label-mode-padding}
 
@@ -244,6 +252,7 @@ label-unfocused = %icon%
 label-unfocused-background = ${colors.bg}
 label-unfocused-foreground = ${colors.fg}
 label-unfocused-padding = ${self.label-mode-padding}
+label-unfocused-underline = ${colors.highlight}
 
 ; visible = Active workspace on unfocused monitor
 ;label-visible = %icon%
