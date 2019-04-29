@@ -59,7 +59,7 @@ let g:lightline = {
 " Shortcuts
 " --------------------------------------------------------------------------------
 map <leader>h :History!<CR>
-map <leader>o :Files!<CR>
+map <leader>o :Files! ~/<CR>
 map <C-b> :w! \| !latexmk -pdf %<cr><cr>
 map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
