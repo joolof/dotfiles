@@ -134,4 +134,8 @@ let g:vimwiki_list = [{'path': '~/.notes/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 nnoremap <leader>l :VimwikiToggleListItem<CR>
+" --------------------------------------------------------------------------------
+" Vim Calendar
+" --------------------------------------------------------------------------------
+let g:calendar_google_calendar = 1
 
