@@ -5,7 +5,7 @@ fg = ${xrdb:color7}
 bg = ${xrdb:color0}
 background-alt = #688486
 foreground-alt = #81a2be
-highlight = ${xrdb:color8}
+highlight = ${xrdb:color7}
 primary = ${xrdb:color10}
 secondary = ${xrdb:color11}
 alert = ${xrdb:color3}
@@ -27,8 +27,8 @@ foreground = ${colors.fg}
 
 overline-size = 0
 overline-color = #ff0000
-underline-size = 0
-underline-color = ${colors.fg}
+underline-size = 3
+;underline-color = ${colors.fg}
 
 border-color = #00000000
 border-top-size = 4%
@@ -100,7 +100,7 @@ label-song-foreground = ${colors.fg}
 toggle-on-background = ${colors.bg}
 toggle-off-background = ${colors.bg}
 label-song-background = ${colors.bg}
-
+format-online-underline = ${colors.highlight}
 toggle-on-padding = 1
 toggle-off-padding = 1
 label-song-padding = 1
@@ -164,6 +164,7 @@ label = %date% %time%
 label-foreground = ${colors.fg}
 label-background = ${colors.bg}
 label-padding = 1
+format-underline = ${colors.highlight}
 
 ; >> volume
 [module/volume]
@@ -180,6 +181,8 @@ ramp-volume-foreground = ${colors.fg}
 ramp-volume-background = ${colors.bg}
 ramp-volume-padding = 1
 
+format-muted-underline = ${colors.highlight}
+format-volume-underline = ${colors.highlight}
 
 ; >> battery
 [module/battery]
@@ -246,12 +249,14 @@ label-unfocused = %icon%
 label-unfocused-background = ${colors.bg}
 label-unfocused-foreground = ${colors.fg}
 label-unfocused-padding = ${self.label-mode-padding}
+label-unfocused-underline = ${colors.highlight}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %icon%
 ;label-visible-background = ${self.label-focused-background}
 ;label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-mode-padding}
+label-visible-underline = ${colors.highlight}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %icon%

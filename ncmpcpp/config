@@ -26,11 +26,11 @@ progressbar_elapsed_color = "green"
 # Colors ..
 colors_enabled = "yes"
 empty_tag_color = "red"
-statusbar_color = "black"
-state_line_color = "black"
-state_flags_color = "green"
-main_window_color = "green" 
-header_window_color = "black"
+statusbar_color = "red"
+state_line_color = "red"
+state_flags_color = "red"
+main_window_color = "red" 
+header_window_color = "red"
 main_window_highlight_color = "blue"
 
 # Misc ..   

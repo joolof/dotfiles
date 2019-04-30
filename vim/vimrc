@@ -1,21 +1,15 @@
 let mapleader = ","
-
+" --------------------------------------------------------------------------------
+" General settings for plugins and such
+" --------------------------------------------------------------------------------
 set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
-
 filetype plugin indent on
 runtime! config/**/*.vim
 runtime snippets.vim
-
 " --------------------------------------------------------------------------------
-" For finding files more easily
-" --------------------------------------------------------------------------------
-set path+=**
-set wildmenu
-set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when completing
-" --------------------------------------------------------------------------------
-" configure editor with tabs and nice stuff...
+" General behavior
 " --------------------------------------------------------------------------------
 syntax on               " syntax highlighting
 set expandtab           " enter spaces when tab is pressed
@@ -24,9 +18,6 @@ set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set backspace=indent,eol,start " make backspaces more powerful
-"set cursorline
-"set ruler                           " show line and column number
-"set showcmd             " show (partial) command in status line
 set number relativenumber
 set numberwidth=6
 set noshowmode
@@ -34,59 +25,64 @@ set laststatus=2
 set wrap
 set textwidth=0 wrapmargin=0
 set display+=lastline
-
 set scrolloff=5
-" --------------------------------------------------------------------------------
-" Color scheme
-" --------------------------------------------------------------------------------
-"colorscheme angr
-"colorscheme nord
-colorscheme wal
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
-"hi CursorLine ctermbg=7 ctermfg=0
-"hi CursorLineNr ctermbg=7 ctermfg=0
-
-
-
-" --------------------------------------------------------------------------------
-" Shortcuts
-" --------------------------------------------------------------------------------
-map <leader>o :NERDTreeToggle<CR>
-let NERDTreeQuitOnOpen = 1
-
-inoremap <C-e> <C-o>$
-inoremap <C-a> <C-o>0
-map <C-b> :w! \| !latexmk -pdf %<cr><cr>
-" Open corresponding .pdf/.html or preview
-map <leader>p :!opout <c-r>%<CR><CR>
-command! MakeTags !ctags -R .
 set autochdir
-
-map <C-j> :tabp<CR>
-map <C-k> :tabn<CR>
-
-nnoremap k gk
-nnoremap j gj
-nnoremap 0 g0
-nnoremap $ g$
-nnoremap ^ g^
-
+"set cursorline
+"set ruler                           " show line and column number
+"set showcmd             " show (partial) command in status line
 " --------------------------------------------------------------------------------
-" configure expanding of tabs for various file types
+" Configure expanding of tabs for various file types
 " --------------------------------------------------------------------------------
 au BufRead,BufNewFile *.py set expandtab
 au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
-
 " --------------------------------------------------------------------------------
 " Search settings
 " --------------------------------------------------------------------------------
 set incsearch           " search as characters are entered
-"set hlsearch            " highlight matches
-
+set ignorecase
+" --------------------------------------------------------------------------------
+" For finding files more easily
+" --------------------------------------------------------------------------------
+set path+=**
+set wildmenu
+set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when completing
+" --------------------------------------------------------------------------------
+" Color scheme
+" --------------------------------------------------------------------------------
+colorscheme wal
+"let g:airline_theme='wombat'
+"let g:lightline = {
+      "\ 'colorscheme': 'wombat',
+      "\ }
+let g:airline_powerline_fonts = 1
+hi TabLineFill ctermfg=Black ctermbg=White
+hi TabLine ctermfg=Green ctermbg=Black
+hi TabLineSel ctermfg=LightGrey ctermbg=Black
+" --------------------------------------------------------------------------------
+" Shortcuts
+" --------------------------------------------------------------------------------
+map <leader>h :History!<CR>
+map <leader>o :Files ~/<CR>
+map <C-b> :w! \| !latexmk -pdf %<cr><cr>
+map <leader>p :!opout <c-r>%<CR><CR>
+command! MakeTags !ctags -R .
+" --------------------------------------------------------------------------------
+" Navigation
+" --------------------------------------------------------------------------------
+nnoremap k gk
+nnoremap j gj
+nnoremap 0 g0
+nnoremap $ g$
+nnoremap ^ g^
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>0
+map <C-j> :tabp<CR>
+map <C-k> :tabn<CR>
+" --------------------------------------------------------------------------------
+" Jump to last known position
+" --------------------------------------------------------------------------------
 augroup vimrcEx
   autocmd!
   " When editing a file, always jump to the last known cursor position.
@@ -121,7 +117,6 @@ endfunction
 inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-Tab> <C-n>
 
-
 " --------------------------------------------------------------------------------
 "  Spell checking stuff
 " --------------------------------------------------------------------------------
@@ -135,5 +130,18 @@ autocmd bufwritepost .vimrc source $MYVIMRC
 "  Copy and paste from clipboard
 " --------------------------------------------------------------------------------
 vnoremap <C-c> "*y :let @+=@*<CR>
-map <C-x> "+P
+map <C-z> "+P
+map <C-x> "+p
+" --------------------------------------------------------------------------------
+" Vim Wiki configuration 
+" --------------------------------------------------------------------------------
+let g:vimwiki_list = [{'path': '~/.notes/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+nnoremap <leader>l :VimwikiToggleListItem<CR>
+" --------------------------------------------------------------------------------
+" Vim Calendar
+" --------------------------------------------------------------------------------
+let g:calendar_google_calendar = 1
+nnoremap <leader>c :Calendar -first_day=monday<CR>
 

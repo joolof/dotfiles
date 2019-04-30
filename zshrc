@@ -120,13 +120,13 @@ export PATH="/home/joo/gasgano/bin:/home/joo/Codes/Packages/ESO/pipelines/bin:$P
 # For MCFOST
 export MCFOST_UTILS=/home/joo/IRS/mcfost/utils
 
-export READER='zathura'
-
+# Define the timezone
 TZ='America/Santiago'; 
 export TZ
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export FZF_DEFAULT_COMMAND='fd --type f'
 
+export READER='zathura'
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 
@@ -137,3 +137,5 @@ VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 #dynamic-colors init
 (cat ~/.cache/wal/sequences &)
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
