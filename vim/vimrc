@@ -52,14 +52,19 @@ set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when
 " Color scheme
 " --------------------------------------------------------------------------------
 colorscheme wal
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
+"let g:airline_theme='wombat'
+"let g:lightline = {
+      "\ 'colorscheme': 'wombat',
+      "\ }
+let g:airline_powerline_fonts = 1
+hi TabLineFill ctermfg=Black ctermbg=White
+hi TabLine ctermfg=Green ctermbg=Black
+hi TabLineSel ctermfg=LightGrey ctermbg=Black
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
 map <leader>h :History!<CR>
-map <leader>o :Files! ~/<CR>
+map <leader>o :Files ~/<CR>
 map <C-b> :w! \| !latexmk -pdf %<cr><cr>
 map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
@@ -138,4 +143,7 @@ nnoremap <leader>l :VimwikiToggleListItem<CR>
 " Vim Calendar
 " --------------------------------------------------------------------------------
 let g:calendar_google_calendar = 1
+nnoremap <leader>c :Calendar -first_day=monday<CR>
+autocmd FileType calendar nmap <buffer> h <Plug>(calendar_prev)
+autocmd FileType calendar nmap <buffer> l <Plug>(calendar_next)
 
