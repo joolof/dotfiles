@@ -16,4 +16,3 @@ augroup mail_filetype
     autocmd VimEnter /tmp/neomutt* :call IsReply()
     autocmd VimEnter /tmp/neomutt* :exe 'startinsert'
 augroup END
-

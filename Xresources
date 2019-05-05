@@ -23,7 +23,8 @@ URxvt*internalBorder: 40
 !URxvt.background: [95]termbg
 
 !! Font preferences
-URxvt.font: xft:Iosevka Term:pixelsize=30:weight=Semibold 
+URxvt.font: xft:Iosevka Term:pixelsize=30
+!!:weight=Semibold 
 URxvt.boldFont: xft:Iosevka Term:pixelsize=30:weight=Semibold 
 
 !! Larger history limit
