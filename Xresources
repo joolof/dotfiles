@@ -21,7 +21,7 @@ URxvt.scrollBar: false
 URxvt*internalBorder: 40
 
 !! Font preferences
-URxvt.font: xft:Iosevka Term:pixelsize=14:weight=Semibold 
+URxvt.font: xft:Iosevka Term:pixelsize=14
 URxvt.boldFont: xft:Iosevka Term:pixelsize=14:weight=Semibold 
 
 !! Larger history limit
@@ -35,3 +35,9 @@ URxvt.matcher.button: C1
 !! Change font size on Control-Plus/Minus
 URxvt.keysym.Control-0x2b: perl:font-size:increase
 URxvt.keysym.Control-0x2d: perl:font-size:decrease
+
+
+
+!! To remap the escape key to the caps lock key
+!xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+

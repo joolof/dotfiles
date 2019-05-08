@@ -57,7 +57,7 @@ bindsym $mod+f fullscreen toggle
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -169,7 +169,7 @@ for_window [class="Lutris"] floating enable
 for_window [class="Wine"] floating enable
 for_window [class="topcat"] floating enable
 for_window [class="Ds9.tcl"] floating enable
-for_window [class="mpv"] floating enable 
+#for_window [class="mpv"] floating enable 
 for_window [class="Evince"] floating enable
 for_window [instance="floatingTerminal$"] floating enable
 for_window [instance="floatingNcm$"] floating enable
@@ -193,6 +193,7 @@ bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x
 
 #bindsym $mod+o exec --no-startup-id ~/.scripts/switch_theme.py
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
+bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
 
 workspace 1 output DVI-I-1
 workspace 3 output DVI-I-1
@@ -204,4 +205,6 @@ exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/wo
 bindsym $mod+Shift+p move scratchpad
 # Show the first scratchpad window
 bindsym $mod+p scratchpad show
+
+exec --no-startup-id xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
