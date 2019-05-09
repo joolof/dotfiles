@@ -5,29 +5,29 @@
 
 [global]
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    geometry = "1000x20+29+97"
+    geometry = "1000x20-29+97"
     shrink = yes
-    corner_radius = 10
+    corner_radius = 0
 
     # Show multiple notifications in the same box
     separator_height = 0
 
     # Add vertical padding to the inside of the notification
-    padding = 20
+    padding = 26
 
     # Add horizontal padding for when the text gets long enough
     horizontal_padding = 20
 
     # The frame color and width of the notification
     frame_color = "{color4}"
-    frame_width = 2
+    frame_width = 0
 
     # How long a user needs to be idle for sticky notifications
     idle_threshold = 120
 
     # Font and typography settings
     font = Iosevka Term Semibold 10
-    alignment = "left" 
+    alignment = "center" 
     word_wrap = yes
 
     # Format for how notifications will be displayed
@@ -45,21 +45,15 @@
 
 # Set the background and foreground (text) color for all notifications
 [urgency_low]
-    #background = "{foreground}"
-    #foreground = "{background}"
-    background = "{background}"
-    foreground = "{foreground}"
+    background = "{color1}"
+    foreground = "{background}"
 
 [urgency_normal]
-    #background = "{foreground}"
-    #foreground = "{background}"
-    background = "{background}"
-    foreground = "{foreground}"
+    background = "{color1}"
+    foreground = "{background}"
 
 [urgency_critical]
-    #background = "{foreground}"
-    #foreground = "{background}"
-    background = "{background}"
-    foreground = "{foreground}"
+    background = "{color1}"
+    foreground = "{background}"
 
 # vim:ft=cfg
