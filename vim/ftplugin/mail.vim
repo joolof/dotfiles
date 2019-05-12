@@ -14,5 +14,5 @@ endfunction
 augroup mail_filetype
     autocmd!
     autocmd VimEnter /tmp/neomutt* :call IsReply()
-    autocmd VimEnter /tmp/neomutt* :exe 'startinsert'
+    "autocmd VimEnter /tmp/neomutt* :exe 'startinsert'
 augroup END

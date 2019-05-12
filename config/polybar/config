@@ -35,7 +35,7 @@ border-top-size = 0.5%
 border-left-size = 0.9%
 border-right-size = 0.9%
 border-bottom-size = 0.2%
-radius = 8
+;radius = 8
 
 padding-left = 3%
 padding-right = 3%
@@ -243,7 +243,7 @@ label-mode-background = ${colors.bg}
 label-focused = %icon%
 label-focused-foreground = ${colors.bg}
 label-focused-background = ${colors.fg}
-;label-focused-underline = ${xrdb:color1}
+label-focused-underline = ${colors.highlight}
 ;label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${self.label-mode-padding}
 

@@ -57,9 +57,12 @@ colorscheme wal
       "\ 'colorscheme': 'wombat',
       "\ }
 let g:airline_powerline_fonts = 1
-hi TabLineFill ctermfg=Black ctermbg=White
-hi TabLine ctermfg=Green ctermbg=Black
-hi TabLineSel ctermfg=LightGrey ctermbg=Black
+hi TabLine      ctermfg=White  ctermbg=DarkBlue     cterm=NONE
+hi TabLineFill  ctermfg=White  ctermbg=DarkBlue     cterm=NONE
+hi TabLineSel   ctermfg=Black  ctermbg=DarkCyan  cterm=NONE
+"hi TabLineFill ctermfg=Black ctermbg=White
+"hi TabLine ctermfg=Green ctermbg=Black
+"hi TabLineSel ctermfg=LightGrey ctermbg=Black
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------

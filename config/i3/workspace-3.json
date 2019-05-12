@@ -8,8 +8,8 @@
     "type": "con",
     "nodes": [
         {
-            "border": "pixel",
-            "current_border_width": 0,
+//           "border": "pixel",
+//            "current_border_width": 0,
             "floating": "auto_off",
             "geometry": {
                "height": 828,
@@ -17,7 +17,7 @@
                "x": 0,
                "y": 0
             },
-            "name": "i3-save-tree --workspace 3 > ~/.config/i3/workspace-3.json",
+            "name": "  ",
             "percent": 0.5,
             "swallows": [
                {
@@ -30,8 +30,8 @@
             "type": "con"
         },
         {
-            "border": "pixel",
-            "current_border_width": 0,
+//            "border": "pixel",
+//            "current_border_width": 0,
             "floating": "auto_off",
             "geometry": {
                "height": 828,
@@ -39,7 +39,7 @@
                "x": 0,
                "y": 0
             },
-            "name": "joo@joo-XPS-13-9360: ~/SPHERE/HR4796",
+            "name": "  ",
             "percent": 0.5,
             "swallows": [
                {
@@ -55,8 +55,8 @@
 }
 
 {
-    "border": "pixel",
-    "current_border_width": 0,
+//    "border": "pixel",
+//    "current_border_width": 0,
     "floating": "auto_off",
     "geometry": {
        "height": 1660,
@@ -64,7 +64,7 @@
        "x": 1607,
        "y": 64
     },
-    "name": "~/SPHERE/HR4796/Radial.py (HR4796) - Sublime Text (UNREGISTERED)",
+    "name": "  ",
     "percent": 0.6,
     "swallows": [
        {
