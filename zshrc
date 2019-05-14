@@ -127,7 +127,7 @@ export TZ
 export FZF_DEFAULT_COMMAND='fd --type f'
 
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
-
+export BROWSER='/usr/bin/firefox'
 
 # For dynamic colors
 # https://github.com/sos4nt/dynamic-colors
