@@ -50,12 +50,11 @@ font-1 = FontAwesome:pixelsize=18;4
 ; >> Modules
 modules-left = i3
 modules-center = mpd
-modules-right = volume wireless-network battery date
+modules-right = pulseaudio wireless-network battery date
 ;fixed-center = true
 
 tray-position = right
 tray-padding = 2
-tray-transparent = false
 tray-background = ${colors.bg}
 
 ; override-redirect = true
@@ -165,6 +164,31 @@ label-background = ${colors.bg}
 label-padding = 1
 format-underline = ${colors.highlight}
 
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+sink = default
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = true
+interval = 5
+format-volume = <ramp-volume>
+format-muted-foreground = ${colors.fg}
+format-muted-background = ${colors.bg}
+format-muted-padding = 1
+label-muted = 
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-foreground = ${colors.fg}
+ramp-volume-background = ${colors.bg}
+ramp-volume-padding = 1
+format-muted-underline = ${colors.highlight}
+format-volume-underline = ${colors.highlight}
+
 ; >> volume
 [module/volume]
 type = internal/volume
@@ -267,5 +291,6 @@ label-urgent-foreground = ${colors.fg}
 ;label-urgent-background = ${self.label-mode-foreground}
 ;label-urgent-foreground = ${self.label-mode-background}
 label-urgent-padding = ${self.label-mode-padding}
+label-urgent-underline = ${colors.highlight}
 
 
