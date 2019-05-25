@@ -53,9 +53,9 @@ modules-center = mpd
 modules-right = pulseaudio wireless-network battery date
 ;fixed-center = true
 
-tray-position = right
-tray-padding = 2
-tray-background = ${colors.bg}
+;tray-position = right
+;tray-padding = 2
+;tray-background = ${colors.bg}
 
 ; override-redirect = true
 
