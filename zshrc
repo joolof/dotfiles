@@ -10,7 +10,7 @@ export ZSH="/home/joo/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster_joo_2"
 #ZSH_THEME="agnoster"
-#ZSH_THEME="robbyrussell"
+#ZSH_THEME="avit"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
