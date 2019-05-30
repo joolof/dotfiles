@@ -19,6 +19,7 @@ rofi.fullscreen: false
 URxvt.termName: rxvt-unicode
 URxvt.scrollBar: false
 URxvt*internalBorder: 40
+URxvt*depth: 24
 
 !! Font preferences
 URxvt.font: xft:Iosevka Term:pixelsize=14

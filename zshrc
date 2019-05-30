@@ -8,7 +8,7 @@ export ZSH="/home/joo/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster_joo"
+ZSH_THEME="agnoster_joo_2"
 #ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
@@ -128,7 +128,7 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 
 export READER='zathura'
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
-
+export BROWSER='/usr/bin/firefox'
 
 # For dynamic colors
 # https://github.com/sos4nt/dynamic-colors
