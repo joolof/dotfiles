@@ -67,7 +67,8 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 " --------------------------------------------------------------------------------
 map <leader>h :History!<CR>
 map <leader>o :Files ~/<CR>
-map <C-b> :w! \| !latexmk -pdf %<cr><cr>
+autocmd FileType python nmap <C-b> :w! !python<cr>
+autocmd FileType tex,latex nmap <C-b> :w! \| !latexmk -pdf %<cr><cr>
 map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
 " --------------------------------------------------------------------------------
