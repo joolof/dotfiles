@@ -52,6 +52,7 @@ set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when
 " Color scheme
 " --------------------------------------------------------------------------------
 colorscheme wal
+"colorscheme abstract
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
