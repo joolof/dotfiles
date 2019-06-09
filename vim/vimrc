@@ -28,7 +28,7 @@ set textwidth=0 wrapmargin=0
 set display+=lastline
 set scrolloff=5
 set autochdir
-set cursorline
+"set cursorline
 "set ruler                           " show line and column number
 "set showcmd             " show (partial) command in status line
 " --------------------------------------------------------------------------------
@@ -38,6 +38,13 @@ au BufRead,BufNewFile *.py set expandtab
 au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
+" --------------------------------------------------------------------------------
+"  some NERDTRree stuff
+" --------------------------------------------------------------------------------
+"autocmd vimenter * NERDTree
+nnoremap <Leader>f :NERDTreeToggle<Enter>
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 " --------------------------------------------------------------------------------
 " Search settings
 " --------------------------------------------------------------------------------
@@ -53,10 +60,10 @@ set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when
 " Color scheme
 " --------------------------------------------------------------------------------
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
+"let g:airline_theme='deus'
+"let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#show_splits = 0
 let g:airline#extensions#tabline#show_tabs = 1
 let g:airline#extensions#tabline#show_tab_nr = 0
@@ -64,7 +71,7 @@ let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#close_symbol = '×'
 let g:airline#extensions#tabline#show_close_button = 0
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-colorscheme nord
+colorscheme wal
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
@@ -84,8 +91,10 @@ nnoremap $ g$
 nnoremap ^ g^
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
-map <C-j> :tabp<CR>
-map <C-k> :tabn<CR>
+"map <C-j> :tabp<CR>
+"map <C-k> :tabn<CR>
+map <C-j> :bp<CR>
+map <C-k> :bn<CR>
 " --------------------------------------------------------------------------------
 " Jump to last known position
 " --------------------------------------------------------------------------------
@@ -130,7 +139,8 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 " --------------------------------------------------------------------------------
 "  Autoreload stuff
 " --------------------------------------------------------------------------------
-map <leader>vi :tabe $MYVIMRC<cr>
+"map <leader>vi :tabe $MYVIMRC<cr>
+map <leader>vi :e $MYVIMRC<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC
 " --------------------------------------------------------------------------------
 "  Copy and paste from clipboard
