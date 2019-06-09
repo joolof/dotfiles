@@ -45,6 +45,7 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+nnoremap <leader>q :bp<cr>:bd #<cr>
 " --------------------------------------------------------------------------------
 " Search settings
 " --------------------------------------------------------------------------------
@@ -60,8 +61,6 @@ set wildignore+=*.o,*.aux,*.fls,*.out,*.blg,.git,*.pyc " Ignore these files when
 " Color scheme
 " --------------------------------------------------------------------------------
 let g:airline_powerline_fonts = 1
-"let g:airline_theme='deus'
-"let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#show_splits = 0
