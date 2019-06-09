@@ -45,8 +45,9 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 "autocmd vimenter * NERDTree
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
+"let NERDTreeDirArrows = 1
 nnoremap <leader>q :bp<cr>:bd #<cr>
+set fillchars+=vert:│
 " --------------------------------------------------------------------------------
 " Search settings
 " --------------------------------------------------------------------------------
