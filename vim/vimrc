@@ -46,6 +46,10 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 let NERDTreeMinimalUI = 1
 "let NERDTreeDirArrows = 1
+autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" | b# | endif"
+" --------------------------------------------------------------------------------
+"  Some buffers things and appearance
+" --------------------------------------------------------------------------------
 nnoremap <leader>q :bp<cr>:bd #<cr>
 set fillchars+=vert:│
 " --------------------------------------------------------------------------------

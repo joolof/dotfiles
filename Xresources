@@ -18,7 +18,7 @@ URxvt.termName: rxvt-unicode
 URxvt.scrollBar: false
 URxvt*internalBorder: 40
 !URxvt.foreground: termfg
-URxvt*depth: 32
+URxvt*depth: 24
 !URxvt.background: [95]termbg
 
 !! Font preferences
