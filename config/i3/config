@@ -14,7 +14,7 @@ set $mod Mod4
 # >> Gaps
 gaps inner 8
 gaps outer 5
-default_border pixel 2
+default_border pixel 0
 
 # >> Colors
 set $bg-color            #d62a2a
@@ -153,7 +153,7 @@ bindsym $mod+r mode "resize"
 # Start polybar
 exec --no-startup-id wal -R
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-#exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/alena-aenami-quiet-1px.jpg
+exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/trains.jpg
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 #exec --no-startup-id mpd
 #exec --no-startup-id mopidy
@@ -215,7 +215,7 @@ bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
 
 workspace 1 output DVI-I-1
 workspace 3 output DVI-I-1
-exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
+#exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
 
 
 # >> Scratchpad
