@@ -129,6 +129,7 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 export BROWSER='/usr/bin/firefox'
+#export TERM='xterm-256color'
 
 # For dynamic colors
 # https://github.com/sos4nt/dynamic-colors
@@ -139,3 +140,4 @@ export BROWSER='/usr/bin/firefox'
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
