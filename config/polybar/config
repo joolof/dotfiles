@@ -49,7 +49,7 @@ font-1 = FontAwesome:pixelsize=18;4
 
 ; >> Modules
 modules-left = i3
-modules-center = mpd
+;modules-center = mpd
 modules-right = pulseaudio wireless-network battery date
 ;fixed-center = true
 

@@ -112,7 +112,7 @@ export PYTHONPATH=$PYTHONPATH:/home/joo/.ipython/drs:/home/joo/.ipython/loci:/ho
 
 # For ESO p2pp
 export PATH="/home/joo/PROPOSALS/ESO/p2pp-3.4.3/bin:$PATH"
-export JAVA_HOME=/home/joo/Codes/Packages/Java/jre
+#export JAVA_HOME=/home/joo/Codes/Packages/Java/jre
 
 # For esorex and shit
 export CPLDIR=/home/joo/Codes/Packages/ESO/pipelines
@@ -128,6 +128,7 @@ export TZ
 export FZF_DEFAULT_COMMAND='fd --type f'
 
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+#export BROWSER='/usr/bin/google-chrome'
 export BROWSER='/usr/bin/firefox'
 #export TERM='xterm-256color'
 

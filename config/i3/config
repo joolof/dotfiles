@@ -152,21 +152,22 @@ bindsym $mod+r mode "resize"
 # >> Exec boot
 # Start polybar
 #exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
-exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/trains.jpg
+#exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/spiderman.png
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 # exec --no-startup-id mpd
-exec --no-startup-id mopidy
+#exec --no-startup-id mopidy
 exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id compton
+exec --no-startup-id wal -R
 
 # >> Media keys
-bindsym XF86AudioPlay exec --no-startup-id mpc toggle
-bindsym XF86AudioNext exec --no-startup-id mpc next
-bindsym XF86AudioPrev exec --no-startup-id mpc prev
-#bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-#bindsym XF86AudioNext exec --no-startup-id playerctl next
-#bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+#bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+#bindsym XF86AudioNext exec --no-startup-id mpc next
+#bindsym XF86AudioPrev exec --no-startup-id mpc prev
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
@@ -206,8 +207,9 @@ assign [instance="floatingNcm"] $ws10
 
 # >> Exec softwares
 bindsym $mod+Return exec --no-startup-id urxvt
+bindsym $mod+n exec --no-startup-id urxvt -e ranger
+#bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
 bindsym $mod+i exec --no-startup-id urxvt -name "floatingTerminal" -e "/home/joo/anaconda2/bin/ipython"
-bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
 #bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e vifm
 #bindsym $mod+j exec --no-startup-id urxvt -name "floatingTerminal" -e zsh -c "/home/joo/anaconda2/bin/jrnl -n 20 && zsh"
 bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
@@ -218,7 +220,7 @@ bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
 bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
 
-#exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
+exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
 
 
 # >> Scratchpad
