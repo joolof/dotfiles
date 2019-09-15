@@ -35,7 +35,7 @@ ZSH_THEME="agnoster_joo_2"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -108,7 +108,7 @@ source $HOME/.bash_aliases
 export PATH="/home/joo/anaconda2/bin:/home/joo/.scripts:$PATH"
 
 export DDIT_PATH='/home/joo/SPHERE/HD61005/Modelling/Dust/'
-export PYTHONPATH=$PYTHONPATH:/home/joo/.ipython/drs:/home/joo/.ipython/loci:/home/joo/Codes/Python/Papers
+export PYTHONPATH=$PYTHONPATH:/home/joo/.ipython/pydrs:/home/joo/.ipython/loci:/home/joo/Codes/Python/Papers:/home/joo/.ipython/phot
 
 # For ESO p2pp
 export PATH="/home/joo/PROPOSALS/ESO/p2pp-3.4.3/bin:$PATH"
@@ -142,3 +142,8 @@ export BROWSER='/usr/bin/firefox'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+case $TERM in
+  rxvt*)
+    precmd () {print -Pn "\e]0;%~\a"}
+    ;;
+esac
