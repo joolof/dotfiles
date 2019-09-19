@@ -32,7 +32,7 @@ set_from_resource $fg-alt       i3wm.color0 #ff0000
 set_from_resource $hl           i3wm.color0 #ff0000
 
 # class                 border      backgr. text indicator      child_border
-client.focused          $fg-alt     $bg-alt     $hl  $hl            $hl
+client.focused          $fg-alt     $bg-alt     $hl  $hl            $bg-alt
 client.focused_inactive $fg-alt     $bg     $fg  $fg-alt        $fg-alt
 client.unfocused        $fg-alt     $bg     $fg  $fg-alt        $fg-alt
 client.urgent           $fg-alt     $bg     $fg  $fg-alt        $fg-alt
@@ -49,7 +49,8 @@ floating_modifier $mod
 bindsym $mod+q kill
 
 # >> Rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -lines 10 -eh 1 -width 50 -padding 75 -opacity "95" -bw 0 -line-margin 10
+bindsym $mod+d exec --no-startup-id rofi -show drun 
+#bindsym $mod+d exec --no-startup-id rofi -show drun -lines 10 -eh 1 -width 50 -padding 75 -opacity "95" -bw 0 -line-margin 10
 # >> Lock screen
 bindsym $mod+shift+x exec --no-startup-id $HOME/.scripts/lock.sh
 
@@ -218,7 +219,7 @@ bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
 
 bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x30 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
 
-#bindsym $mod+o exec --no-startup-id ~/.scripts/switch_theme.py
+bindsym $mod+o exec --no-startup-id /home/joo/.scripts/rofi_favorite.py
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
 bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
 

@@ -6,8 +6,8 @@ bg = ${xrdb:color0}
 background-alt = #688486
 foreground-alt = #81a2be
 highlight = ${xrdb:color7}
-primary = ${xrdb:color10}
-secondary = ${xrdb:color11}
+primary = ${xrdb:color0}
+secondary = ${xrdb:color6}
 alert = ${xrdb:color3}
 
 ; >> wm
@@ -50,7 +50,7 @@ font-1 = FontAwesome:pixelsize=18;4
 ; >> Modules
 modules-left = i3
 ;modules-center = mpd
-modules-right = pulseaudio wireless-network battery date
+modules-right = spotify pulseaudio wireless-network battery date
 ;fixed-center = true
 
 ;tray-position = right
@@ -64,10 +64,14 @@ modules-right = pulseaudio wireless-network battery date
 [module/spotify]
 type = custom/script
 interval = 2
-format-prefix = " "
+format-prefix = " "
+format-suffix = " "
+format-foreground = ${colors.secondary}
 format = <label>
 exec = python /home/joo/.scripts/spotify_status.py -f '{artist}: {song}'
-format-underline = #1db954
+;exec = python /home/joo/.scripts/spotify_status.py
+;format-underline = ${colors.highlight}
+format-underline = ${colors.bg}
 
 [module/system-usb-udev]
 type = custom/script
@@ -266,18 +270,21 @@ label-mode-background = ${colors.bg}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
+;label-focused-foreground = ${colors.bg}
+;label-focused-background = ${colors.fg}
+;label-focused-underline = ${colors.highlight}
 label-focused-foreground = ${colors.bg}
-label-focused-background = ${colors.fg}
-label-focused-underline = ${colors.highlight}
-;label-focused-underline = ${module/bspwm.label-focused-underline}
+label-focused-background = ${colors.secondary}
+label-focused-underline = ${colors.secondary}
 label-focused-padding = ${self.label-mode-padding}
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %icon%
 label-unfocused-background = ${colors.bg}
-label-unfocused-foreground = ${colors.fg}
+;label-unfocused-foreground = ${colors.fg}
+label-unfocused-foreground = ${colors.secondary}
 label-unfocused-padding = ${self.label-mode-padding}
-label-unfocused-underline = ${colors.highlight}
+label-unfocused-underline = ${colors.secondary}
 
 ; visible = Active workspace on unfocused monitor
 ;label-visible = %icon%
