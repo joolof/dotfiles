@@ -37,3 +37,4 @@ set recolor-lightcolor             "{background}"
 set recolor-darkcolor              "{foreground}"
 
 # vim:ft=conf
+

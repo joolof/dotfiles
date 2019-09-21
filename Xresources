@@ -9,13 +9,9 @@ Xft.rgba: rgb
 ! ROFI Color theme - Alley
 !-------------------------------------------------------------------------------
 rofi.font: Iosevka Term Semibold 21
+!rofi.font: Iosevka Term 21
 rofi.color-enabled: true
-rofi.fullscreen: true
-rofi.hide-scrollbar: true
-rofi.lines: 10
-rofi.eh: 1
-rofi.width: 100
-rofi.bw: 0
+rofi.fullscreen: false
 !-------------------------------------------------------------------------------
 ! URxvt
 !-------------------------------------------------------------------------------
