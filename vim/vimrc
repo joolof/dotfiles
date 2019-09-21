@@ -8,6 +8,9 @@ call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on
 runtime! config/**/*.vim
+" --------------------------------------------------------------------------------
+" Snippets
+" --------------------------------------------------------------------------------
 runtime snippets.vim
 " --------------------------------------------------------------------------------
 " General behavior
@@ -43,10 +46,10 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 "  some NERDTRree stuff
 " --------------------------------------------------------------------------------
 "autocmd vimenter * NERDTree
-nnoremap <Leader>f :NERDTreeToggle<Enter>
-let NERDTreeMinimalUI = 1
+"nnoremap <Leader>f :NERDTreeToggle<Enter>
+"let NERDTreeMinimalUI = 1
 "let NERDTreeDirArrows = 1
-autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" | b# | endif"
+"autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" | b# | endif"
 " --------------------------------------------------------------------------------
 "  Some buffers things and appearance
 " --------------------------------------------------------------------------------
@@ -80,8 +83,8 @@ colorscheme wal
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
-map <leader>h :History!<CR>
-map <leader>o :Files ~/<CR>
+"map <leader>h :History!<CR>
+"map <leader>o :Files ~/<CR>
 "autocmd FileType python nmap <C-b> :w! !python<cr>
 "autocmd FileType tex,latex nmap <C-b> :w! \| !latexmk -pdf %<cr><cr>
 map <leader>p :!opout <c-r>%<CR><CR>
@@ -96,8 +99,6 @@ nnoremap $ g$
 nnoremap ^ g^
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
-"map <C-j> :tabp<CR>
-"map <C-k> :tabn<CR>
 map <C-j> :bp<CR>
 map <C-k> :bn<CR>
 " --------------------------------------------------------------------------------
@@ -140,11 +141,10 @@ inoremap <S-Tab> <C-n>
 " --------------------------------------------------------------------------------
 "  Spell checking stuff
 " --------------------------------------------------------------------------------
-map <F6> :setlocal spell! spelllang=en_us<CR>
+map <F6> :setlocal spell! spelllang=en_gb<CR>
 " --------------------------------------------------------------------------------
 "  Autoreload stuff
 " --------------------------------------------------------------------------------
-"map <leader>vi :tabe $MYVIMRC<cr>
 map <leader>vi :e $MYVIMRC<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC
 " --------------------------------------------------------------------------------

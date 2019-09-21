@@ -4,4 +4,8 @@ autocmd FileType python inoremap ,fig fig = plt.figure(figsize=(7,7))<Enter>ax1 
 
 " Latex snippets.
 autocmd FileType tex,latex inoremap ,bf \textbf{}<Esc>T{i
+autocmd FileType tex,latex inoremap ,mr \mathrm{}<Esc>T{i
+autocmd FileType tex,latex inoremap ,ci ^{\circ}
+autocmd FileType tex,latex inoremap ,4 $$<Esc>i
+
 
