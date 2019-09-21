@@ -7,7 +7,7 @@ background-alt = #688486
 foreground-alt = #81a2be
 highlight = ${xrdb:color7}
 primary = ${xrdb:color14}
-secondary = ${xrdb:color6}
+secondary = ${xrdb:color7}
 alert = ${xrdb:color3}
 
 ; >> wm

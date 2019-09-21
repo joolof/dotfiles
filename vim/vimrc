@@ -11,7 +11,11 @@ runtime! config/**/*.vim
 " --------------------------------------------------------------------------------
 " Snippets
 " --------------------------------------------------------------------------------
-runtime snippets.vim
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
+"runtime snippets.vim
 " --------------------------------------------------------------------------------
 " General behavior
 " --------------------------------------------------------------------------------
@@ -83,10 +87,10 @@ colorscheme wal
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
-"map <leader>h :History!<CR>
-"map <leader>o :Files ~/<CR>
-"autocmd FileType python nmap <C-b> :w! !python<cr>
-"autocmd FileType tex,latex nmap <C-b> :w! \| !latexmk -pdf %<cr><cr>
+let g:gutentags_generate_on_new = 1
+let g:gutentags_generate_on_missing = 1
+let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_empty_buffer = 0
 map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
 " --------------------------------------------------------------------------------
