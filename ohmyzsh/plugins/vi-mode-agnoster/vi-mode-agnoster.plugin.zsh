@@ -31,8 +31,10 @@ PRIMARY_FG=black
 RSEGMENT_SEPARATOR="\ue0b2"
 
 # Vi mode
-VICMD_INDICATOR="NORMAL"
-VIINS_INDICATOR="INSERT"
+#VICMD_INDICATOR="NORMAL"
+#VIINS_INDICATOR="INSERT"
+VICMD_INDICATOR="  "
+VIINS_INDICATOR="  "
 
 # Begin an RPROMPT segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -49,7 +51,8 @@ rprompt_segment() {
   fi
   CURRENT_BG=$1
   # [[ -n $3 ]] && echo -n $3
-  [[ -n $3 ]] && echo -n "%{$fg_bold[$2]%} $3 %{$reset_color%}"
+  #[[ -n $3 ]] && echo -n "%{$fg_bold[$2]%} $3 %{$reset_color%}"
+  [[ -n $3 ]] && echo -n "%{$fg[$2]%} $3 %{$reset_color%}"
 }
 
 # Vi mode
@@ -65,7 +68,7 @@ prompt_vi_mode() {
     color=blue
     mode="$VIINS_INDICATOR"
   fi
-  rprompt_segment $color white $mode
+  rprompt_segment $color black $mode
 }
 
 # Timestamp
@@ -81,7 +84,7 @@ prompt_timestamp() {
 # Right prompt
 rprompt_agnoster_vi() {
   prompt_vi_mode
-  # prompt_timestamp
+   #prompt_timestamp
   echo -n " "  # rprompt looks awful without a space at the end
 }
 
