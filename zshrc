@@ -63,7 +63,7 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  vi-mode-agnoster
+  #vi-mode-agnoster
   #history-substring-search 
   git
 )
@@ -158,13 +158,13 @@ esac
 
 # vi mode
 #bindkey -v # already defined in the vi-mode plugins
-export KEYTIMEOUT=1
+#export KEYTIMEOUT=1
 
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
+## Use vim keys in tab complete menu:
+#bindkey -M menuselect 'h' vi-backward-char
+#bindkey -M menuselect 'k' vi-up-line-or-history
+#bindkey -M menuselect 'l' vi-forward-char
+#bindkey -M menuselect 'j' vi-down-line-or-history
+#bindkey -v '^?' backward-delete-char
 
 
