@@ -27,7 +27,8 @@ Xft.rgba: rgb
 !-------------------------------------------------------------------------------
 ! ROFI Color theme - Alley
 !-------------------------------------------------------------------------------
-rofi.font: Iosevka Term Semibold 12
+!rofi.font: Iosevka Term Semibold 11
+rofi.font: Iosevka Term 11
 rofi.color-enabled: true
 rofi.fullscreen: false
 

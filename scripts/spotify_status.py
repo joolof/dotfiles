@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/home/joo/anaconda2/bin/python
 
 import sys
 import dbus

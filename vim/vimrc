@@ -8,7 +8,14 @@ call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on
 runtime! config/**/*.vim
-runtime snippets.vim
+" --------------------------------------------------------------------------------
+" Snippets
+" --------------------------------------------------------------------------------
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
+"runtime snippets.vim
 " --------------------------------------------------------------------------------
 " General behavior
 " --------------------------------------------------------------------------------
@@ -43,10 +50,10 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 "  some NERDTRree stuff
 " --------------------------------------------------------------------------------
 "autocmd vimenter * NERDTree
-nnoremap <Leader>f :NERDTreeToggle<Enter>
-let NERDTreeMinimalUI = 1
+"nnoremap <Leader>f :NERDTreeToggle<Enter>
+"let NERDTreeMinimalUI = 1
 "let NERDTreeDirArrows = 1
-autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" | b# | endif"
+"autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" | b# | endif"
 " --------------------------------------------------------------------------------
 "  Some buffers things and appearance
 " --------------------------------------------------------------------------------
@@ -80,10 +87,10 @@ colorscheme wal
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
-map <leader>h :History!<CR>
-map <leader>o :Files ~/<CR>
-autocmd FileType python nmap <C-b> :w! !python<cr>
-autocmd FileType tex,latex nmap <C-b> :w! \| !latexmk -pdf %<cr><cr>
+let g:gutentags_generate_on_new = 1
+let g:gutentags_generate_on_missing = 1
+let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_empty_buffer = 0
 map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
 " --------------------------------------------------------------------------------
@@ -96,8 +103,6 @@ nnoremap $ g$
 nnoremap ^ g^
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
-"map <C-j> :tabp<CR>
-"map <C-k> :tabn<CR>
 map <C-j> :bp<CR>
 map <C-k> :bn<CR>
 " --------------------------------------------------------------------------------
@@ -125,26 +130,25 @@ augroup END
 " Tab completion
 " will insert tab at beginning of line,
 " will use completion if not at beginning
-set wildmode=list:longest,list:full
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<Tab>"
-    else
-        return "\<C-p>"
-    endif
-endfunction
-inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
-inoremap <S-Tab> <C-n>
+"set wildmode=list:longest,list:full
+"function! InsertTabWrapper()
+    "let col = col('.') - 1
+    "if !col || getline('.')[col - 1] !~ '\k'
+        "return "\<Tab>"
+    "else
+        "return "\<C-p>"
+    "endif
+"endfunction
+"inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
+"inoremap <S-Tab> <C-n>
 
 " --------------------------------------------------------------------------------
 "  Spell checking stuff
 " --------------------------------------------------------------------------------
-map <F6> :setlocal spell! spelllang=en_us<CR>
+map <F6> :setlocal spell! spelllang=en_gb<CR>
 " --------------------------------------------------------------------------------
 "  Autoreload stuff
 " --------------------------------------------------------------------------------
-"map <leader>vi :tabe $MYVIMRC<cr>
 map <leader>vi :e $MYVIMRC<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC
 " --------------------------------------------------------------------------------
@@ -163,13 +167,39 @@ nnoremap <leader>l :VimwikiToggleListItem<CR>
 " --------------------------------------------------------------------------------
 " Vim Calendar
 " --------------------------------------------------------------------------------
-let g:calendar_google_calendar = 1
-nnoremap <leader>c :Calendar -first_day=monday<CR>
-autocmd FileType calendar nmap <buffer> h <Plug>(calendar_prev)
-autocmd FileType calendar nmap <buffer> l <Plug>(calendar_next)
+"let g:calendar_google_calendar = 1
+"nnoremap <leader>c :Calendar -first_day=monday<CR>
+"autocmd FileType calendar nmap <buffer> h <Plug>(calendar_prev)
+"autocmd FileType calendar nmap <buffer> l <Plug>(calendar_next)
 " --------------------------------------------------------------------------------
 " Some mail stuff that are being ignored otheriwse
 " --------------------------------------------------------------------------------
 autocmd FileType mail set fo-=t
 autocmd FileType mail set tw=0
+
+
+" Quick run via <F5>
+nnoremap <C-b> :call <SID>compile_and_run()<CR>
+
+function! s:compile_and_run()
+    exec 'w'
+    if &filetype == 'python'
+        "exec "AsyncRun! gcc % -o %<; time ./%<"
+        exec "Dispatch python %"
+    "elseif &filetype == 'cpp'
+       "exec "AsyncRun! g++ -std=c++11 % -o %<; time ./%<"
+    "elseif &filetype == 'java'
+       "exec "AsyncRun! javac %; time java %<"
+    "elseif &filetype == 'sh'
+       "exec "AsyncRun! time bash %"
+    "elseif &filetype == 'python'
+       "exec "AsyncRun! time ipython %"
+    elseif &filetype == 'tex'
+        exec "Dispatch! latexmk -pdf %"
+    endif
+endfunction
+
+" asyncrun now has an option for opening quickfix automatically
+"let g:asyncrun_open = 5
+nnoremap <leader>c :ccl<CR>
 

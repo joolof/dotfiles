@@ -25,13 +25,13 @@ set $urgent-bg-color     #E53935
 ###--- i3 coloring ---###
 # Make it clear when failed using red - otherwise set i3 colors with wal from xresources
 set_from_resource $bg           i3wm.color0 #ff0000
-set_from_resource $bg-alt       i3wm.color14 #ff0000
+set_from_resource $bg-alt       i3wm.color7 #ff0000
 set_from_resource $fg           i3wm.color15 #ff0000
 set_from_resource $fg-alt       i3wm.color0 #ff0000
-set_from_resource $hl           i3wm.color3 #ff0000
+set_from_resource $hl           i3wm.color0 #ff0000
 
 # class                 border      backgr. text indicator      child_border
-client.focused          $fg-alt     $bg     $hl  $hl            $hl
+client.focused          $fg-alt     $bg-alt     $hl  $hl            $bg-alt
 client.focused_inactive $fg-alt     $bg     $fg  $fg-alt        $fg-alt
 client.unfocused        $fg-alt     $bg     $fg  $fg-alt        $fg-alt
 client.urgent           $fg-alt     $bg     $fg  $fg-alt        $fg-alt
@@ -49,7 +49,8 @@ floating_modifier $mod
 bindsym $mod+q kill
 
 # >> Rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -lines 10 -eh 1 -width 50 -padding 75 -opacity "95" -bw 0 -line-margin 10
+bindsym $mod+d exec --no-startup-id rofi -show drun -width 40 -eh 1
+#bindsym $mod+d exec --no-startup-id rofi -show drun -lines 10 -eh 1 -width 50 -padding 75 -opacity "95" -bw 0 -line-margin 10
 # >> Lock screen
 bindsym $mod+shift+x exec --no-startup-id $HOME/.scripts/lock.sh
 
@@ -153,7 +154,6 @@ bindsym $mod+r mode "resize"
 # Start polybar
 exec --no-startup-id wal -R
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/trains.jpg
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 #exec --no-startup-id mpd
 #exec --no-startup-id mopidy
@@ -162,21 +162,29 @@ exec --no-startup-id nm-applet
 exec --no-startup-id compton
 
 # >> Media keys
-#bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-#bindsym XF86AudioNext exec --no-startup-id playerctl next
-#bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindsym XF86AudioPlay exec --no-startup-id mpc toggle
-bindsym XF86AudioNext exec --no-startup-id mpc next
-bindsym XF86AudioPrev exec --no-startup-id mpc previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+#bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+#bindsym XF86AudioNext exec --no-startup-id mpc next
+#bindsym XF86AudioPrev exec --no-startup-id mpc previous
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume bluez_sink.04_5D_4B_53_64_C6.a2dp_sink +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume bluez_sink.04_5D_4B_53_64_C6.a2dp_sink -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute bluez_sink.04_5D_4B_53_64_C6.a2dp_sink toggle # mute sound
+
+# Spotify related key bindings
+#bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+#bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
+#bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+#bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
 bindsym --release Print exec --no-startup-id "scrot -m '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'"
 bindsym --release Shift+Print exec --no-startup-id "scrot -s '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'"
 
 
 # >> for_window
+for_window [class="URxvt"] border normal 2
+for_window [class="URxvt"] title_format "<span font='Iosevka Term Semibold 11'>  %title</span>"    
 for_window [title="Figure"] floating enable
 for_window [title="Write"] floating enable
 for_window [class="Blueman-manager"] floating enable
@@ -191,31 +199,31 @@ for_window [class="Evince"] floating enable
 for_window [instance="floatingTerminal$"] floating enable
 for_window [instance="floatingNcm$"] floating enable
 # >> Assign
-#assign [class="Google-chrome"] $ws1
 assign [class="Firefox"] $ws1
 assign [class="Thunderbird"] $ws2
 assign [class="wow.exe"] $ws5
+assign [class="zathura"] $ws4
 assign [class="Skype"] $ws6
 assign [instance="floatingNcm"] $ws10
 
 # >> Exec softwares
 bindsym $mod+Return exec --no-startup-id urxvt
 bindsym $mod+i exec --no-startup-id urxvt -name "floatingTerminal" -e "/home/joo/anaconda2/bin/ipython"
-bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
+bindsym $mod+n exec --no-startup-id nautilus
+#bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
 #bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e vifm
-#bindsym $mod+j exec --no-startup-id urxvt -name "floatingTerminal" -e zsh -c "/home/joo/anaconda2/bin/jrnl -n 20 && zsh"
-#bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
-bindsym $mod+m exec --no-startup-id urxvt -e ncmpcpp
+#bindsym $mod+m exec --no-startup-id urxvt -e ncmpcpp
 
-bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x30 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
+#bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x30 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
 
-#bindsym $mod+o exec --no-startup-id ~/.scripts/switch_theme.py
+bindsym $mod+t exec --no-startup-id /home/joo/.scripts/rofi_taskwarrior.py
+bindsym $mod+o exec --no-startup-id /home/joo/.scripts/rofi_favorite.py
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
 bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
 
 workspace 1 output DVI-I-1
 workspace 3 output DVI-I-1
-#exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
+exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
 
 
 # >> Scratchpad

@@ -6,8 +6,8 @@ bg = ${xrdb:color0}
 background-alt = #688486
 foreground-alt = #81a2be
 highlight = ${xrdb:color7}
-primary = ${xrdb:color10}
-secondary = ${xrdb:color11}
+primary = ${xrdb:color14}
+secondary = ${xrdb:color7}
 alert = ${xrdb:color3}
 
 ; >> wm
@@ -49,9 +49,9 @@ font-1 = FontAwesome:pixelsize=11;2
 
 ; >> Modules
 modules-left = i3
-modules-center = mpd
+modules-center = taskwarrior
 ;modules-center = spotify
-modules-right = volume date
+modules-right = spotify volume date
 ;fixed-center = true
 
 ;tray-position = right
@@ -61,15 +61,27 @@ modules-right = volume date
 
 ; override-redirect = true
 
-
+[module/taskwarrior]
+type = custom/script
+interval = 30
+format-prefix = " "
+format-suffix = " "
+format-foreground = ${colors.secondary}
+format = <label>
+exec = /home/joo/.scripts/polybar_taskwarrior.py
+format-underline = ${colors.bg}
 
 [module/spotify]
 type = custom/script
 interval = 2
-format-prefix = " "
+format-prefix = " "
+format-suffix = " "
+format-foreground = ${colors.secondary}
 format = <label>
-exec = /home/joo/anaconda2/bin/python /home/joo/.scripts/spotify_status.py -f '{artist}: {song}'
-format-underline = #1db954
+exec = /home/joo/.scripts/spotify_status.py -f '{artist}: {song}'
+;exec = python /home/joo/.scripts/spotify_status.py
+;format-underline = ${colors.highlight}
+format-underline = ${colors.bg}
 
 [module/system-usb-udev]
 type = custom/script
