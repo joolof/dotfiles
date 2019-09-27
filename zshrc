@@ -114,7 +114,7 @@ source $HOME/.bash_aliases
 export PATH="/home/joo/anaconda2/bin:/home/joo/.scripts:$PATH"
 
 export DDIT_PATH='/home/joo/SPHERE/HD61005/Modelling/Dust/'
-export PYTHONPATH=$PYTHONPATH:/home/joo/.ipython/pydrs:/home/joo/.ipython/loci:/home/joo/Codes/Python/Papers:/home/joo/.ipython/phot
+#export PYTHONPATH=$PYTHONPATH:/home/joo/.ipython/pydrs:/home/joo/.ipython/loci:/home/joo/Codes/Python/Papers:/home/joo/.ipython/phot
 
 # For ESO p2pp
 export PATH="/home/joo/PROPOSALS/ESO/p2pp-3.4.3/bin:$PATH"
