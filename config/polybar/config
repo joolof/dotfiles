@@ -6,8 +6,9 @@ bg = ${xrdb:color0}
 background-alt = #688486
 foreground-alt = #81a2be
 highlight = ${xrdb:color7}
-primary = ${xrdb:color14}
-secondary = ${xrdb:color7}
+primary = ${xrdb:color7}
+secondary = ${xrdb:color10}
+tertiary = ${xrdb:color0}
 alert = ${xrdb:color3}
 
 ; >> wm
@@ -19,7 +20,7 @@ margin-bottom = 0
 [bar/mainbar]
 monitor = DVI-I-1
 width = 100%
-height = 28
+height = 24
 offset-x = 0
 offset-y = 0
 background = ${colors.bg}
@@ -27,7 +28,7 @@ foreground = ${colors.fg}
 
 overline-size = 0
 overline-color = #ff0000
-underline-size = 3
+underline-size = 0
 ;underline-color = ${colors.fg}
 
 border-color = #00000000
@@ -39,11 +40,12 @@ border-color = #00000000
 
 padding-left = 3%
 padding-right = 3%
-;module-margin-left = 0
+module-margin-left = 0
 ;module-margin-right = 0
 
 ; >> Font
 font-0 = Iosevka Term Semibold:pixelsize=11;2
+;font-1 = icomoon\-feather:pixelsize=11;2
 font-1 = FontAwesome:pixelsize=11;2
 ;font-2 = siji:pixelsize=10
 
@@ -51,14 +53,13 @@ font-1 = FontAwesome:pixelsize=11;2
 modules-left = i3
 modules-center = taskwarrior
 ;modules-center = spotify
-modules-right = spotify volume date
+modules-right = spotify_i separator spotify separator volume_i volume separator date_i date
 ;fixed-center = true
 
 ;tray-position = right
 ;tray-padding = 2
 ;tray-transparent = false
 ;tray-background = ${colors.bg}
-
 ; override-redirect = true
 
 [module/taskwarrior]
@@ -66,20 +67,32 @@ type = custom/script
 interval = 30
 format-prefix = " "
 format-suffix = " "
-format-foreground = ${colors.secondary}
+format-foreground = ${colors.primary}
 format = <label>
 exec = /home/joo/.scripts/polybar_taskwarrior.py
 format-underline = ${colors.bg}
 
+[module/separator]
+type = custom/text
+content = " "
+
+[module/spotify_i]
+type = custom/text
+content = "  "
+content-foreground = ${colors.tertiary}
+content-background = ${colors.secondary}
+
 [module/spotify]
 type = custom/script
 interval = 2
-format-prefix = " "
+;format-prefix = 
 format-suffix = " "
-format-foreground = ${colors.secondary}
-format = <label>
+format-foreground = ${colors.primary}
+format-background = ${colors.bg}
+format =<label>
+icon-play =  
 exec = /home/joo/.scripts/spotify_status.py -f '{artist}: {song}'
-format-underline = ${colors.bg}
+;format-underline = ${colors.bg}
 
 [module/system-usb-udev]
 type = custom/script
@@ -165,6 +178,12 @@ label-disconnected = %ifname% disconnected
 label-disconnected-foreground = ${colors.fg}
 
 ; >> date
+[module/date_i]
+type = custom/text
+content = "  "
+content-foreground = ${colors.tertiary}
+content-background = ${colors.secondary}
+
 [module/date]
 type = internal/date
 interval = 5
@@ -178,18 +197,34 @@ format-underline = ${colors.highlight}
 
 ; >> volume
 [module/volume]
-type = internal/volume
-format-volume = <ramp-volume>
-format-muted-foreground = ${colors.fg}
+type = internal/alsa
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+format-volume = <label-volume>
+format-volume-background = ${colors.bg}
+format-volume-foreground = ${colors.fg}
+format-volume-padding = 1
+label-volume = %percentage%%
 format-muted-background = ${colors.bg}
+format-muted-foreground = ${colors.fg}
 format-muted-padding = 1
+label-muted = "Muted"
+label-muted-foreground = ${colors.fg}
+
+[module/volume_i]
+type = internal/alsa
+format-volume = <ramp-volume>
+format-muted-foreground = ${colors.tertiary}
+format-muted-background = ${colors.secondary}
+format-muted-padding = 1.5
 label-muted = 
 
 ramp-volume-0 = 
 ramp-volume-1 = 
-ramp-volume-foreground = ${colors.fg}
-ramp-volume-background = ${colors.bg}
-ramp-volume-padding = 1
+ramp-volume-foreground = ${colors.tertiary}
+ramp-volume-background = ${colors.secondary}
+ramp-volume-padding = 1.5
 
 format-muted-underline = ${colors.highlight}
 format-volume-underline = ${colors.highlight}
@@ -213,10 +248,6 @@ label-full-background = ${colors.bg}
 label-full-padding = 1
 label-charging-padding = 1
 label-discharging-padding = 1
-
-
-
-
 
 
 
@@ -249,7 +280,7 @@ label-mode-background = ${colors.bg}
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
 label-focused-foreground = ${colors.bg}
-label-focused-background = ${colors.fg}
+label-focused-background = ${colors.secondary}
 ;label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${self.label-mode-padding}
 
@@ -262,7 +293,7 @@ label-unfocused-underline = ${colors.highlight}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %icon%
-;label-visible-background = ${self.label-focused-background}
+label-visible-foreground = ${colors.fg}
 ;label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-mode-padding}
 label-visible-underline = ${colors.highlight}
@@ -273,6 +304,6 @@ label-urgent-background = ${colors.bg}
 label-urgent-foreground = ${colors.fg}
 ;label-urgent-background = ${self.label-mode-foreground}
 ;label-urgent-foreground = ${self.label-mode-background}
-label-urgent-padding = ${self.label-mode-padding}
+;label-urgent-padding = ${self.label-mode-padding}
 
 
