@@ -3,6 +3,7 @@
 wallpaper = #1B1B19
 fg = ${xrdb:color7}
 bg = ${xrdb:color0}
+;bg = [20]#000000
 background-alt = #688486
 foreground-alt = #81a2be
 highlight = ${xrdb:color7}
@@ -50,10 +51,10 @@ font-1 = FontAwesome:pixelsize=11;2
 ;font-2 = siji:pixelsize=10
 
 ; >> Modules
-modules-left = i3
-modules-center = taskwarrior
+;modules-left = i3
+;modules-left = taskwarrior_i taskwarrior
 ;modules-center = spotify
-modules-right = spotify_i separator spotify separator volume_i volume separator date_i date
+modules-right = taskwarrior_i taskwarrior separator spotify_i separator spotify separator volume_i volume separator date_i date
 ;fixed-center = true
 
 ;tray-position = right
@@ -61,6 +62,12 @@ modules-right = spotify_i separator spotify separator volume_i volume separator 
 ;tray-transparent = false
 ;tray-background = ${colors.bg}
 ; override-redirect = true
+
+[module/taskwarrior_i]
+type = custom/text
+content = "  "
+content-foreground = ${colors.tertiary}
+content-background = ${colors.secondary}
 
 [module/taskwarrior]
 type = custom/script
