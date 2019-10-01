@@ -52,9 +52,9 @@ font-1 = FontAwesome:pixelsize=11;2
 
 ; >> Modules
 ;modules-left = i3
-;modules-left = taskwarrior_i taskwarrior
+modules-left = spotify_i spotify
 ;modules-center = spotify
-modules-right = taskwarrior_i taskwarrior separator spotify_i separator spotify separator volume_i volume separator date_i date
+modules-right = taskwarrior_i taskwarrior separator separator volume_i volume separator date_i date
 ;fixed-center = true
 
 ;tray-position = right
@@ -92,13 +92,13 @@ content-background = ${colors.secondary}
 [module/spotify]
 type = custom/script
 interval = 2
-;format-prefix = 
+format-prefix = " "
 format-suffix = " "
 format-foreground = ${colors.primary}
 format-background = ${colors.bg}
 format =<label>
 icon-play =  
-exec = /home/joo/.scripts/spotify_status.py -f '{artist}: {song}'
+exec = /home/joo/.scripts/spotify_status.py -f '{artist}: {song}' -t 150
 ;format-underline = ${colors.bg}
 
 [module/system-usb-udev]
