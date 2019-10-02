@@ -1,25 +1,21 @@
 ; vim:ft=dosini
 [colors]
-wallpaper = #1B1B19
 fg = ${xrdb:color7}
 bg = ${xrdb:color0}
-background-alt = #688486
-foreground-alt = #81a2be
-highlight = ${xrdb:color7}
-primary = ${xrdb:color14}
-secondary = ${xrdb:color7}
+underline = ${xrdb:color7}
+primary = ${xrdb:color7}
+icon-bg = ${xrdb:color6}
+icon-fg = ${xrdb:color0}
 alert = ${xrdb:color3}
 
-; >> wm
 [global/wm]
 margin-top = 0
 margin-bottom = 0
 
-; >> mainbar
 [bar/mainbar]
-;monitor = ${env:MONITOR:HDMI-1}
+;monitor = DVI-I-1
 width = 100%
-height = 55 
+height = 50
 offset-x = 0
 offset-y = 0
 background = ${colors.bg}
@@ -27,62 +23,91 @@ foreground = ${colors.fg}
 
 overline-size = 0
 overline-color = #ff0000
-underline-size = 6
-;underline-color = #ffa71a
+underline-size = 0
+;underline-color = ${colors.fg}
 
-border-color = #00000000
-;border-top-size = 0.5%
-;border-left-size = 0.9%
-;border-right-size = 0.9%
-;border-bottom-size = 0.2%
-;radius = 8
+border-color = ${colors.icon-bg}
+;border-top-size = 4%
+;border-left-size = 12%
+;border-right-size = 12%
+border-bottom-size = 0.6%
+;radius = 6
 
 padding-left = 3%
 padding-right = 3%
-;module-margin-left = 0
+module-margin-left = 0
 ;module-margin-right = 0
 
 ; >> Font
-font-0 = Iosevka Term Semibold:pixelsize=20;4
-font-1 = FontAwesome:pixelsize=18;4
-;font-2 = siji:pixelsize=10
+font-0 = Iosevka Term Semibold:pixelsize=22;4
+font-1 = FontAwesome:pixelsize=22;4
+font-2 = Iosevka Nerd Font:style=Medium:size=51;6
 
 ; >> Modules
-modules-left = i3
-modules-center = taskwarrior
-;modules-center = mpd
-modules-right = spotify pulseaudio wireless-network battery date
+;modules-left = i3
+modules-left = left-leftbar spotify_i right-leftbar spotify
+modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar wireless_i right-rightbar wireless left-rightbar battery_i right-rightbar battery left-rightbar date_i right-rightbar date
 ;fixed-center = true
 
 ;tray-position = right
 ;tray-padding = 2
+;tray-transparent = false
 ;tray-background = ${colors.bg}
-
 ; override-redirect = true
+[module/decor-glyph]
+type = custom/text
+content-background = ${colors.icon-fg}
+content-foreground = ${colors.icon-bg}
 
+[module/right-rightbar]
+inherit = module/decor-glyph
+content = "%{T3}◤%{T-}"
 
+[module/left-rightbar]
+inherit = module/decor-glyph
+content = "%{T3}◢%{T-}"
+
+[module/right-leftbar]
+inherit = module/decor-glyph
+content = "%{T3}◣%{T-}"
+
+[module/left-leftbar]
+inherit = module/decor-glyph
+content = "%{T3}◥%{T-}"
+
+[module/taskwarrior_i]
+type = custom/text
+content = ""
+content-foreground = ${colors.icon-fg}
+content-background = ${colors.icon-bg}
 
 [module/taskwarrior]
 type = custom/script
 interval = 30
 format-prefix = " "
 format-suffix = " "
-format-foreground = ${colors.secondary}
+format-foreground = ${colors.primary}
 format = <label>
 exec = /home/joo/.scripts/polybar_taskwarrior.py
 format-underline = ${colors.bg}
+
+[module/spotify_i]
+type = custom/text
+content = ""
+content-foreground = ${colors.icon-fg}
+content-background = ${colors.icon-bg}
 
 [module/spotify]
 type = custom/script
 interval = 2
 format-prefix = " "
 format-suffix = " "
-format-foreground = ${colors.secondary}
-format = <label>
-exec = python /home/joo/.scripts/spotify_status.py -f '{artist}: {song}'
-;exec = python /home/joo/.scripts/spotify_status.py
-;format-underline = ${colors.highlight}
-format-underline = ${colors.bg}
+format-foreground = ${colors.primary}
+format-background = ${colors.bg}
+format =<label>
+icon-play =  
+exec = /home/joo/.scripts/spotify_status.py -f '{artist}: {song}' -t 150
+;format-underline = ${colors.bg}
 
 [module/system-usb-udev]
 type = custom/script
@@ -91,34 +116,25 @@ tail = true
 click-left = /home/joo/.config/polybar/system-usb-udev.sh --mount
 click-right = /home/joo/.config/polybar/system-usb-udev.sh --unmount
 
-
-; >> mpd
 [module/mpd]
 type = internal/mpd
-
 format-offline = <label-offline>
 ;format-online = <label-song><bar-progress>
 format-online = <label-song>
 label-offline = ---
-label-song = %artist%  %album%  %title%
-format-online-underline = ${colors.highlight}
-
-label-song-maxlen = 150
+label-song = %artist% - %album% - %title%
+label-song-maxlen = 100
 label-song-ellipsis = true
-
 toggle-on-foreground = ${colors.fg}
 toggle-off-foreground = ${colors.fg}
 label-song-foreground = ${colors.fg}
-
 toggle-on-background = ${colors.bg}
 toggle-off-background = ${colors.bg}
 label-song-background = ${colors.bg}
-
+format-online-underline = ${colors.underline}
 toggle-on-padding = 1
 toggle-off-padding = 1
 label-song-padding = 1
-
-
 bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
 bar-progress-width = 5
 bar-progress-indicator = 
@@ -135,123 +151,159 @@ bar-progress-empty-foreground = #777777
 bar-progress-empty-background = ${colors.bg}
 bar-progress-empty-padding-right = 1
 
-
-; >> wifi
-[module/wireless-network]
+[module/wireless]
 type = internal/network
 interface = wlp58s0
-interval = 3.0
-
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
 format-connected = <label-connected>
-label-connected =  %essid%
-label-connected-padding = 1
-; ramp-signal-0 = 
-label-connected-background = ${colors.bg}
-label-connected-foreground = ${colors.fg}
-ramp-signal-background = ${colors.bg}
-ramp-signal-foreground = ${colors.fg}
-format-connected-underline = ${colors.highlight}
+format-connected-background = ${colors.bg}
+format-connected-foreground = ${colors.fg}
+format-connected-padding = 1
+format-disconnected = <label-disconnected>
+format-disconnected-background = ${colors.bg}
+format-disconnected-foreground = ${colors.fg}
+format-disconnected-padding = 1
+label-connected = "%essid%"
+label-disconnected = "Disconnected"
 
-; >> eth
+[module/wireless_i]
+type = internal/network
+interface = wlp58s0
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+format-connected = <ramp-signal>
+format-connected-background = ${colors.icon-bg}
+format-connected-foreground = ${colors.icon-fg}
+format-connected-padding = 0
+format-disconnected = <label-disconnected>
+format-disconnected-background = ${colors.icon-bg}
+format-disconnected-foreground = ${colors.icon-fg}
+format-disconnected-padding = 0
+label-disconnected = 
+ramp-signal-0 = 
+
 [module/eth]
 type = internal/network
 interface = eth0
 interval = 3.0
-
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-foreground-foreground = ${colors.fg}
 label-connected = %local_ip%
-
 format-disconnected-underline = ${self.format-connected-underline}
 label-disconnected = %ifname% disconnected
 label-disconnected-foreground = ${colors.fg}
 
-; >> date
+[module/date_i]
+type = custom/text
+content = ""
+content-foreground = ${colors.icon-fg}
+content-background = ${colors.icon-bg}
+
 [module/date]
-type = internal/date
+type = custom/script
+exec = ~/.scripts/popup-calendar.sh
 interval = 5
-date = "%d/%m"
-time = %H:%M
-label = %date% %time% 
-label-foreground = ${colors.fg}
-label-background = ${colors.bg}
-label-padding = 1
-format-underline = ${colors.highlight}
+click-left = ~/.scripts/popup-calendar.sh --popup
+;type = internal/date
+;interval = 5
+;date = "%d/%m"
+;time = %H:%M
+;label = %date% %time% 
+;label-foreground = ${colors.fg}
+;label-background = ${colors.bg}
+;label-padding = 1
+;format-underline = ${colors.underline}
 
-[module/pulseaudio]
-type = internal/pulseaudio
-
-; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
-; If not, uses default sink
-sink = default
-
-; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
-; Default: true
-use-ui-max = true
-interval = 5
-format-volume = <ramp-volume>
-format-muted-foreground = ${colors.fg}
-format-muted-background = ${colors.bg}
-format-muted-padding = 1
-label-muted = 
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-foreground = ${colors.fg}
-ramp-volume-background = ${colors.bg}
-ramp-volume-padding = 1
-format-muted-underline = ${colors.highlight}
-format-volume-underline = ${colors.highlight}
-
-; >> volume
 [module/volume]
-type = internal/volume
-format-volume = <ramp-volume>
-format-muted-foreground = ${colors.fg}
+type = internal/alsa
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+format-volume = <label-volume>
+format-volume-background = ${colors.bg}
+format-volume-foreground = ${colors.fg}
+format-volume-padding = 1
+label-volume = %percentage%%
 format-muted-background = ${colors.bg}
+format-muted-foreground = ${colors.fg}
 format-muted-padding = 1
-label-muted = 
+label-muted = "Muted"
+label-muted-foreground = ${colors.fg}
 
+[module/volume_i]
+type = internal/alsa
+format-volume = <ramp-volume>
+format-muted-foreground = ${colors.icon-fg}
+format-muted-background = ${colors.icon-bg}
+format-muted-padding = 0.
+label-muted = 
 ramp-volume-0 = 
 ramp-volume-1 = 
-ramp-volume-foreground = ${colors.fg}
-ramp-volume-background = ${colors.bg}
-ramp-volume-padding = 1
-format-muted-underline = ${colors.highlight}
-format-volume-underline = ${colors.highlight}
+ramp-volume-foreground = ${colors.icon-fg}
+ramp-volume-background = ${colors.icon-bg}
+ramp-volume-padding = 0.
+format-muted-underline = ${colors.underline}
+format-volume-underline = ${colors.underline}
 
-
-; >> battery
 [module/battery]
 type = internal/battery
+full-at = 98
 battery = BAT0
 adapter = AC
-full-at = 98
+poll-interval = 2
+time-format = %H:%M
+format-charging = <label-charging>
+format-charging-background = ${colors.bg}
+format-charging-foreground = ${colors.fg}
+format-charging-padding = 1
+format-discharging = <label-discharging>
+format-discharging-background = ${colors.bg}
+format-discharging-foreground = ${colors.fg}
+format-discharging-padding = 1
 label-charging = %percentage%%
 label-discharging = %percentage%%
-
-label-charging-background = ${colors.bg}
-label-charging-foreground = ${colors.fg}
-label-discharging-background = ${colors.bg}
-label-discharging-foreground = ${colors.fg}
+label-full = 100%
 label-full-foreground = ${colors.fg}
 label-full-background = ${colors.bg}
-
 label-full-padding = 1
-label-charging-padding = 1
-label-discharging-padding = 1
 
-format-charging-underline = ${colors.highlight}
-format-full-underline = ${colors.highlight}
-format-discharging-underline = ${colors.highlight}
+[module/battery_i]
+type = internal/battery
+full-at = 98
+battery = BAT0
+adapter = AC
+poll-interval = 2
+time-format = %H:%M
+format-charging = <animation-charging>
+format-charging-background = ${colors.icon-bg}
+format-charging-foreground = ${colors.icon-fg}
+format-charging-padding = 0
+format-discharging = <ramp-capacity>
+format-discharging-background = ${colors.icon-bg}
+format-discharging-foreground = ${colors.icon-fg}
+format-discharging-padding = 0
+label-charging = %percentage%%
+label-discharging = %percentage%%
+label-full = 
+label-full-background = ${colors.icon-bg}
+label-full-foreground = ${colors.icon-fg}
+label-full-padding = 0
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+animation-charging-0 =  
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
 
-
-
-
-
-
-; >> i3
 [module/i3]
 type = internal/i3
 format = <label-state>
@@ -261,17 +313,15 @@ wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
-
-;ws-icon-0 = 1;
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
-ws-icon-3 = 4;
+ws-icon-3 = 4;
 ws-icon-4 = 5;
 ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-default = ♟
 
@@ -281,27 +331,24 @@ label-mode-background = ${colors.bg}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
-;label-focused-foreground = ${colors.bg}
-;label-focused-background = ${colors.fg}
-;label-focused-underline = ${colors.highlight}
 label-focused-foreground = ${colors.bg}
-label-focused-background = ${colors.secondary}
-label-focused-underline = ${colors.secondary}
+label-focused-background = ${colors.icon-bg}
+;label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${self.label-mode-padding}
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %icon%
 label-unfocused-background = ${colors.bg}
-;label-unfocused-foreground = ${colors.fg}
-label-unfocused-foreground = ${colors.secondary}
+label-unfocused-foreground = ${colors.fg}
 label-unfocused-padding = ${self.label-mode-padding}
-label-unfocused-underline = ${colors.secondary}
+label-unfocused-underline = ${colors.underline}
 
 ; visible = Active workspace on unfocused monitor
-;label-visible = %icon%
-;label-visible-background = ${self.label-focused-background}
+label-visible = %icon%
+label-visible-foreground = ${colors.fg}
 ;label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-mode-padding}
+label-visible-underline = ${colors.underline}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %icon%
@@ -309,7 +356,7 @@ label-urgent-background = ${colors.bg}
 label-urgent-foreground = ${colors.fg}
 ;label-urgent-background = ${self.label-mode-foreground}
 ;label-urgent-foreground = ${self.label-mode-background}
-label-urgent-padding = ${self.label-mode-padding}
-label-urgent-underline = ${colors.highlight}
+;label-urgent-padding = ${self.label-mode-padding}
+
 
 
