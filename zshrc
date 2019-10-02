@@ -116,6 +116,8 @@ export PATH="/home/joo/anaconda2/bin:/home/joo/.scripts:$PATH"
 export DDIT_PATH='/home/joo/SPHERE/HD61005/Modelling/Dust/'
 #export PYTHONPATH=$PYTHONPATH:/home/joo/.ipython/pydrs:/home/joo/.ipython/loci:/home/joo/Codes/Python/Papers:/home/joo/.ipython/phot
 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/joo/_NOT_SYNC/MultiNest/lib
+
 # For ESO p2pp
 export PATH="/home/joo/PROPOSALS/ESO/p2pp-3.4.3/bin:$PATH"
 #export JAVA_HOME=/home/joo/Codes/Packages/Java/jre
