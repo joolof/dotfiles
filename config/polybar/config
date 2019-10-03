@@ -46,7 +46,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=25;3
 ; >> Modules
 ;modules-left = i3
 modules-left = left-leftbar spotify_i right-leftbar spotify
-modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar dated_i right-rightbar dated left-rightbar dateh_i right-rightbar dateh
+modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
 ;fixed-center = true
 
 ;tray-position = right
@@ -196,36 +196,41 @@ format-disconnected-underline = ${self.format-connected-underline}
 label-disconnected = %ifname% disconnected
 label-disconnected-foreground = ${colors.fg}
 
-[module/dateh_i]
-type = custom/text
-content = ""
-content-foreground = ${colors.icon-fg}
-content-background = ${colors.icon-bg}
+;[module/dateh_i]
+;type = custom/text
+;content = ""
+;content-foreground = ${colors.icon-fg}
+;content-background = ${colors.icon-bg}
 
-[module/dateh]
-type = internal/date
-interval = 5
-time = %H:%M
-label = %time% 
-label-foreground = ${colors.fg}
-label-background = ${colors.bg}
-label-padding = 1
-;format-underline = ${colors.underline}
+;[module/dateh]
+;type = internal/date
+;interval = 5
+;time = %H:%M
+;label = %time% 
+;label-foreground = ${colors.fg}
+;label-background = ${colors.bg}
+;label-padding = 1
+;;format-underline = ${colors.underline}
 
-[module/dated_i]
+
+[module/date_i]
 type = custom/text
 content = ""
 content-foreground = ${colors.icon-fg}
 content-background = ${colors.icon-bg}
 
-[module/dated]
-type = internal/date
+[module/date]
+type = custom/script
+exec = ~/.scripts/popup-calendar.sh
 interval = 5
-date = "%d/%m"
-label = %date%
-label-foreground = ${colors.fg}
-label-background = ${colors.bg}
-label-padding = 1
+click-left = ~/.scripts/popup-calendar.sh --popup
+;type = internal/date
+;interval = 5
+;date = "%d/%m"
+;label = %date%
+;label-foreground = ${colors.fg}
+;label-background = ${colors.bg}
+;label-padding = 1
 ;format-underline = ${colors.underline}
 
 ; >> volume
