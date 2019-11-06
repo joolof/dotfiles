@@ -206,6 +206,7 @@ assign [class="Thunderbird"] $ws2
 assign [class="wow.exe"] $ws5
 assign [class="zathura"] $ws4
 assign [class="Skype"] $ws6
+assign [class="ClickUp Desktop"] $ws7
 assign [instance="floatingNcm"] $ws10
 
 # >> Exec softwares
@@ -225,7 +226,7 @@ bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
 
 workspace 1 output DVI-I-1
 workspace 3 output DVI-I-1
-exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
+#exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
 
 
 # >> Scratchpad

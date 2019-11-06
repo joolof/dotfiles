@@ -17,7 +17,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -31,7 +31,7 @@ d/home/joo
 7
 d/home/joo/Desktop
 	Kennedy_HD98800.pdf
-13
+17
 d
 
 # Right window history (oldest to newest):
@@ -59,6 +59,36 @@ D/home/joo
 D/home/joo/Papers
 	..
 0
+D/home/joo
+	Videos
+32
+D/home/joo/Videos
+	youtube
+3
+D/home/joo
+	Desktop
+9
+D/home/joo/Desktop
+	Stuff
+6
+D/home/joo/Desktop/Stuff
+	Papers_admin
+12
+D/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+5
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2019
+2
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
+	Boletas
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Boletas
+	Martin_003.pdf
+9
 D
 
 # Command line history (oldest to newest):
@@ -66,6 +96,7 @@ D
 :help
 :W
 :w
+:delete
 :q
 
 # Search history (oldest to newest):
@@ -75,7 +106,7 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/000_HR4796_v1.pdf
+""/home/joo/.local/share/vifm/Trash/000_The Godfather (1972)
 
 # Directory stack (oldest to newest):
 
@@ -86,6 +117,14 @@ t/home/joo/.local/share/vifm/Trash/000_polar_deg.pdf
 	/home/joo/Desktop/polar_deg.pdf
 t/home/joo/.local/share/vifm/Trash/000_HR4796_v1.pdf
 	/home/joo/Desktop/HR4796_v1.pdf
+t/home/joo/.local/share/vifm/Trash/000_Once (2007)
+	/home/joo/Videos/Once (2007)
+t/home/joo/.local/share/vifm/Trash/000_Amélie (2001)
+	/home/joo/Videos/Amélie (2001)
+t/home/joo/.local/share/vifm/Trash/000_Fame (1980)
+	/home/joo/Videos/Fame (1980)
+t/home/joo/.local/share/vifm/Trash/000_The Godfather (1972)
+	/home/joo/Videos/The Godfather (1972)
 
 # State:
 f
