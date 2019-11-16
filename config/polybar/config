@@ -4,7 +4,7 @@ fg = ${xrdb:color7}
 bg = ${xrdb:color0}
 underline = ${xrdb:color7}
 primary = ${xrdb:color7}
-icon-bg = ${xrdb:color6}
+icon-bg = ${xrdb:color4}
 icon-fg = ${xrdb:color0}
 alert = ${xrdb:color3}
 
@@ -46,13 +46,15 @@ font-2 = Iosevka Nerd Font:style=Medium:size=51;6
 ; >> Modules
 ;modules-left = i3
 modules-left = left-leftbar spotify_i right-leftbar spotify
-modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar wireless_i right-rightbar wireless left-rightbar battery_i right-rightbar battery left-rightbar date_i right-rightbar date
+;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar wireless_i right-rightbar wireless left-rightbar battery_i right-rightbar battery left-rightbar date_i right-rightbar date
+modules-right = left-rightbar volume_i right-rightbar volume left-rightbar wireless_i right-rightbar wireless left-rightbar battery_i right-rightbar battery left-rightbar date_i right-rightbar date
 ;fixed-center = true
 
 ;tray-position = right
 ;tray-padding = 2
 ;tray-transparent = false
 ;tray-background = ${colors.bg}
+
 ; override-redirect = true
 [module/decor-glyph]
 type = custom/text
@@ -160,11 +162,11 @@ unknown-as-up = true
 format-connected = <label-connected>
 format-connected-background = ${colors.bg}
 format-connected-foreground = ${colors.fg}
-format-connected-padding = 1
+format-connected-padding = 0
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.bg}
 format-disconnected-foreground = ${colors.fg}
-format-disconnected-padding = 1
+format-disconnected-padding = 0
 label-connected = "%essid%"
 label-disconnected = "Disconnected"
 
@@ -226,7 +228,7 @@ headphone-soundcard = default
 format-volume = <label-volume>
 format-volume-background = ${colors.bg}
 format-volume-foreground = ${colors.fg}
-format-volume-padding = 1
+format-volume-padding = 0
 label-volume = %percentage%%
 format-muted-background = ${colors.bg}
 format-muted-foreground = ${colors.fg}
@@ -269,7 +271,7 @@ label-discharging = %percentage%%
 label-full = 100%
 label-full-foreground = ${colors.fg}
 label-full-background = ${colors.bg}
-label-full-padding = 1
+label-full-padding = 0
 
 [module/battery_i]
 type = internal/battery

@@ -83,7 +83,9 @@ let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#close_symbol = '×'
 let g:airline#extensions#tabline#show_close_button = 0
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-colorscheme wal
+"colorscheme wal
+"colorscheme gruvbox
+colorscheme nord
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
@@ -205,4 +207,4 @@ endfunction
 " asyncrun now has an option for opening quickfix automatically
 "let g:asyncrun_open = 5
 nnoremap <leader>c :ccl<CR>
-
+let g:goyo_width = 100

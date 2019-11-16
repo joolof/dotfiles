@@ -25,14 +25,14 @@ set $urgent-bg-color     #E53935
 
 ###--- i3 coloring ---###
 # Make it clear when failed using red - otherwise set i3 colors with wal from xresources
-set_from_resource $bg           i3wm.color0 #ff0000
-set_from_resource $bg-alt       i3wm.color6 #ff0000
-set_from_resource $fg           i3wm.color15 #ff0000
-set_from_resource $fg-alt       i3wm.color0 #ff0000
-set_from_resource $hl           i3wm.color0 #ff0000
+set_from_resource $bg           color0 #ff0000
+set_from_resource $bg-alt       color3 #ff0000
+set_from_resource $fg           color15 #ff0000
+set_from_resource $fg-alt       color0 #ff0000
+set_from_resource $hl           color0 #ff0000
 
 # class                 border      backgr. text indicator      child_border
-client.focused          $fg-alt     $bg-alt     $hl  $hl            $bg-alt
+client.focused          $bg-alt     $bg     $fg  $fg-alt        $bg-alt
 client.focused_inactive $fg-alt     $bg     $fg  $fg-alt        $fg-alt
 client.unfocused        $fg-alt     $bg     $fg  $fg-alt        $fg-alt
 client.urgent           $fg-alt     $bg     $fg  $fg-alt        $fg-alt
@@ -152,16 +152,15 @@ bindsym $mod+r mode "resize"
 
 # >> Exec boot
 # Start polybar
-#exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
-#exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/spiderman.png
+exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 # exec --no-startup-id mpd
 #exec --no-startup-id mopidy
 exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id compton
-exec --no-startup-id wal -R
-exec --no-startup-id $HOME/.config/polybar/launch.sh
+#exec --no-startup-id wal -R
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # >> Media keys
 #bindsym XF86AudioPlay exec --no-startup-id mpc toggle
@@ -187,8 +186,8 @@ bindsym --release Shift+Print exec --no-startup-id "scrot -s '/home/joo/Pictures
 # >> for_window
 #for_window [class="URxvt"] default_border normal
 for_window [class="Yad" title="yad-calendar"] floating enable
-for_window [class="URxvt"] border normal 1
-for_window [class="URxvt"] title_format "<span font='Iosevka Term Semibold 10'>  %title</span>"
+#for_window [class="URxvt"] border normal 1
+#for_window [class="URxvt"] title_format "<span font='Iosevka Term Semibold 10'>  %title</span>"
 for_window [title="Figure"] floating enable
 for_window [title="Write"] floating enable
 for_window [class="Eog"] floating enable
@@ -207,6 +206,7 @@ assign [class="Firefox"] $ws1
 assign [class="Thunderbird"] $ws2
 assign [class="wow.exe"] $ws5
 assign [class="Skype"] $ws6
+assign [class="ClickUp Desktop"] $ws7
 assign [instance="floatingNcm"] $ws10
 
 # >> Exec softwares
@@ -225,7 +225,7 @@ bindsym $mod+o exec --no-startup-id /home/joo/.scripts/rofi_favorite.py
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
 bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
 
-exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
+#exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
 
 
 # >> Scratchpad
