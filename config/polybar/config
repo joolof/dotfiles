@@ -1,6 +1,6 @@
 ; vim:ft=dosini
 [colors]
-fg = ${xrdb:color7}
+fg = ${xrdb:color4}
 bg = ${xrdb:background}
 underline = ${xrdb:color7}
 primary = ${xrdb:color7}
