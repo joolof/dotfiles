@@ -29,7 +29,7 @@ Xft.rgba: rgb
 *fading: 25
 *fadeColor: nord3
 
-*.color0: nord1
+*.color0: nord0
 *.color1: nord11
 *.color2: nord14
 *.color3: nord13

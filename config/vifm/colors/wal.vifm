@@ -1,4 +1,3 @@
-" vim: filetype=vim :
 " You can edit this file by hand.
 " The " character at the beginning of a line comments out the line.
 " Blank lines are ignored.
@@ -46,8 +45,8 @@
 
 highlight clear
 
-highlight Win cterm=none ctermfg=red ctermbg=black
-highlight Directory cterm=bold ctermfg=cyan ctermbg=default
+highlight Win cterm=none ctermfg=white ctermbg=black
+highlight Directory cterm=bold ctermfg=cyan ctermbg=black
 highlight Link cterm=bold ctermfg=yellow ctermbg=default
 highlight BrokenLink cterm=bold ctermfg=red ctermbg=default
 highlight Socket cterm=bold ctermfg=magenta ctermbg=default
@@ -56,13 +55,13 @@ highlight Fifo cterm=bold ctermfg=cyan ctermbg=default
 highlight Executable cterm=bold ctermfg=green ctermbg=default
 highlight Selected cterm=bold ctermfg=magenta ctermbg=default
 highlight CurrLine cterm=bold,reverse ctermfg=default ctermbg=default
-highlight TopLine cterm=none ctermfg=black ctermbg=white
-highlight TopLineSel cterm=bold ctermfg=black ctermbg=default
-highlight StatusLine cterm=bold ctermfg=black ctermbg=white
+highlight TopLine cterm=none ctermfg=yellow ctermbg=black
+highlight TopLineSel cterm=bold ctermfg=white ctermbg=black
+highlight StatusLine cterm=bold ctermfg=white ctermbg=black
 highlight WildMenu cterm=underline,reverse ctermfg=white ctermbg=black
 highlight CmdLine cterm=none ctermfg=white ctermbg=black
 highlight ErrorMsg cterm=none ctermfg=red ctermbg=black
-highlight Border cterm=none ctermfg=black ctermbg=white
+highlight Border cterm=none ctermfg=white ctermbg=black
 highlight JobLine cterm=bold,reverse ctermfg=black ctermbg=white
 highlight SuggestBox cterm=bold ctermfg=default ctermbg=default
 highlight CmpMismatch cterm=bold ctermfg=white ctermbg=red
