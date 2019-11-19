@@ -17,7 +17,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -26,75 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/joo
-	DatabaseDebris
-8
-d/home/joo/DatabaseDebris
-	Targets
-1
-d/home/joo/DatabaseDebris/Targets
-	chains
-5
-d/home/joo/DatabaseDebris/Targets/chains
-	HD121617-corner.pdf
-28
-d/home/joo/DatabaseDebris/Targets
-	chains
-5
-d/home/joo/DatabaseDebris
-	Targets
-1
-d/home/joo
-	DatabaseDebris
-8
-d/home
-	joo
-1
-d/home/joo
-	Desktop
-9
-d/home/joo/Desktop
-	Ticha
-7
-d/home/joo
-	Talks
-30
-d/home/joo/Talks
-	Talks
-1
-d/home/joo/Talks/Talks
-	Conferences
-2
-d/home/joo/Talks/Talks/Conferences
-	2019-Lyot
-14
-d/home/joo/Talks/Talks/Conferences/2019-Lyot
-	..
-0
-d/home/joo/Talks/Talks/Conferences
-	2019 - Cambridge
-12
-d/home/joo/Talks/Talks/Conferences/2019 - Cambridge
-	..
-0
-d/home/joo/Talks/Talks/Conferences
-	2019 - Cambridge
-12
-d/home/joo/Talks/Talks
-	Conferences
-2
-d/home/joo/Talks
-	Talks
-1
-d/home/joo
-	Fundings
-12
-d/home/joo/Fundings
-	ICM2019
-2
-d/home/joo/Fundings/ICM2019
-	Milenio_bases_2019.pdf
-1
 d/home/joo/Fundings
 	ICM2016
 1
@@ -324,11 +255,86 @@ d/home/joo/Desktop/Stuff
 	Papers_admin
 12
 d/home/joo/Desktop
-	Stuff
-7
+	Daniela_comments.md
+11
+d/home/joo
+	Fundings
+12
+d/home/joo/Fundings
+	ICM2016
+1
+d/home/joo/Fundings/ICM2016
+	Informe2018
+1
+d/home/joo/Fundings/ICM2016/Informe2018
+	NPF MSI Annual Report 2018.pdf
+1
+d/home/joo/Fundings/ICM2016
+	Logos
+2
+d/home/joo/Fundings/ICM2016/Logos
+	ENG
+1
+d/home/joo/Fundings/ICM2016
+	Meetings
+3
+d/home/joo/Fundings/ICM2016/Meetings
+	..
+0
+d/home/joo/Fundings/ICM2016
+	Outreach
+4
+d/home/joo/Fundings/ICM2016/Outreach
+	..
+0
+d/home/joo/Fundings/ICM2016
+	Paperwork
+5
+d/home/joo/Fundings/ICM2016/Paperwork
+	..
+0
+d/home/joo/Fundings/ICM2016
+	Project
+6
+d/home/joo/Fundings/ICM2016/Project
+	Submitted
+2
+d/home/joo/Fundings/ICM2016/Project/Submitted
+	Figures
+1
+d/home/joo/Fundings/ICM2016/Project
+	Interview
+1
+d/home/joo/Fundings/ICM2016/Project/Interview
+	tech.png
+12
+d/home/joo/Fundings/ICM2016/Project
+	Interview
+1
+d/home/joo/Fundings/ICM2016
+	class3.txt
+8
+d/home/joo/Fundings
+	ICM2016
+1
+d/home/joo
+	Pictures
+24
+d/home/joo/Pictures
+	wallpapers
+17
+d/home/joo/Pictures/wallpapers
+	curls.png
+32
 d
 
 # Right window history (oldest to newest):
+D/home/joo/Pictures
+	wallpapers
+17
+D/home/joo/Pictures/wallpapers
+	1f58779439d77f2c5d335f3c0e92b.jpg
+1
 D/home/joo
 	Papers
 22
@@ -428,6 +434,21 @@ D/home/joo/Fundings
 D/home/joo/Fundings/ICM2019
 	Milenio_bases_2019.pdf
 1
+D/home/joo/Fundings
+	ICM2019
+2
+D/home/joo
+	DatabaseDebris
+8
+D/home/joo/DatabaseDebris
+	Targets
+1
+D/home/joo/DatabaseDebris/Targets
+	pdf
+7
+D/home/joo/DatabaseDebris/Targets/pdf
+	corner_TYC_8830_410_1.pdf
+10
 D
 
 # Command line history (oldest to newest):
@@ -451,7 +472,7 @@ pOlofsson_poster.pdf
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/000_ms_JO.pdf
+""/home/joo/.local/share/vifm/Trash/000_vosa_results_32255
 
 # Directory stack (oldest to newest):
 
@@ -498,6 +519,8 @@ t/home/joo/.local/share/vifm/Trash/000_Iglesias_Olofsson_CEHW.pdf
 	/home/joo/Desktop/Iglesias_Olofsson_CEHW.pdf
 t/home/joo/.local/share/vifm/Trash/000_ms_JO.pdf
 	/home/joo/Desktop/ms_JO.pdf
+t/home/joo/.local/share/vifm/Trash/000_vosa_results_32255
+	/home/joo/Desktop/vosa_results_32255
 
 # State:
 f

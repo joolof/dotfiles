@@ -151,7 +151,8 @@ bindsym $mod+r mode "resize"
 
 # >> Exec boot
 # Start polybar
-exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
+#exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
+exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/curls.png
 #exec --no-startup-id wal -R
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
@@ -204,7 +205,7 @@ for_window [instance="floatingNcm$"] floating enable
 assign [class="Firefox"] $ws1
 assign [class="Thunderbird"] $ws2
 assign [class="wow.exe"] $ws5
-assign [class="zathura"] $ws4
+assign [class="mpv"] $ws8
 assign [class="Skype"] $ws6
 assign [class="ClickUp Desktop"] $ws7
 assign [instance="floatingNcm"] $ws10
@@ -226,8 +227,14 @@ bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
 
 workspace 1 output DVI-I-1
 workspace 3 output DVI-I-1
+workspace 8 output DVI-I-1
+workspace 10 output DVI-I-1
+workspace 2 output DP-0
+workspace 4 output DP-0
+workspace 5 output DP-0
+workspace 6 output DP-0
+workspace 7 output DP-0
 #exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joo/.config/i3/workspace-3.json'"
-
 
 # >> Scratchpad
 # Make the currently focused window a scratchpad
