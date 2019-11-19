@@ -1,2 +1,1 @@
-rofi.theme: ~/.cache/wal/rofi-jooh.rasi
-
+rofi.theme: ~/.config/rofi/colors-rofi-jooh.rasi

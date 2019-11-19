@@ -46,7 +46,8 @@ font-2 = Iosevka Nerd Font:style=Medium:size=25;3
 ; >> Modules
 ;modules-left = i3
 modules-left = left-leftbar spotify_i right-leftbar spotify
-modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
+;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
+modules-right = left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
 ;fixed-center = true
 
 ;tray-position = right

@@ -137,7 +137,7 @@ export BROWSER='/usr/bin/firefox'
 #export PATH="$HOME/.dynamic-colors/bin:$PATH"
 #source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
 #dynamic-colors init
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
