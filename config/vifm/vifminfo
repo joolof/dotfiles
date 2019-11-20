@@ -26,33 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/joo/Fundings
-	ICM2016
-1
-d/home/joo/Fundings/ICM2016
-	Project
-6
-d/home/joo/Fundings/ICM2016/Project
-	Interview
-1
-d/home/joo/Fundings/ICM2016/Project/Interview
-	..
-0
-d/home/joo/Fundings/ICM2016/Project
-	Submitted
-2
-d/home/joo/Fundings/ICM2016/Project/Submitted
-	Bases_2016.05.04.16.31.23_12_73883.pdf
-12
-d/home/joo/Fundings/ICM2016/Project
-	Submitted
-2
-d/home/joo/Fundings/ICM2016
-	Project
-6
-d/home/joo/Fundings
-	ICM2019
-2
 d/home/joo/Fundings/ICM2019
 	Milenio_bases_2019.pdf
 1
@@ -326,6 +299,33 @@ d/home/joo/Pictures
 d/home/joo/Pictures/wallpapers
 	curls.png
 32
+d/home/joo/Pictures
+	wallpapers
+17
+d/home/joo
+	Desktop
+9
+d/home/joo/Desktop
+	2019 - Nikko-20191114T131635Z-001
+1
+d/home/joo/Desktop/2019 - Nikko-20191114T131635Z-001
+	2019 - Nikko
+1
+d/home/joo/Desktop/2019 - Nikko-20191114T131635Z-001/2019 - Nikko
+	DSC_0210.jpg
+1
+d/home/joo/Desktop/2019 - Nikko-20191114T131635Z-001
+	..
+0
+d/home/joo/Desktop
+	Train
+8
+d/home/joo/Desktop/Train
+	Grenoble_Lyon.pdf
+1
+d/home/joo/Desktop
+	uid___A001_X87c_X3cd.HD181327_sci.spw19_21_23_25.cont.I.pbcor.fits
+26
 d
 
 # Right window history (oldest to newest):
@@ -449,6 +449,84 @@ D/home/joo/DatabaseDebris/Targets
 D/home/joo/DatabaseDebris/Targets/pdf
 	corner_TYC_8830_410_1.pdf
 10
+D/home/joo/DatabaseDebris/Targets
+	pdf
+7
+D/home/joo/DatabaseDebris
+	Targets
+1
+D/home/joo
+	Fundings
+12
+D/home/joo/Fundings
+	ICM2016
+1
+D/home/joo/Fundings/ICM2016
+	Project
+6
+D/home/joo/Fundings/ICM2016/Project
+	Submitted
+2
+D/home/joo/Fundings/ICM2016/Project/Submitted
+	0_Additional_info_v1.txt
+2
+D/home/joo/Fundings/ICM2016/Project
+	Interview
+1
+D/home/joo/Fundings/ICM2016/Project/Interview
+	..
+0
+D/home/joo/Fundings/ICM2016/Project
+	Interview
+1
+D/home/joo/Fundings/ICM2016
+	Informe2018
+1
+D/home/joo/Fundings/ICM2016/Informe2018
+	NPF MSI Annual Report 2018.pdf
+1
+D/home/joo/Fundings/ICM2016
+	Paperwork
+5
+D/home/joo/Fundings/ICM2016/Paperwork
+	Permanencia
+1
+D/home/joo/Fundings/ICM2016/Paperwork/Permanencia
+	Compromiso_permanencia_Johan.pdf
+2
+D/home/joo/Fundings/ICM2016/Paperwork
+	Permanencia
+1
+D/home/joo/Fundings/ICM2016
+	Paperwork
+5
+D/home/joo/Fundings
+	ICM2016
+1
+D/home/joo
+	Desktop
+9
+D/home/joo/Desktop
+	Stuff
+7
+D/home/joo/Desktop/Stuff
+	Photos_hirez
+13
+D/home/joo/Desktop/Stuff/Photos_hirez
+	Japan
+5
+D/home/joo/Desktop/Stuff/Photos_hirez/Japan
+	..
+0
+D/home/joo/Desktop/Stuff/Photos_hirez
+	2019 - Nikko
+1
+D/home/joo/Desktop/Stuff/Photos_hirez/2019 - Nikko
+	DSC_0301.jpg
+12
+D/home/joo/Desktop/Stuff/Photos_hirez
+	2019 - Nikko
+1
 D
 
 # Command line history (oldest to newest):
@@ -472,7 +550,7 @@ pOlofsson_poster.pdf
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/000_vosa_results_32255
+""/home/joo/.local/share/vifm/Trash/001_vosa_results_32255
 
 # Directory stack (oldest to newest):
 
@@ -521,6 +599,10 @@ t/home/joo/.local/share/vifm/Trash/000_ms_JO.pdf
 	/home/joo/Desktop/ms_JO.pdf
 t/home/joo/.local/share/vifm/Trash/000_vosa_results_32255
 	/home/joo/Desktop/vosa_results_32255
+t/home/joo/.local/share/vifm/Trash/000_2019 - Nikko-20191114T131635Z-001
+	/home/joo/Desktop/2019 - Nikko-20191114T131635Z-001
+t/home/joo/.local/share/vifm/Trash/000_Train
+	/home/joo/Desktop/Train
 
 # State:
 f

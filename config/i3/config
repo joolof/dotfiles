@@ -220,7 +220,7 @@ bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128
 
 #bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x30 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
 
-bindsym $mod+t exec --no-startup-id /home/joo/.scripts/rofi_taskwarrior.py
+#bindsym $mod+t exec --no-startup-id /home/joo/.scripts/rofi_taskwarrior.py
 bindsym $mod+o exec --no-startup-id /home/joo/.scripts/rofi_favorite.py
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
 bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
@@ -243,4 +243,10 @@ bindsym $mod+Shift+p move scratchpad
 bindsym $mod+p scratchpad show
 
 exec --no-startup-id xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
+## quick terminal
+for_window [instance="metask"] floating enable
+for_window [instance="metask"] move scratchpad; [instance="metask"] scratchpad show; move scratchpad
+exec --no-startup-id urxvt -name "metask" -geometry 230x40+0+1
+bindsym $mod+t [instance="metask"] scratchpad show
 
