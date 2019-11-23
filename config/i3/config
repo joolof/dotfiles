@@ -26,17 +26,17 @@ set $urgent-bg-color     #E53935
 ###--- i3 coloring ---###
 # Make it clear when failed using red - otherwise set i3 colors with wal from xresources
 set_from_resource $bg           color0 #ff0000
-set_from_resource $bg-alt       color3 #ff0000
+set_from_resource $bg-alt       color8 #ff0000
 set_from_resource $fg           color15 #ff0000
 set_from_resource $fg-alt       color0 #ff0000
 set_from_resource $hl           color0 #ff0000
 
 # class                 border      backgr. text indicator      child_border
-client.focused          $bg-alt     $bg     $fg  $fg-alt        $bg-alt
-client.focused_inactive $fg-alt     $bg     $fg  $fg-alt        $fg-alt
-client.unfocused        $fg-alt     $bg     $fg  $fg-alt        $fg-alt
-client.urgent           $fg-alt     $bg     $fg  $fg-alt        $fg-alt
-client.placeholder      $fg-alt     $bg     $fg  $fg-alt        $fg-alt
+client.focused          $fg-alt     $bg     $fg  $fg-alt        $bg-alt
+client.focused_inactive $fg-alt     $bg-alt     $fg  $fg-alt        $fg-alt
+client.unfocused        $fg-alt     $bg-alt     $fg  $fg-alt        $fg-alt
+client.urgent           $fg-alt     $bg-alt     $fg  $fg-alt        $fg-alt
+client.placeholder      $fg-alt     $bg-alt     $fg  $fg-alt        $fg-alt
 client.background       $bg
 
 # >> Font
@@ -152,7 +152,8 @@ bindsym $mod+r mode "resize"
 
 # >> Exec boot
 # Start polybar
-exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
+exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/curls.png
+#exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/deer.jpg
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 # exec --no-startup-id mpd
 #exec --no-startup-id mopidy
@@ -160,7 +161,7 @@ exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id compton
 #exec --no-startup-id wal -R
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # >> Media keys
 #bindsym XF86AudioPlay exec --no-startup-id mpc toggle
@@ -207,20 +208,21 @@ assign [class="Thunderbird"] $ws2
 assign [class="wow.exe"] $ws5
 assign [class="Skype"] $ws6
 assign [class="ClickUp Desktop"] $ws7
+assign [class="mpv"] $ws8
 assign [instance="floatingNcm"] $ws10
 
 # >> Exec softwares
 bindsym $mod+Return exec --no-startup-id urxvt
-bindsym $mod+n exec --no-startup-id nautilus
+#bindsym $mod+n exec --no-startup-id nautilus
 #bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e ranger
 bindsym $mod+i exec --no-startup-id urxvt -name "floatingTerminal" -e "/home/joo/anaconda2/bin/ipython"
-#bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e vifm
+bindsym $mod+n exec --no-startup-id urxvt -name "floatingTerminal" -geometry 128x32 -e vifm
 #bindsym $mod+j exec --no-startup-id urxvt -name "floatingTerminal" -e zsh -c "/home/joo/anaconda2/bin/jrnl -n 20 && zsh"
 bindsym $mod+m exec --no-startup-id urxvt -name "floatingNcm" -e ncmpcpp
 
 #bindsym $mod+t exec --no-startup-id urxvt -name "floatingTerminal" -geometry 80x30 -e zsh -c "/home/joo/anaconda2/bin/python /home/joo/Codes/Python/ToDo/todo.py"
 
-bindsym $mod+t exec --no-startup-id /home/joo/.scripts/rofi_taskwarrior.py
+#bindsym $mod+t exec --no-startup-id /home/joo/.scripts/rofi_taskwarrior.py
 bindsym $mod+o exec --no-startup-id /home/joo/.scripts/rofi_favorite.py
 bindsym $mod+u exec --no-startup-id ~/.scripts/dtest
 bindsym $mod+space exec --no-startup-id kill $(pidof mpv)
@@ -236,3 +238,7 @@ bindsym $mod+p scratchpad show
 
 exec --no-startup-id xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
+for_window [instance="metask"] floating enable
+for_window [instance="metask"] move scratchpad; [instance="metask"] scratchpad show; move scratchpad
+exec --no-startup-id urxvt -name "metask" -geometry 208x35+0+1
+bindsym $mod+t [instance="metask"] scratchpad show
