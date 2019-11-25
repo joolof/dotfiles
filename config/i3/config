@@ -16,12 +16,7 @@ gaps inner 8
 gaps outer 5
 default_border pixel 0
 
-# >> Colors
-set $bg-color            #d62a2a
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
+exec --no-startup-id xrdb -merge .Xresources
 
 # Make it clear when failed using red - otherwise set i3 colors with wal from xresources
 set_from_resource $bg           color0 #ff0000
@@ -158,7 +153,6 @@ exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/curls.p
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 #exec --no-startup-id mpd
 #exec --no-startup-id mopidy
-exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id compton
 
@@ -192,6 +186,7 @@ for_window [title="Write"] floating enable
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Eog"] floating enable
 for_window [class="gui.py"] floating enable
+for_window [class="28818-casaviewer-svr"] floating enable
 for_window [class="Lutris"] floating enable
 for_window [class="Wine"] floating enable
 for_window [class="java-lang-Thread"] floating enable
