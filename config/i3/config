@@ -16,14 +16,7 @@ gaps inner 8
 gaps outer 5
 default_border pixel 0
 
-# >> Colors
-set $bg-color            #d62a2a
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
-
-###--- i3 coloring ---###
+exec --no-startup-id xrdb .Xresources
 # Make it clear when failed using red - otherwise set i3 colors with wal from xresources
 set_from_resource $bg           color0 #ff0000
 set_from_resource $bg-alt       color8 #ff0000
@@ -157,7 +150,6 @@ exec_always --no-startup-id feh --bg-scale /home/joo/Pictures/wallpapers/curls.p
 exec --no-startup-id dunst -config /home/joo/.config/dunst/dunstrc
 # exec --no-startup-id mpd
 #exec --no-startup-id mopidy
-exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id compton
 #exec --no-startup-id wal -R
@@ -240,5 +232,5 @@ exec --no-startup-id xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 for_window [instance="metask"] floating enable
 for_window [instance="metask"] move scratchpad; [instance="metask"] scratchpad show; move scratchpad
-exec --no-startup-id urxvt -name "metask" -geometry 208x35+0+1
+exec --no-startup-id urxvt -name "metask" -geometry 208x34+0+1
 bindsym $mod+t [instance="metask"] scratchpad show
