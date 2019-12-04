@@ -1,10 +1,12 @@
 ; vim:ft=dosini
 [colors]
-fg = ${xrdb:color7}
-bg = ${xrdb:color0}
-icon-bg = ${xrdb:color6}
-icon-fg = ${xrdb:color0}
-underline = ${xrdb:color7}
+fg = ${xrdb:color1}
+bg = #00000000
+;bg = ${xrdb:background}
+icon-bg = ${xrdb:color8}
+;icon-fg = ${xrdb:background}
+icon-fg = #bb000000
+underline = ${xrdb:color8}
 
 [global/wm]
 margin-top = 0
@@ -22,7 +24,7 @@ foreground = ${colors.fg}
 
 overline-size = 0
 overline-color = #ff0000
-underline-size = 3
+underline-size = 0
 underline-color = ${colors.underline}
 
 border-size = 0
@@ -31,7 +33,8 @@ border-color = ${colors.icon-bg}
 ;border-top-size = 4%
 ;border-left-size = 12%
 ;border-right-size = 12%
-border-bottom-size = 4.2%
+;border-bottom-size = 4.2%
+border-bottom-size = 0%
 ;radius = 6
 
 padding-left = 2%
@@ -45,9 +48,9 @@ font-2 = Iosevka Nerd Font:style=Medium:size=25;3
 
 ; >> Modules
 ;modules-left = i3
-modules-left = left-leftbar spotify_i right-leftbar spotify
+modules-left = spotify
 ;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
-modules-right = left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
+modules-right = volume date_i date
 ;fixed-center = true
 
 ;tray-position = right
@@ -97,7 +100,7 @@ exec = /home/joo/.scripts/polybar_taskwarrior.py
 
 [module/spotify_i]
 type = custom/text
-content = ""
+content = "  "
 content-margin-left = 0
 content-foreground = ${colors.icon-fg}
 content-background = ${colors.icon-bg}
@@ -105,7 +108,7 @@ content-background = ${colors.icon-bg}
 [module/spotify]
 type = custom/script
 interval = 2
-format-prefix = " "
+format-prefix = "  "
 format-suffix = " "
 format-foreground = ${colors.fg}
 format-background = ${colors.bg}
@@ -216,9 +219,9 @@ label-disconnected-foreground = ${colors.fg}
 
 [module/date_i]
 type = custom/text
-content = ""
-content-foreground = ${colors.icon-fg}
-content-background = ${colors.icon-bg}
+content = "  "
+;content-foreground = ${colors.icon-fg}
+;content-background = ${colors.icon-bg}
 
 [module/date]
 type = custom/script
@@ -240,30 +243,32 @@ type = internal/alsa
 master-soundcard = default
 speaker-soundcard = default
 headphone-soundcard = default
-format-volume = <label-volume>
+format-volume = <ramp-volume> <label-volume>
 format-volume-background = ${colors.bg}
 format-volume-foreground = ${colors.fg}
 format-volume-padding = 1
-label-volume = %percentage%%
+label-volume = %percentage%% 
 format-muted-background = ${colors.bg}
 format-muted-foreground = ${colors.fg}
 format-muted-padding = 1
-label-muted = "Muted"
+label-muted = "Muted |"
 label-muted-foreground = ${colors.fg}
+ramp-volume-0 = 
+ramp-volume-1 = 
 
 [module/volume_i]
 type = internal/alsa
 format-volume = <ramp-volume>
 format-muted-foreground = ${colors.icon-fg}
 format-muted-background = ${colors.icon-bg}
-format-muted-padding = 0
+format-muted-padding = 1
 label-muted = 
 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-foreground = ${colors.icon-fg}
 ramp-volume-background = ${colors.icon-bg}
-ramp-volume-padding = 0
+ramp-volume-padding = 1
 
 ;format-muted-underline = ${colors.underline}
 ;format-volume-underline = ${colors.underline}
