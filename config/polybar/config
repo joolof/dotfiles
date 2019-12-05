@@ -1,7 +1,7 @@
 ; vim:ft=dosini
 [colors]
 fg = ${xrdb:color1}
-bg = #00000000
+bg = #aa000000
 ;bg = ${xrdb:background}
 icon-bg = ${xrdb:color8}
 ;icon-fg = ${xrdb:background}
@@ -14,7 +14,7 @@ margin-bottom = 0
 
 [bar/mainbar]
 width = 100%
-height = 20
+height = 40
 offset-x = 0
 offset-y = 0
 background = ${colors.bg}
@@ -23,8 +23,8 @@ foreground = ${colors.fg}
 
 overline-size = 0
 overline-color = #ff0000
-underline-size = 0
-underline-color = ${colors.underline}
+underline-size = 2
+underline-color = ${colors.fg}
 
 border-size = 0
 ;border-color = #00000000
@@ -38,18 +38,18 @@ border-bottom-size = 0%
 
 padding-left = 2%
 padding-right = 2%
-module-margin-left = 0
+module-margin-left = 1
 module-margin-right = 0.
 
 font-0 = Iosevka Term Semibold:pixelsize=21;4
-font-1 = FontAwesome:pixelsize=21;4
+font-1 = FontAwesome:pixelsize=20;4
 font-2 = Iosevka Nerd Font:style=Medium:size=51;6
 
 ; >> Modules
 ;modules-left = i3
 modules-left = spotify
 ;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
-modules-right = battery_i battery volume date_i date
+modules-right = battery volume date
 ;fixed-center = true
 
 ;tray-position = right
@@ -114,7 +114,7 @@ format-background = ${colors.bg}
 format =<label>
 icon-play =  
 exec = /home/joo/.scripts/spotify_status.py -f '{artist}: {song}' -t 150
-;format-underline = ${colors.bg}
+format-underline = ${colors.fg}
 
 [module/system-usb-udev]
 type = custom/script
@@ -234,7 +234,7 @@ click-left = ~/.scripts/popup-calendar.sh --popup
 ;label-foreground = ${colors.fg}
 ;label-background = ${colors.bg}
 ;label-padding = 1
-;format-underline = ${colors.underline}
+format-underline = ${colors.fg}
 
 ; >> volume
 [module/volume]
@@ -250,10 +250,12 @@ label-volume = %percentage%%
 format-muted-background = ${colors.bg}
 format-muted-foreground = ${colors.fg}
 format-muted-padding = 1
-label-muted = "Muted"
+label-muted =   0%
 label-muted-foreground = ${colors.fg}
 ramp-volume-0 = 
 ramp-volume-1 = 
+format-muted-underline = ${colors.fg}
+format-volume-underline = ${colors.fg}
 
 [module/volume_i]
 type = internal/alsa
@@ -269,27 +271,27 @@ ramp-volume-foreground = ${colors.icon-fg}
 ramp-volume-background = ${colors.icon-bg}
 ramp-volume-padding = 1
 
-;format-muted-underline = ${colors.underline}
-;format-volume-underline = ${colors.underline}
+format-muted-underline = ${colors.fg}
+format-volume-underline = ${colors.fg}
 
-[module/battery_i]
+[module/battery]
 type = internal/battery
 full-at = 98
 battery = BAT0
 adapter = AC
 poll-interval = 2
 time-format = %H:%M
-format-charging = <animation-charging>
+format-charging = <animation-charging> <label-charging>
 ;format-charging-background = ${colors.icon-bg}
 format-charging-foreground = ${colors.fg}
 format-charging-padding = 0
-format-discharging = <ramp-capacity>
+format-discharging = <ramp-capacity> <label-discharging>
 ;format-discharging-background = ${colors.icon-bg}
 format-discharging-foreground = ${colors.fg}
 format-discharging-padding = 0
 label-charging = %percentage%%
 label-discharging = %percentage%%
-label-full = 
+label-full =  %percentage%%
 ;label-full-background = ${colors.icon-bg}
 label-full-foreground = ${colors.fg}
 label-full-padding = 0
@@ -304,25 +306,10 @@ animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
-; >> battery
-[module/battery]
-type = internal/battery
-battery = BAT0
-adapter = AC
-full-at = 98
-label-charging = %percentage%%
-label-discharging = %percentage%%
+format-full-underline = ${colors.fg}
+format-charging-underline = ${colors.fg}
+format-discharging-underline = ${colors.fg}
 
-label-charging-background = ${colors.bg}
-label-charging-foreground = ${colors.fg}
-label-discharging-background = ${colors.bg}
-label-discharging-foreground = ${colors.fg}
-label-full-foreground = ${colors.fg}
-label-full-background = ${colors.bg}
-
-label-full-padding = 1
-label-charging-padding = 1
-label-discharging-padding = 1
 
 
 
