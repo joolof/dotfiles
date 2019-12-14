@@ -2,6 +2,8 @@
 [colors]
 fg = ${xrdb:color1}
 bg = #aa000000
+colspot = ${xrdb:color2}
+coldate = ${xrdb:color5}
 ;bg = ${xrdb:background}
 icon-bg = ${xrdb:color8}
 ;icon-fg = ${xrdb:background}
@@ -109,12 +111,12 @@ type = custom/script
 interval = 2
 format-prefix = "  "
 format-suffix = " "
-format-foreground = ${colors.fg}
+format-foreground = ${colors.colspot}
 format-background = ${colors.bg}
 format =<label>
 icon-play =  
 exec = /home/joo/.scripts/spotify_status.py -f '{artist}: {song}' -t 150
-format-underline = ${colors.fg}
+format-underline = ${colors.colspot}
 
 [module/system-usb-udev]
 type = custom/script
@@ -231,10 +233,10 @@ click-left = ~/.scripts/popup-calendar.sh --popup
 ;interval = 5
 ;date = "%d/%m"
 ;label = %date%
-;label-foreground = ${colors.fg}
+label-foreground = ${colors.coldate}
 ;label-background = ${colors.bg}
 ;label-padding = 1
-format-underline = ${colors.fg}
+format-underline = ${colors.coldate}
 
 ; >> volume
 [module/volume]

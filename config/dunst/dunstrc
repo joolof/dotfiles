@@ -5,7 +5,7 @@
 
 [global]
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    geometry = "1000x20-480+5"
+    geometry = "2000x50-480+5"
     shrink = yes
     corner_radius = 0
 
@@ -46,15 +46,15 @@
 # Set the background and foreground (text) color for all notifications
 [urgency_low]
     background = "#000000"
-    foreground = "#BF616A"
+    foreground = "#5E81AC"
 
 [urgency_normal]
     background = "#000000"
-    foreground = "#BF616A"
+    foreground = "#5E81AC"
 
 [urgency_critical]
     background = "#000000"
-    foreground = "#BF616A"
+    foreground = "#5E81AC"
 
 # vim:ft=cfg
 
