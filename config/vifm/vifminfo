@@ -312,18 +312,21 @@ d/home/joo/Desktop/Stuff/Papers_admin/Chile/MPTG/Viaticos
 d/home/joo/Desktop/Stuff/Papers_admin/Chile/MPTG
 	Post-doc_hiring
 13
+d/home/joo/Desktop/Stuff/Papers_admin/Chile
+	MPTG
+11
+d/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+d/home/joo/Desktop/Stuff
+	Papers_admin
+12
+d/home/joo/Desktop
+	NPF_renovation-20191215T173837Z-001.zip
+21
 d
 
 # Right window history (oldest to newest):
-D/home/joo/Desktop/Stuff
-	Papers_admin
-12
-D/home/joo/Desktop/Stuff/Papers_admin
-	Chile
-1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	Health
-8
 D/home/joo/Desktop/Stuff/Papers_admin/Chile/Health
 	Blood_test_2019-11-11.pdf
 2
@@ -615,6 +618,15 @@ D/home/joo/Desktop/Stuff
 D/home/joo/Desktop
 	Daniela_comments.md
 8
+D/home/joo
+	Pictures
+24
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo/Pictures/screenshots
+	HR4796.png
+4
 D
 
 # Command line history (oldest to newest):
@@ -671,7 +683,7 @@ pPlanetrotation.mp4
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/001_Figure_2.png
+""/home/joo/.local/share/vifm/Trash/000_NPF_renovation-20191212T180729Z-001.zip
 
 # Directory stack (oldest to newest):
 
@@ -790,6 +802,12 @@ t/home/joo/.local/share/vifm/Trash/000_Figure_2.png
 	/home/joo/Desktop/Figure_2.png
 t/home/joo/.local/share/vifm/Trash/000_Figure_1.png
 	/home/joo/Desktop/Figure_1.png
+t/home/joo/.local/share/vifm/Trash/000_feh_010081_000002_05-Ma-Azul.png
+	/home/joo/Pictures/screenshots/feh_010081_000002_05-Ma-Azul.png
+t/home/joo/.local/share/vifm/Trash/000_feh_010081_000001_05-Ma-Azul.png
+	/home/joo/Pictures/screenshots/feh_010081_000001_05-Ma-Azul.png
+t/home/joo/.local/share/vifm/Trash/000_NPF_renovation-20191212T180729Z-001.zip
+	/home/joo/Desktop/NPF_renovation-20191212T180729Z-001.zip
 
 # State:
 f

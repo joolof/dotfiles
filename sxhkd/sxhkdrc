@@ -7,7 +7,11 @@ super + Return
 	urxvt
 # negative -w arg to account for a border width (default: 100%)
 super + t
-    tdrop -ma -w 80% -x 10% -y 25% -h 50% urxvt
+    tdrop -ma -w 80% -x 10% -y 3% -h 50% urxvt
+
+# Lock screen
+super + shift + x
+    $HOME/.scripts/lock.sh
 
 # Media keys
 
@@ -157,3 +161,9 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# dunst notification test
+super + u
+    $HOME/.scripts/dtest
+
+

@@ -4,7 +4,7 @@ BAR_HEIGHT=50  # polybar height
 BORDER_SIZE=4  # border size from your wm settings
 YAD_WIDTH=222  # 222 is minimum possible value
 YAD_HEIGHT=193 # 193 is minimum possible value
-DATE="$(date +"  %d/%m %H:%M")"
+DATE="$(date +" %d/%m %H:%M")"
 
 case "$1" in
 --popup)
