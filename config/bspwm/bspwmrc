@@ -20,3 +20,4 @@ bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^9' state=floating follow=on
 bspc rule -a Firefox desktop='^1'
+bspc rule -a mpv desktop='^8'
