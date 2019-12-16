@@ -4,7 +4,7 @@ BAR_HEIGHT=50  # polybar height
 BORDER_SIZE=4  # border size from your wm settings
 YAD_WIDTH=222  # 222 is minimum possible value
 YAD_HEIGHT=193 # 193 is minimum possible value
-DATE="$(date +"  %d/%m %H:%M") "
+DATE="$(date +" %d/%m | %H:%M") "
 
 case "$1" in
 --popup)
@@ -32,7 +32,7 @@ case "$1" in
     #fi
 
     yad --calendar --undecorated --fixed --close-on-unfocus --no-buttons \
-        --width=$YAD_WIDTH --height=$YAD_HEIGHT --posx=1672 --posy=28    \
+        --width=$YAD_WIDTH --height=$YAD_HEIGHT --posx=836 --posy=28    \
         --title="yad-calendar" --borders=0 >/dev/null &
     ;;
 *)
