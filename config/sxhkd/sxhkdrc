@@ -30,11 +30,11 @@ XF86AudioPrev
 
 # Increase sound volume
 XF86AudioRaiseVolume
-    pactl set-sink-volume bluez_sink.04_5D_4B_53_64_C6.a2dp_sink
+    pactl set-sink-volume bluez_sink.04_5D_4B_53_64_C6.a2dp_sink +5%
 
 # Decrease sound volume
 XF86AudioLowerVolume
-    pactl set-sink-volume bluez_sink.04_5D_4B_53_64_C6.a2dp_sink
+    pactl set-sink-volume bluez_sink.04_5D_4B_53_64_C6.a2dp_sink -5%
 
 # Mute sound
 XF86AudioMute

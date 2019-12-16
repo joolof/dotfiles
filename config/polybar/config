@@ -48,7 +48,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=25;3
 modules-left = spotify_i spotify
 modules-center = date_i date
 ;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
-modules-right = volume_i volume 
+modules-right = mpv-polybar volume_i volume 
 ;fixed-center = true
 ;
 wm-restack = bspwm
@@ -377,4 +377,10 @@ label-urgent-foreground = ${colors.fg}
 
 
 
-
+[module/mpv-polybar]
+type = custom/script
+exec = ~/.dotfiles/scripts/mpv-info
+interval = 1
+label-foreground = ${colors.fg}
+click-left = echo 'cycle pause' | socat - /tmp/mpvsocket
+click-right = echo 'cycle mute' | socat - /tmp/mpvsocket
