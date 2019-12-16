@@ -27,11 +27,9 @@ underline-color = ${colors.fg}
 
 ;border-size = 0
 border-color = #00000000
-;border-color = ${colors.icon-bg}
 border-top-size = 0.5%
 border-left-size = 4%
 border-right-size = 4%
-;border-bottom-size = 4.2%
 border-bottom-size = 0.%
 radius = 10
 
@@ -51,6 +49,8 @@ modules-center = date_i date
 ;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
 modules-right = volume_i volume battery_i battery 
 ;fixed-center = true
+;
+wm-restack = bspwm
 
 ;tray-position = right
 ;tray-padding = 2
@@ -61,8 +61,6 @@ modules-right = volume_i volume battery_i battery
 type = custom/text
 content-background = ${colors.icon-fg}
 content-foreground = ${colors.icon-bg}
-;content-background = ${colors.icon-bg}
-;content-foreground = ${colors.icon-fg}
 
 [module/right-rightbar]
 inherit = module/decor-glyph
@@ -261,7 +259,7 @@ type = internal/alsa
 format-volume = <ramp-volume>
 format-muted-foreground = ${colors.icon-fg}
 ;format-muted-background = ${colors.icon-bg}
-format-muted-padding = 0
+format-muted-padding = 1
 label-muted = 
 
 ramp-volume-0 = 

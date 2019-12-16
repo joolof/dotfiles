@@ -49,9 +49,12 @@ XF86MonBrightnessDown
 
 # program launcher
 super + d
-    dmenu_run
+	rofi -show drun -width 40 -eh 1
 
-	#rofi -show drun -width 40 -eh 1
+#Screenshots
+Print
+    scrot -s '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
