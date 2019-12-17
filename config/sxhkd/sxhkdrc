@@ -10,6 +10,10 @@ super + Return
 super + t
     tdrop -ma -w 80% -x 10% -y 3% -h 50% urxvt
 
+# rofi favorites
+super + o 
+    $HOME/.scripts/rofi_favorite.py
+
 # Lock screen
 super + shift + x
     $HOME/.scripts/lock.sh
