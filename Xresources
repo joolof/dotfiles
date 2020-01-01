@@ -62,9 +62,9 @@ URxvt*depth: 24
 !URxvt.background: [95]termbg
 
 !! Font preferences
-URxvt.font: xft:Iosevka Term:pixelsize=30
+URxvt.font: xft:Iosevka Term:pixelsize=26
 !!:weight=Semibold 
-URxvt.boldFont: xft:Iosevka Term:pixelsize=30:weight=Semibold 
+URxvt.boldFont: xft:Iosevka Term:pixelsize=26:weight=Semibold 
 
 !! Larger history limit
 URxvt.saveLines: 5000
