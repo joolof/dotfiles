@@ -333,24 +333,6 @@ d/home/joo/Desktop
 d
 
 # Right window history (oldest to newest):
-D/home/joo
-	Documents
-9
-D/home/joo/Documents
-	League of Legends
-5
-D/home/joo/Documents/League of Legends
-	..
-0
-D/home/joo/Documents
-	League of Legends
-5
-D/home/joo
-	Pictures
-24
-D/home/joo/Pictures
-	Draw
-2
 D/home/joo/Pictures/Draw
 	Blender
 1
@@ -631,8 +613,26 @@ D/home/joo
 	Desktop
 8
 D/home/joo/Desktop
-	sncf.pdf
-34
+	Stuff
+4
+D/home/joo/Desktop/Stuff
+	Papers_admin
+12
+D/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+5
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2019
+2
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
+	Contract
+2
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Contract
+	Contract_Martin_Solar_2019.pdf
+2
 D
 
 # Command line history (oldest to newest):
@@ -689,7 +689,7 @@ pPlanetrotation.mp4
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/000_dd_python.png
+""/home/joo/.local/share/vifm/Trash/000_sncf.pdf
 
 # Directory stack (oldest to newest):
 
@@ -818,6 +818,8 @@ t/home/joo/.local/share/vifm/Trash/000_2019-12-16_08.46.01.png
 	/home/joo/Pictures/screenshots/2019-12-16_08.46.01.png
 t/home/joo/.local/share/vifm/Trash/000_dd_python.png
 	/home/joo/Desktop/dd_python.png
+t/home/joo/.local/share/vifm/Trash/000_sncf.pdf
+	/home/joo/Desktop/sncf.pdf
 
 # State:
 f
