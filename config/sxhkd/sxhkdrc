@@ -7,7 +7,15 @@ super + Return
 	urxvt
 # negative -w arg to account for a border width (default: 100%)
 super + t
-    tdrop -ma -w 80% -x 10% -y 3% -h 50% urxvt
+    tdrop -ma -w 94% -x 3% -y -1% -h 50% urxvt
+
+# Lock screen
+super + o
+    $HOME/.scripts/rofi_favorite.py
+
+# MPV from clipboard
+#super + y
+    #$HOME/.dotfiles/scripts/mpv-play.py >/home/joo/tmp
 
 # Lock screen
 super + shift + x

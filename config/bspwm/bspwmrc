@@ -4,6 +4,7 @@ sxhkd &
 xrdb /home/joo/.Xresources &
 /home/joo/.config/polybar/launch.sh &
 compton &
+nm-applet &
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 #feh --bg-scale /home/joo/Pictures/wallpapers/curls.png &
 feh --bg-scale /home/joo/Pictures/wallpapers/alena-aenami-quiet-1px.jpg &
@@ -19,6 +20,11 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Yad state=floating
-bspc rule -a Gimp desktop='^9' state=floating follow=on
+bspc rule -a lutris state=floating
+bspc rule -a blueman-manager state=floating
+bspc rule -a matplotlib state=floating
+bspc rule -a " " state=floating
 bspc rule -a Firefox desktop='^1'
 bspc rule -a mpv desktop='^8'
+bspc rule -a Gimp desktop='^9' state=floating follow=on
+bspc rule -a spotify desktop='^10'

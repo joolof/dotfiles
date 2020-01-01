@@ -21,7 +21,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -30,48 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/joo
-	Desktop
-7
-d/home/joo/Desktop
-	Driving.pdf
-12
-d/home/joo
-	SPHERE
-27
-d/home/joo/SPHERE
-	HD95086
-8
-d/home/joo
-	SPHERE
-27
-d/home
-	joo
-1
-d/home/joo
-	Codes
-4
-d/home/joo/Codes
-	Python
-5
-d/home/joo/Codes/Python
-	Projects
-8
-d/home/joo/Codes/Python/Projects
-	stellar
-4
-d/home/joo/Codes/Python/Projects/stellar
-	Stellar.py
-4
-d/home/joo/Codes/Python/Projects
-	stellar
-4
-d/home/joo/Codes/Python
-	Projects
-8
-d/home/joo/Codes
-	Python
-5
 d/home/joo
 	Codes
 4
@@ -322,170 +280,59 @@ d/home/joo/Desktop/Stuff
 	Papers_admin
 12
 d/home/joo/Desktop
-	NPF_renovation-20191215T173837Z-001.zip
+	Stuff
+6
+d/home/joo/Desktop/Stuff
+	Papers_admin
+12
+d/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+d/home/joo/Desktop/Stuff/Papers_admin/Chile
+	Boleta
+2
+d/home/joo/Desktop/Stuff/Papers_admin/Chile/Boleta
+	Boleta_51_2019-06.pdf
+32
+d/home/joo/Desktop/Stuff/Papers_admin/Chile
+	Boleta
+2
+d/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+d/home/joo/Desktop/Stuff
+	Papers_admin
+12
+d/home/joo/Desktop
+	Stuff
+6
+d/home/joo
+	Desktop
+8
+d/home/joo/Desktop
+	Stuff
+6
+d/home/joo/Desktop/Stuff
+	Photos_hirez
+13
+d/home/joo/Desktop/Stuff/Photos_hirez
+	2019 - Nikko
+1
+d/home/joo/Desktop/Stuff/Photos_hirez/2019 - Nikko
+	DSC_0210.jpg
+1
+d/home/joo/Desktop/Stuff/Photos_hirez
+	2019 - Nikko
+1
+d/home/joo/Desktop/Stuff
+	Photos_hirez
+13
+d/home/joo/Desktop
+	PELICULAS.odt
 21
 d
 
 # Right window history (oldest to newest):
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/Health
-	Blood_test_2019-11-11.pdf
-2
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	Health
-8
-D/home/joo/Desktop/Stuff/Papers_admin
-	Chile
-1
-D/home/joo/Desktop/Stuff
-	Papers_admin
-12
-D/home/joo/Desktop
-	Stuff
-7
-D/home/joo
-	Codes
-4
-D/home/joo/Codes
-	Python
-5
-D/home/joo/Codes/Python
-	Debris
-2
-D/home/joo/Codes/Python/Debris
-	MPTG_Logo
-8
-D/home/joo/Codes/Python/Debris/MPTG_Logo
-	PNG
-1
-D/home/joo/Codes/Python/Debris/MPTG_Logo/PNG
-	..
-0
-D/home/joo/Codes/Python/Debris/MPTG_Logo
-	PNG
-1
-D/home/joo/Codes/Python/Debris/MPTG_Logo/PNG
-	..
-0
-D/home/joo/Codes/Python/Debris/MPTG_Logo
-	PNG
-1
-D/home/joo/Codes/Python/Debris
-	Orbital
-11
-D/home/joo/Codes/Python/Debris/Orbital
-	PNG
-1
-D/home/joo/Codes/Python/Debris/Orbital/PNG
-	image_0003.png
-4
-D/home/joo/Codes/Python/Debris/Orbital
-	PNG
-1
-D/home/joo/Codes/Python/Debris
-	MPTG_Logo
-8
-D/home/joo/Codes/Python/Debris/MPTG_Logo
-	PNG
-1
-D/home/joo/Codes/Python/Debris/MPTG_Logo/PNG
-	image_0003.png
-1
-D/home/joo/Codes/Python/Debris/MPTG_Logo
-	PNG
-1
-D/home/joo/Codes/Python/Debris
-	MPTG_Logo
-8
-D/home/joo/Codes/Python
-	Debris
-2
-D/home/joo/Codes
-	Python
-5
-D/home/joo
-	Documents
-9
-D/home/joo/Documents
-	Passport
-9
-D/home/joo/Documents/Passport
-	passport_Olofsson.pdf
-3
-D/home/joo/Documents
-	Passport
-9
-D/home/joo
-	PROPOSALS
-22
-D/home/joo/PROPOSALS
-	ESO
-2
-D/home/joo/PROPOSALS/ESO
-	P97
-20
-D/home/joo/PROPOSALS/ESO/P97
-	..
-0
-D/home/joo/PROPOSALS/ESO
-	P98
-21
-D/home/joo/PROPOSALS/ESO/P98
-	debris
-3
-D/home/joo/PROPOSALS/ESO/P98/debris
-	debris_figure.pdf
-11
-D/home/joo/PROPOSALS/ESO/P98
-	debris
-3
-D/home/joo/PROPOSALS/ESO
-	P98
-21
-D/home/joo/PROPOSALS
-	ESO
-2
-D/home/joo
-	Fundings
-12
-D/home/joo/Fundings
-	ICM2019
-2
-D/home/joo/Fundings/ICM2019
-	Milenio_bases_2019.pdf
-1
-D/home/joo/Fundings
-	ICM2019
-2
-D/home/joo
-	PROPOSALS
-22
-D/home/joo/PROPOSALS
-	ESO
-2
-D/home/joo/PROPOSALS/ESO
-	ALMA
-1
-D/home/joo/PROPOSALS/ESO/ALMA
-	Cycle3
-1
-D/home/joo/PROPOSALS/ESO/ALMA/Cycle3
-	Debris
-1
-D/home/joo/PROPOSALS/ESO/ALMA/Cycle3/Debris
-	debris.pdf
-8
-D/home/joo/PROPOSALS/ESO/ALMA/Cycle3
-	Debris
-1
-D/home/joo/PROPOSALS/ESO/ALMA
-	Cycle3
-1
-D/home/joo/PROPOSALS/ESO
-	ALMA
-1
-D/home/joo/PROPOSALS
-	ESO
-2
 D/home/joo
 	Documents
 9
@@ -627,6 +474,165 @@ D/home/joo/Pictures
 D/home/joo/Pictures/screenshots
 	HR4796.png
 4
+D/home/joo/Pictures
+	wallpapers
+17
+D/home/joo/Pictures/wallpapers
+	alena-aenami-quiet-1px.jpg
+20
+D/home/joo/Pictures
+	wallpapers
+17
+D/home/joo
+	Fundings
+12
+D/home/joo/Fundings
+	ICM2019
+2
+D/home/joo/Fundings/ICM2019
+	Milenio_bases_2019.pdf
+1
+D/home/joo/Fundings
+	ICM2019
+2
+D/home/joo
+	Pictures
+24
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo/Pictures/screenshots
+	Cuello.png
+3
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo
+	Documents
+9
+D/home/joo/Documents
+	PhD
+10
+D/home/joo/Documents/PhD
+	Doctorat Johan OLOFSSON-1.jpg
+2
+D/home/joo/Documents
+	PhD
+10
+D/home/joo
+	Talks
+30
+D/home/joo/Talks
+	..
+0
+D/home/joo
+	Talks
+30
+D/home/joo/Talks
+	Talks
+1
+D/home/joo/Talks/Talks
+	Conferences
+2
+D/home/joo/Talks/Talks/Conferences
+	2019 - Cambridge
+12
+D/home/joo/Talks/Talks/Conferences/2019 - Cambridge
+	IAU350.pdf
+4
+D/home/joo/Talks/Talks/Conferences
+	2019 - Cambridge
+12
+D/home/joo/Talks/Talks
+	Conferences
+2
+D/home/joo/Talks
+	Talks
+1
+D/home/joo
+	Desktop
+8
+D/home/joo/Desktop
+	Stuff
+6
+D/home/joo/Desktop/Stuff
+	Bouquins
+4
+D/home/joo/Desktop/Stuff/Bouquins
+	Fantasy
+4
+D/home/joo/Desktop/Stuff/Bouquins/Fantasy
+	Patrick Rothfuss
+1
+D/home/joo/Desktop/Stuff/Bouquins/Fantasy/Patrick Rothfuss
+	The Name of the Wind - Patrick Rothfuss.mobi
+2
+D/home/joo/Desktop/Stuff/Bouquins/Fantasy
+	Patrick Rothfuss
+1
+D/home/joo/Desktop/Stuff/Bouquins
+	Fantasy
+4
+D/home/joo/Desktop/Stuff
+	Bouquins
+4
+D/home/joo/Desktop
+	Stuff
+6
+D/home/joo
+	Fundings
+12
+D/home/joo/Fundings
+	ICM2019
+2
+D/home/joo/Fundings/ICM2019
+	Postulacion_105_en.pdf
+2
+D/home/joo/Fundings
+	Valparaiso
+6
+D/home/joo/Fundings/Valparaiso
+	2018-Fondecyt-Regular
+4
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
+	Abstract
+1
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular/Abstract
+	..
+0
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
+	Submitted
+5
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular/Submitted
+	Resumen.pdf
+1
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
+	Project
+4
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular/Project
+	biblio.bib
+6
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
+	Abstract
+1
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular/Abstract
+	abstract_REG2018_eng.tex
+8
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
+	Abstract
+1
+D/home/joo/Fundings/Valparaiso
+	2018-Fondecyt-Regular
+4
+D/home/joo/Fundings
+	Valparaiso
+6
+D/home/joo
+	Desktop
+8
+D/home/joo/Desktop
+	sncf.pdf
+34
 D
 
 # Command line history (oldest to newest):
@@ -683,7 +689,7 @@ pPlanetrotation.mp4
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/000_NPF_renovation-20191212T180729Z-001.zip
+""/home/joo/.local/share/vifm/Trash/000_dd_python.png
 
 # Directory stack (oldest to newest):
 
@@ -808,6 +814,10 @@ t/home/joo/.local/share/vifm/Trash/000_feh_010081_000001_05-Ma-Azul.png
 	/home/joo/Pictures/screenshots/feh_010081_000001_05-Ma-Azul.png
 t/home/joo/.local/share/vifm/Trash/000_NPF_renovation-20191212T180729Z-001.zip
 	/home/joo/Desktop/NPF_renovation-20191212T180729Z-001.zip
+t/home/joo/.local/share/vifm/Trash/000_2019-12-16_08.46.01.png
+	/home/joo/Pictures/screenshots/2019-12-16_08.46.01.png
+t/home/joo/.local/share/vifm/Trash/000_dd_python.png
+	/home/joo/Desktop/dd_python.png
 
 # State:
 f
