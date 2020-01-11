@@ -333,57 +333,6 @@ d/home/joo/Desktop
 d
 
 # Right window history (oldest to newest):
-D/home/joo/Pictures/Draw
-	Blender
-1
-D/home/joo/Pictures/Draw/Blender
-	Cities
-1
-D/home/joo/Pictures/Draw/Blender/Cities
-	..
-0
-D/home/joo/Pictures/Draw/Blender
-	Cities
-1
-D/home/joo/Pictures/Draw/Blender/Cities
-	Valparaiso.png
-4
-D/home/joo/Pictures/Draw/Blender
-	Cities
-1
-D/home/joo/Pictures/Draw
-	Blender
-1
-D/home/joo/Pictures/Draw/Blender
-	ICM
-2
-D/home/joo/Pictures/Draw/Blender/ICM
-	..
-0
-D/home/joo/Pictures/Draw/Blender
-	Renders
-3
-D/home/joo/Pictures/Draw/Blender/Renders
-	debris_progress
-2
-D/home/joo/Pictures/Draw/Blender/Renders/debris_progress
-	test8.png
-8
-D/home/joo/Pictures/Draw/Blender/Renders
-	OTS44.png
-3
-D/home/joo/Pictures/Draw/Blender
-	Renders
-3
-D/home/joo/Pictures/Draw
-	Blender
-1
-D/home/joo/Pictures
-	Potes
-9
-D/home/joo/Pictures/Potes
-	..
-0
 D/home/joo/Pictures
 	nimp
 12
@@ -633,6 +582,57 @@ D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
 D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Contract
 	Contract_Martin_Solar_2019.pdf
 2
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
+	Boletas
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Boletas
+	..
+0
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
+	Boletas
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2019
+2
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+5
+D/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+D/home/joo/Desktop/Stuff
+	Papers_admin
+12
+D/home/joo/Desktop
+	Stuff
+6
+D/home/joo
+	Pictures
+24
+D/home/joo/Pictures
+	wallpapers
+17
+D/home/joo/Pictures/wallpapers
+	house_lake.jpg
+41
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo/Pictures/screenshots
+	05-Ma-Azul.pdf
+1
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo
+	Pictures
+24
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo/Pictures/screenshots
+	Sz91.png
+6
 D
 
 # Command line history (oldest to newest):
@@ -646,10 +646,10 @@ D
 :colorscheme
 :reload
 :mv
-:move
 :!ds9 %c
 :mkdir PhD
 :!gimp %c
+:move
 :q
 
 # Search history (oldest to newest):
@@ -685,11 +685,12 @@ pHD117214_tb.png
 pBlood_test_2019-11-112.pdf
 pBlood_test_2019-11-11.pdf
 pPlanetrotation.mp4
+pPRIN2020.png
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/000_sncf.pdf
+""/home/joo/.local/share/vifm/Trash/000_2020-01-06_07.57.56.png
 
 # Directory stack (oldest to newest):
 
@@ -820,6 +821,8 @@ t/home/joo/.local/share/vifm/Trash/000_dd_python.png
 	/home/joo/Desktop/dd_python.png
 t/home/joo/.local/share/vifm/Trash/000_sncf.pdf
 	/home/joo/Desktop/sncf.pdf
+t/home/joo/.local/share/vifm/Trash/000_2020-01-06_07.57.56.png
+	/home/joo/Pictures/screenshots/2020-01-06_07.57.56.png
 
 # State:
 f

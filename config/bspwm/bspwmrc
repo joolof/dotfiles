@@ -7,7 +7,7 @@ compton &
 nm-applet &
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 #feh --bg-scale /home/joo/Pictures/wallpapers/curls.png &
-feh --bg-scale /home/joo/Pictures/wallpapers/alena-aenami-quiet-1px.jpg &
+feh --bg-scale /home/joo/Pictures/wallpapers/house_lake.jpg &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
