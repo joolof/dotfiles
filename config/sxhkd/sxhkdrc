@@ -8,7 +8,7 @@ super + Return
 
 # negative -w arg to account for a border width (default: 100%)
 super + t
-    tdrop -ma -w 80% -x 10% -y 3% -h 50% urxvt
+    tdrop -ma -w 96% -x 2% -y -1% -h 50% urxvt
 
 # rofi favorites
 super + o 
@@ -51,7 +51,7 @@ super + d
 
 #Screenshots
 Print
-    scrot -s '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'
+    scrot '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'
 
 # make sxhkd reload its configuration files:
 super + Escape

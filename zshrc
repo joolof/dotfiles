@@ -8,8 +8,8 @@ export ZSH="/home/joo/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="joo"
-#ZSH_THEME="robbyrussell"
+#ZSH_THEME="joo"
+ZSH_THEME="typewritten"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -105,7 +105,7 @@ bindkey '^[[A' fzf-history-widget
 
 source $HOME/.bash_aliases
 # added by Anaconda2 installer
-export PATH="/home/joo/anaconda2/bin:/home/joo/.scripts:$PATH"
+export PATH="/home/joo/anaconda2/bin:/home/joo/.scripts:/home/joo/.cargo/bin:$PATH"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/joo/_NOT_SYNCED/MultiNest/lib
 
 export DDIT_PATH='/home/joo/SPHERE/HD61005/Modelling/Dust/'

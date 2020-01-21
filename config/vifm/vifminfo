@@ -17,7 +17,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -26,42 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/joo/Fundings/ICM2019
-	Milenio_bases_2019.pdf
-1
-d/home/joo/Fundings
-	ICM2016
-1
-d/home/joo/Fundings/ICM2016
-	Project
-6
-d/home/joo/Fundings/ICM2016/Project
-	Submitted
-2
-d/home/joo/Fundings/ICM2016/Project/Submitted
-	Dedication_20161202154952870.pdf
-14
-d/home/joo/Fundings/ICM2016/Project
-	Interview
-1
-d/home/joo/Fundings/ICM2016/Project/Interview
-	gsm.csv
-4
-d/home/joo/Fundings/ICM2016/Project
-	Interview
-1
-d/home/joo/Fundings/ICM2016
-	Logos
-2
-d/home/joo/Fundings/ICM2016/Logos
-	ENG
-1
-d/home/joo/Fundings/ICM2016/Logos/ENG
-	..
-0
-d/home/joo/Fundings/ICM2016/Logos
-	ENG
-1
 d/home/joo/Fundings/ICM2016
 	Informe2018
 1
@@ -324,86 +288,47 @@ d/home/joo/Desktop/Train
 	Grenoble_Lyon.pdf
 1
 d/home/joo/Desktop
-	uid___A001_X87c_X3cd.HD181327_sci.spw19_21_23_25.cont.I.pbcor.fits
+	..
+0
+d/home/joo
+	Desktop
+9
+d/home/joo/Desktop
+	falabella_guia.pdf
+42
+d/home/joo
+	PROPOSALS
+22
+d/home/joo/PROPOSALS
+	ESO
+2
+d/home/joo/PROPOSALS/ESO
+	P105
 26
+d/home/joo/PROPOSALS/ESO/P105
+	HD121617
+1
+d/home/joo/PROPOSALS/ESO/P105/HD121617
+	HD121617.pdf
+5
+d/home/joo/PROPOSALS/ESO/P105
+	HD121617
+1
+d/home/joo/PROPOSALS/ESO
+	P105
+26
+d/home/joo/PROPOSALS
+	ESO
+2
+d/home/joo
+	Desktop
+9
+d/home/joo/Desktop
+	Thesis.pdf
+24
 d
 
 # Right window history (oldest to newest):
-D/home/joo/Pictures
-	wallpapers
-17
-D/home/joo/Pictures/wallpapers
-	1f58779439d77f2c5d335f3c0e92b.jpg
-1
-D/home/joo
-	Papers
-22
-D/home/joo/Papers
-	HR4796-SPHERE
-15
-D/home/joo/Papers/HR4796-SPHERE
-	..
-0
-D/home/joo/Papers
-	HR4796-SPHERE
-15
-D/home/joo
-	Papers
-22
-D/home
-	joo
-1
-D/home/joo
-	Papers
-22
-D/home/joo/Papers
-	..
-0
-D/home/joo
-	Videos
-32
-D/home/joo/Videos
-	youtube
-3
-D/home/joo
-	Desktop
-9
-D/home/joo/Desktop
-	Stuff
-6
-D/home/joo/Desktop/Stuff
-	Papers_admin
-12
-D/home/joo/Desktop/Stuff/Papers_admin
-	Chile
-1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	FONDECYT_Regular - 2018
-5
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
-	ETAPA_2019
-2
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
-	Boletas
-1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Boletas
-	Catalina_006.pdf
-7
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
-	Boletas
-1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
-	ETAPA_2019
-2
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	FONDECYT_Regular - 2018
-5
-D/home/joo/Desktop/Stuff/Papers_admin
-	Chile
-1
-D/home/joo/Desktop/Stuff
-	Papers_admin
-12
 D/home/joo/Desktop
 	Stuff
 6
@@ -527,6 +452,183 @@ D/home/joo/Desktop/Stuff/Photos_hirez/2019 - Nikko
 D/home/joo/Desktop/Stuff/Photos_hirez
 	2019 - Nikko
 1
+D/home/joo/Desktop/Stuff
+	Photos_hirez
+13
+D/home/joo/Desktop
+	Stuff
+6
+D/home/joo
+	Pictures
+24
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo/Pictures/screenshots
+	sfr.jpeg
+9
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo
+	Pictures
+24
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo/Pictures/screenshots
+	PDS70.png
+5
+D/home/joo/Pictures
+	screenshots
+15
+D/home/joo
+	SAM
+26
+D/home
+	joo
+1
+D/
+	home
+5
+D/home
+	joo
+1
+D/home/joo
+	Fundings
+12
+D/home/joo/Fundings
+	ICM2016
+1
+D/home/joo
+	Herschel
+14
+D/home
+	joo
+1
+D/
+	home
+5
+D/home
+	joo
+1
+D/home/joo
+	Desktop
+9
+D/home/joo/Desktop
+	Stuff
+6
+D/home/joo/Desktop/Stuff
+	Papers_admin
+12
+D/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+5
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2018
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Scanned
+13
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Scanned
+	final version
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Scanned/final version
+	Correct
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Scanned/final version/Correct
+	..
+0
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Scanned/final version
+	all_merged.pdf
+2
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Scanned
+	final version
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Recibo_Simple
+12
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Recibo_Simple
+	Recibo_9_IAUS350_registration.pdf
+16
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Recibo_Simple
+12
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Recibo_Simple
+	Recibo_9_IAUS350_registration.pdf
+16
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Facturas
+7
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Facturas
+	..
+0
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Comprobante_pago
+5
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Comprobante_pago
+	..
+0
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	reintegro
+17
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/reintegro
+	..
+0
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Viajes
+16
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Viajes
+	..
+0
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Observaciones
+10
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Observaciones
+	..
+0
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Observaciones
+10
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2018
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+5
+D/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+D/home/joo/Desktop/Stuff
+	Papers_admin
+12
+D/home/joo/Desktop
+	Stuff
+6
+D/home/joo
+	Desktop
+9
+D/home
+	joo
+1
+D/
+	home
+5
+D/home
+	joo
+1
+D/home/joo
+	Fundings
+12
+D/home/joo/Fundings
+	ICM2019
+2
+D/home/joo/Fundings/ICM2019
+	Milenio_bases_2019.pdf
+1
 D
 
 # Command line history (oldest to newest):
@@ -538,6 +640,7 @@ D
 :!evince %c
 :mkdir ICM2019
 :mkdir 2019-Lyot
+:mkdir Observaciones
 :move
 :q
 
@@ -550,7 +653,7 @@ pOlofsson_poster.pdf
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/001_vosa_results_32255
+""/home/joo/.local/share/vifm/Trash/000_virtscreen.deb
 
 # Directory stack (oldest to newest):
 
@@ -603,6 +706,28 @@ t/home/joo/.local/share/vifm/Trash/000_2019 - Nikko-20191114T131635Z-001
 	/home/joo/Desktop/2019 - Nikko-20191114T131635Z-001
 t/home/joo/.local/share/vifm/Trash/000_Train
 	/home/joo/Desktop/Train
+t/home/joo/.local/share/vifm/Trash/000_6.2Espanol.pages
+	/home/joo/Desktop/6.2Espanol.pages
+t/home/joo/.local/share/vifm/Trash/000_IAU_letter.pdf
+	/home/joo/Desktop/IAU_letter.pdf
+t/home/joo/.local/share/vifm/Trash/000_OTS44.png
+	/home/joo/Desktop/OTS44.png
+t/home/joo/.local/share/vifm/Trash/000_Session1_DBarrado.pdf
+	/home/joo/Desktop/Session1_DBarrado.pdf
+t/home/joo/.local/share/vifm/Trash/000_Untitled presentation.png
+	/home/joo/Desktop/Untitled presentation.png
+t/home/joo/.local/share/vifm/Trash/000_cartola.pdf
+	/home/joo/Desktop/cartola.pdf
+t/home/joo/.local/share/vifm/Trash/000_falabella_guia.pdf
+	/home/joo/Desktop/falabella_guia.pdf
+t/home/joo/.local/share/vifm/Trash/000_fig1.png
+	/home/joo/Desktop/fig1.png
+t/home/joo/.local/share/vifm/Trash/000_gaseous_disk.png
+	/home/joo/Desktop/gaseous_disk.png
+t/home/joo/.local/share/vifm/Trash/000_test.sh
+	/home/joo/Desktop/test.sh
+t/home/joo/.local/share/vifm/Trash/000_virtscreen.deb
+	/home/joo/Desktop/virtscreen.deb
 
 # State:
 f
