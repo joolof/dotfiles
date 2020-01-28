@@ -17,8 +17,10 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Yad state=floating
+bspc rule -a Casalogger state=floating
+bspc rule -a "*:casa-viewer" state=floating
 bspc rule -a Blueman-manager state=floating
-bspc rule -a matplotlib state=floating
+bspc rule -a Matplotlib state=floating
 bspc rule -a " " state=floating
 bspc rule -a Gimp desktop=9 state=floating
 bspc rule -a Firefox desktop=1
