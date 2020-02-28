@@ -115,6 +115,7 @@ format =<label>
 icon-play =  
 exec = /home/joo/.scripts/spotify_status.py -f '{artist}: {song}' -t 150
 click-left = playerctl play-pause
+click-right = playerctl next
 format-underline = ${colors.colspot}
 
 [module/system-usb-udev]
