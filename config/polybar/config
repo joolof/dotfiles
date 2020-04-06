@@ -1,4 +1,4 @@
-; vim:ft=dosini
+; vim:ft=dosini 
 [colors]
 fg = ${xrdb:color4}
 bg = ${xrdb:background}
@@ -47,7 +47,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=51;6
 modules-left = spotify_i spotify mpv_i mpv-polybar 
 modules-center = date_i date
 ;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
-modules-right = volume_i volume battery_i battery 
+modules-right = cpu_i cpu volume_i volume battery_i battery 
 ;fixed-center = true
 ;
 wm-restack = bspwm
@@ -391,3 +391,13 @@ label-foreground = ${colors.fg}
 click-left = echo 'cycle pause' | socat - /tmp/mpvsocket
 click-right = echo 'cycle mute' | socat - /tmp/mpvsocket
 
+[module/cpu_i]
+type = custom/text
+content = "  "
+content-margin-left = 0
+content-foreground = ${colors.icon-fg}
+content-background = ${colors.bg}
+
+[module/cpu]
+type = internal/cpu
+interval = 1.

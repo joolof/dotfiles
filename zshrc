@@ -158,8 +158,6 @@ case $TERM in
     ;;
 esac
 
-
-
 # vi mode
 #bindkey -v # already defined in the vi-mode plugins
 #export KEYTIMEOUT=1

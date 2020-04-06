@@ -190,7 +190,7 @@ function! s:compile_and_run()
     exec 'w'
     if &filetype == 'python'
         "exec "AsyncRun! gcc % -o %<; time ./%<"
-        exec "Dispatch python %"
+        exec "Dispatch python3 %"
     "elseif &filetype == 'cpp'
        "exec "AsyncRun! g++ -std=c++11 % -o %<; time ./%<"
     "elseif &filetype == 'java'

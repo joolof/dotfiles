@@ -50,7 +50,7 @@ snippet /bf "bold" wA
 endsnippet
 
 snippet /it "italic" wA
-\textit{${1:text}} $0
+\textit{${1:text}}$0
 endsnippet
 
 snippet /ci "degrees" iA
@@ -59,9 +59,9 @@ endsnippet
 
 snippet fig "Figure environment" bA
 \begin{figure}
-	\centering
-	\includegraphics[width=0.8\linewidth]{PDF/${2:name.ext}}
-	\caption{${2/(\w+)\.\w+/\u$1/}$0}%
-	\label{fig:${2/(\w+)\.\w+/$1/}}
+\centering
+\includegraphics[width=\hsize]{PDF/${2:name.ext}}
+\caption{${2/(\w+)\.\w+/\u$1/}$0}%
+\label{fig:${2/(\w+)\.\w+/$1/}}
 \end{figure}
 endsnippet

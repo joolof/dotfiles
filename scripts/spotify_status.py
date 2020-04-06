@@ -72,6 +72,10 @@ try:
         'org.mpris.MediaPlayer2.spotify',
         '/org/mpris/MediaPlayer2'
     )
+    # spotify_bus = session_bus.get_object(
+        # 'org.mpris.MediaPlayer2.spotifyd',
+        # '/org/mpris/MediaPlayer2'
+    # )
 
     spotify_properties = dbus.Interface(
         spotify_bus,
@@ -80,6 +84,8 @@ try:
 
     metadata = spotify_properties.Get('org.mpris.MediaPlayer2.Player', 'Metadata')
     status = spotify_properties.Get('org.mpris.MediaPlayer2.Player', 'PlaybackStatus')
+    # metadata = spotify_properties.Get('org.mpris.MediaPlayer2.spotifyd', 'Metadata')
+    # status = spotify_properties.Get('org.mpris.MediaPlayer2.spotifyd', 'PlaybackStatus')
 
     # Handle play/pause label
 

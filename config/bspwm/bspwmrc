@@ -7,7 +7,8 @@ compton &
 nm-applet &
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 #feh --bg-scale /home/joo/Pictures/wallpapers/curls.png &
-feh --bg-scale /home/joo/Pictures/wallpapers/house_lake.jpg &
+#feh --bg-scale /home/joo/Pictures/wallpapers/house_lake.jpg &
+feh --bg-scale /home/joo/Pictures/wallpapers/enso_color.png &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -22,9 +23,11 @@ bspc config gapless_monocle      true
 bspc rule -a Yad state=floating
 bspc rule -a lutris state=floating
 bspc rule -a blueman-manager state=floating
-bspc rule -a matplotlib state=floating
+bspc rule -a Matplotlib state=floating
 bspc rule -a " " state=floating
 bspc rule -a Firefox desktop='^1'
+bspc rule -a GoPanda2 desktop='^7'
+bspc rule -a Sabaki desktop='^7'
 bspc rule -a mpv desktop='^8'
 bspc rule -a Gimp desktop='^9' state=floating follow=on
 bspc rule -a spotify desktop='^10'
