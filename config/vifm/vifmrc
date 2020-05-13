@@ -15,6 +15,8 @@ set vicmd=vim
 " set vicmd=elvis\ -G\ termcap
 " set vicmd=vile
 
+view
+
 " This makes vifm perform file operations on its own instead of relying on
 " standard utilities like `cp`.  While using `cp` and alike is a more universal
 " solution, it's also much slower and doesn't support progress measuring.
@@ -175,6 +177,10 @@ command! reload :write | restart
 "fileviewer *.pdf pdftotext -nopgbrk %c -
 command zathura zathura *.{pdf} &
 filetype *.pdf zathura
+fileviewer *.pdf
+        \ vifmimg pdf %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
 "command evince evince *.{pdf} &
 "filetype *.pdf evince
 
@@ -242,8 +248,14 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ gpicview %c,
         \ {View in shotwell}
         \ shotwell,
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-         \ convert -identify %f -verbose /dev/null
+"fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+         "\ convert -identify %f -verbose /dev/null
+" Images
+"filextype <image/*> mpv %c %i &
+fileviewer <image/*>
+        \ vifmimg draw %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
 
 " OpenRaster
 filextype *.ora

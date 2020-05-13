@@ -24,7 +24,7 @@ b/home/joo/Desktop/Stuff/Papers_admin/Chile/
 	1585080573
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -33,30 +33,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/joo/Desktop/Stuff
-	Photos_hirez
-13
-d/home/joo/Desktop/Stuff/Photos_hirez
-	2019 - Nikko
-1
-d/home/joo/Desktop/Stuff/Photos_hirez/2019 - Nikko
-	DSC_0210.jpg
-1
-d/home/joo/Desktop/Stuff/Photos_hirez
-	2019 - Nikko
-1
-d/home/joo/Desktop/Stuff
-	Photos_hirez
-13
-d/home/joo/Desktop
-	PELICULAS.odt
-23
-d/home/joo
-	Documents
-9
-d/home/joo/Documents
-	PhD
-10
 d/home/joo/Documents/PhD
 	old
 1
@@ -331,8 +307,32 @@ d/home/joo/Desktop/2016.1.00878.S
 	science_goal.uid___A001_X87d_X7a2
 1
 d/home/joo/Desktop
-	s41550-018-0626-6.pdf
-38
+	HD145263_2009.png
+20
+d/home/joo
+	Papers
+24
+d/home/joo/Papers
+	PhaseFunction
+28
+d/home/joo/Papers/PhaseFunction
+	animation
+2
+d/home/joo/Papers/PhaseFunction/animation
+	PNG
+1
+d/home/joo/Papers/PhaseFunction/animation/PNG
+	inclination
+3
+d/home/joo/Papers/PhaseFunction/animation/PNG/inclination
+	incl_0001.png
+2
+d/home/joo/Papers/PhaseFunction/animation/PNG
+	disk
+1
+d/home/joo/Papers/PhaseFunction/animation/PNG/disk
+	image_0499.png
+45
 d
 
 # Right window history (oldest to newest):
@@ -634,8 +634,8 @@ D/home/joo
 	Desktop
 9
 D/home/joo/Desktop
-	(Elementary Go Series) James Davies - Life and Death-Kiseido Publishing Co..pdf
-10
+	FRM-1-INV.docx
+16
 D
 
 # Command line history (oldest to newest):

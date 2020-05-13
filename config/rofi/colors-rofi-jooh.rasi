@@ -29,7 +29,7 @@ spacing: 2;
 
 #window {
 background-color: #212325;
-border: 10;
+border: 1;
 padding: 2.5ch;
 }
 
@@ -39,7 +39,7 @@ padding: 0;
 }
 
 #message {
-border: 2px 0px 0px;
+border: 0px 0px 0px;
 border-color: @border-color;
 padding: 1px;
 }

@@ -24,6 +24,7 @@ bspc rule -a Yad state=floating
 bspc rule -a lutris state=floating
 bspc rule -a blueman-manager state=floating
 bspc rule -a Matplotlib state=floating
+bspc rule -a herschel-ia-gui-apps-HipeStarter state=floating
 bspc rule -a " " state=floating
 bspc rule -a Firefox desktop='^1'
 bspc rule -a GoPanda2 desktop='^7'

@@ -142,6 +142,9 @@ VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 export BROWSER='/usr/bin/firefox'
 #export TERM='xterm-256color'
 
+# JAVA stuff for reiszing the window
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # For dynamic colors
 # https://github.com/sos4nt/dynamic-colors
 #export PATH="$HOME/.dynamic-colors/bin:$PATH"

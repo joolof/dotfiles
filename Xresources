@@ -22,13 +22,11 @@ Xft.rgba: rgb
 #define nord13 #EBCB8B
 #define nord14 #A3BE8C
 #define nord15 #B48EAD
-
 *.foreground:   nord4
 *.background:   nord0
 *.cursorColor:  nord4
 *fading: 25
 *fadeColor: nord3
-
 *.color0: nord1
 *.color1: nord11
 *.color2: nord14
