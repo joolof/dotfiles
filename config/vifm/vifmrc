@@ -176,7 +176,7 @@ command! reload :write | restart
 "filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
 "fileviewer *.pdf pdftotext -nopgbrk %c -
 command zathura zathura *.{pdf} &
-filetype *.pdf zathura
+filetype *.pdf zathura &
 fileviewer *.pdf
         \ vifmimg pdf %px %py %pw %ph %c
         \ %pc

@@ -13,8 +13,8 @@ feh --bg-scale /home/joo/Pictures/wallpapers/enso_color.png &
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config top_padding         0
-bspc config border_width         6
-bspc config window_gap          32
+bspc config border_width         4
+bspc config window_gap          16
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true

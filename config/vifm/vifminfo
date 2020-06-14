@@ -13,6 +13,10 @@
 	/home/joo/
 	..
 1555427149
+'k
+	/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2020
+	..
+1589307964
 'o
 	/home/joo/Pictures/screenshots
 	HR4796.png
@@ -22,9 +26,12 @@
 b/home/joo/Desktop/Stuff/Papers_admin/Chile/
 	Chile
 	1585080573
+b/home/joo/Desktop/
+	Desktop
+	1588099483
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -33,51 +40,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/joo/Documents/PhD
-	old
-1
-d/home/joo/Documents/PhD/old
-	PhD_diploma.pdf
-2
-d/home/joo/Documents/PhD
-	PhD_Olofsson_apostille.pdf
-4
-d/home/joo/Documents
-	Papers
-7
-d/home/joo/Documents/Papers
-	..
-0
-d/home/joo/Documents
-	diplome_ENSPG.pdf
-18
-d/home/joo
-	Desktop
-8
-d/home/joo/Desktop
-	Ramon
-6
-d/home/joo/Desktop/Ramon
-	..
-0
-d/home/joo/Desktop
-	Ramon
-6
-d/home/joo
-	Fundings
-13
-d/home/joo/Fundings
-	Valparaiso
-6
-d/home/joo/Fundings/Valparaiso
-	2018-Fondecyt-Regular
-4
-d/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
-	Budget
-3
-d/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular/Budget
-	..
-0
 d/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
 	Submitted
 5
@@ -307,62 +269,98 @@ d/home/joo/Desktop/2016.1.00878.S
 	science_goal.uid___A001_X87d_X7a2
 1
 d/home/joo/Desktop
-	HD145263_2009.png
-20
+	Daniela_comments.md
+5
 d/home/joo
-	Papers
-24
-d/home/joo/Papers
-	PhaseFunction
-28
-d/home/joo/Papers/PhaseFunction
-	animation
-2
-d/home/joo/Papers/PhaseFunction/animation
-	PNG
+	Fundings
+13
+d/home/joo/Fundings
+	Tandem_Group
+5
+d/home/joo/Fundings/Tandem_Group
+	LOGO
 1
-d/home/joo/Papers/PhaseFunction/animation/PNG
-	inclination
+d/home/joo/Fundings/Tandem_Group/LOGO
+	make_logo.py
+1
+d/home/joo/Fundings/Tandem_Group
+	LOGO
+1
+d/home/joo/Fundings
+	Tandem_Group
+5
+d/home/joo
+	Codes
+5
+d/home/joo/Codes
+	Python
+5
+d/home/joo/Codes/Python
+	Others
+4
+d/home/joo/Codes/Python/Others
+	OIFITS
+2
+d/home/joo/Codes/Python
+	Debris
+2
+d/home/joo/Codes/Python/Debris
+	MPTG_Logo
+8
+d/home/joo/Codes/Python/Debris/MPTG_Logo
+	logo.png
 3
-d/home/joo/Papers/PhaseFunction/animation/PNG/inclination
-	incl_0001.png
+d/home/joo/Codes/Python/Debris
+	MPTG_Logo
+8
+d/home/joo/Codes/Python
+	Debris
 2
-d/home/joo/Papers/PhaseFunction/animation/PNG
-	disk
+d/home/joo/Codes
+	Python
+5
+d/home/joo
+	Desktop
+9
+d/home/joo/Desktop
+	ComprobanteContratacionDAP.pdf
+13
+d/home/joo
+	Desktop
+9
+d/home
+	joo
 1
-d/home/joo/Papers/PhaseFunction/animation/PNG/disk
-	image_0499.png
-45
+d/home/joo/Desktop
+	Expenses.txt
+14
+d/home/joo
+	Desktop
+9
+d/home/joo/Desktop
+	TYC_fitting.png
+26
 d
 
 # Right window history (oldest to newest):
-D/home/joo/Pictures
-	wallpapers
-17
-D/home/joo/Pictures/wallpapers
-	enso_color.png
-38
-D/home/joo/Pictures
-	wallpapers
-17
-D/home/joo
-	Desktop
-9
-D/home/joo/Desktop
-	factura
-11
-D/home/joo/Desktop/factura
-	factura-ARQUIPUNTO.pdf
-2
-D/home/joo/Desktop
-	Stuff
-9
-D/home/joo/Desktop/Stuff
-	Papers_admin
-13
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+6
 D/home/joo/Desktop/Stuff/Papers_admin
 	Chile
 1
+D/home/joo/Desktop/Stuff
+	Papers_admin
+13
+D/home/joo/Desktop
+	ETAPA2019
+3
+D/home/joo/Desktop/ETAPA2019
+	..
+0
+D/home/joo/Desktop
+	HD181327
+6
 D/home/joo/Desktop/Stuff/Papers_admin/Chile
 	FONDECYT_Regular - 2018
 6
@@ -371,223 +369,103 @@ D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
 2
 D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
 	Rendicion
-6
+7
 D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Rendicion
-	Formulario_de_recepcion_de_fondos_IDGL_Reg2016_SDGL.pdf
-2
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
-	Rendicion
-6
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
-	ETAPA_2018
+	Scanned
 1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
-	Jurada
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Rendicion/Scanned
+	final.pdf
+4
+D/home/joo/Desktop
+	Stuff
 9
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Jurada
-	..
-0
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
-	Recepcion
-11
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Recepcion
-	..
-0
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
-	Scanned
-14
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Scanned
-	..
-0
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
-	Scanned
-14
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
-	ETAPA_2018
+D/home/joo/Desktop/Stuff
+	Go
+9
+D/home/joo/Desktop/Stuff/Go
+	Books
 1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	FONDECYT_Regular - 2018
-6
-D/home/joo/Desktop/Stuff/Papers_admin
-	Chile
+D/home/joo/Desktop/Stuff/Go/Books
+	The Second Book of Go by Richard Bozulich (z-lib.org).pdf
+3
+D/home/joo/Desktop/Stuff/Go
+	Books
 1
 D/home/joo/Desktop/Stuff
-	Papers_admin
-13
+	Go
+9
 D/home/joo/Desktop
-	factura
-11
-D/home/joo/Desktop/factura
-	preface_2019.odt
-5
-D/home/joo/Desktop
-	factura
-11
+	Stuff
+9
 D/home/joo
 	Papers
 24
 D/home/joo/Papers
-	IAU350
-17
-D/home/joo/Papers/IAU350
-	debris.pdf
-15
+	PhaseFunction
+28
+D/home/joo/Papers/PhaseFunction
+	animation
+2
+D/home/joo/Papers/PhaseFunction/animation
+	PNG
+1
+D/home/joo/Papers/PhaseFunction/animation/PNG
+	inclination
+2
+D/home/joo/Papers/PhaseFunction/animation/PNG/inclination
+	..
+0
+D/home/joo/Papers/PhaseFunction/animation/PNG
+	disk
+1
+D/home/joo/Papers/PhaseFunction/animation/PNG/disk
+	image_0257.png
+41
+D/home/joo/Papers/PhaseFunction/animation/PNG
+	disk
+1
+D/home/joo/Papers/PhaseFunction/animation
+	PNG
+1
+D/home/joo/Papers/PhaseFunction
+	animation
+2
 D/home/joo/Papers
-	IAU350
-17
+	PhaseFunction
+28
 D/home/joo
 	Desktop
 9
 D/home/joo/Desktop
-	DSC_0784.NEF
-4
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	FONDECYT_Regular - 2018
-6
-D/home/joo/Desktop/Stuff/Papers_admin
-	Chile
-1
+	Stuff
+9
 D/home/joo/Desktop/Stuff
-	Papers_admin
-13
-D/home/joo/Desktop
-	Stuff
-4
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	Boleta
+	Go
+9
+D/home/joo/Desktop/Stuff/Go
+	Books
+1
+D/home/joo/Desktop/Stuff/Go/Books
+	The Second Book of Go by Richard Bozulich (z-lib.org).pdf
 3
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/Boleta
-	Boleta_Olofsson_Fondecyt_1180395_etapa2019.pdf
-44
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	FONDECYT_Regular - 2018
-6
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
-	ETAPA_2018
-1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
-	Observaciones
-10
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Observaciones
-	FAC3000480 Falabella 2019.pdf
-3
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
-	Observaciones
-10
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
-	ETAPA_2019
-2
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
-	Cartolas
-2
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Cartolas
-	Cartola-Abril.pdf
-1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
-	Cartolas
-2
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
-	ETAPA_2018
-1
-D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
-	Observaciones_secondround
-11
-D/home/joo/Desktop/Stuff/Papers_admin/Chile
-	FONDECYT_Regular - 2018
-6
-D/home/joo/Desktop/Stuff/Papers_admin
-	Chile
-1
-D/home/joo/Desktop/Stuff
-	Papers_admin
-13
+D/
+	home
+5
 D/home/joo/Desktop
 	Stuff
-4
-D/home/joo
-	Codes
-5
-D/home/joo/Codes
-	Fortran
-2
-D/home/joo/Codes/Fortran
-	OpacityTool
-1
-D/home/joo/Codes/Fortran/OpacityTool
-	UserGuide.pdf
-13
-D/home/joo/Codes/Fortran
-	OpacityTool
-1
-D/home/joo/Codes
-	Fortran
-2
-D/home/joo
-	Pictures
-25
-D/home/joo/Pictures
-	screenshots
-15
-D/home/joo/Pictures/screenshots
-	2020-03-27_14.03.30.png
 9
-D/home/joo/Pictures
-	screenshots
-15
-D/home/joo
-	Desktop
-9
-D/home/joo/Desktop
-	Figure_1.png
-12
-D/home/joo
-	Codes
-5
-D/home/joo/Codes
-	Fortran
-2
-D/home/joo/Codes/Fortran
-	OpacityTool
-1
-D/home/joo/Codes/Fortran/OpacityTool
-	UserGuide.pdf
-13
-D/home/joo/Codes/Fortran
-	OpacityTool
-1
-D/home/joo/Codes
-	Fortran
-2
-D/home/joo
-	Desktop
-9
-D/home/joo/Desktop
-	Stuff
-5
 D/home/joo/Desktop/Stuff
 	Bouquins
 4
 D/home/joo/Desktop/Stuff/Bouquins
 	Crime
 2
-D/home/joo/Desktop/Stuff/Bouquins/Crime
-	Connelly
-2
-D/home/joo/Desktop/Stuff/Bouquins/Crime/Connelly
-	Harry Bosch
-1
-D/home/joo/Desktop/Stuff/Bouquins/Crime/Connelly/Harry Bosch
-	..
-0
-D/home/joo/Desktop/Stuff/Bouquins/Crime/Connelly
-	Harry Bosch
-1
 D/home/joo/Desktop/Stuff/Bouquins/Crime
 	Robert_Crais
 6
 D/home/joo/Desktop/Stuff/Bouquins/Crime/Robert_Crais
-	Crais, Robert - Hostage.mobi
-20
+	Crais, Robert - Elvis Cole 12 - Chasing Darkness.mobi
+14
 D/home/joo/Desktop/Stuff/Bouquins/Crime
 	Robert_Crais
 6
@@ -595,47 +473,176 @@ D/home/joo/Desktop/Stuff/Bouquins
 	Crime
 2
 D/home/joo/Desktop/Stuff
-	Bouquins
+	Go
+9
+D/home/joo/Desktop/Stuff/Go
+	Books
+1
+D/home/joo/Desktop/Stuff/Go/Books
+	The Second Book of Go by Richard Bozulich (z-lib.org).pdf
 4
+D/home/joo/Desktop/Stuff/Go
+	Books
+1
+D/home/joo/Desktop/Stuff
+	Go
+9
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+6
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2019
+2
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
+	Contract
+3
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Contract
+	..
+0
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
+	Rendicion
+7
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Rendicion
+	Scanned
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Rendicion/Scanned
+	final.pdf
+4
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Rendicion
+	Scanned
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
+	Boletas
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019/Boletas
+	Nicolas_Soto.pdf
+14
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2019
+	Boletas
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2020
+3
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2020
+	Contracts
+2
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2020/Contracts
+	Contract_Daniela_Iglesias_2020.pdf
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2020
+	Boletas
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2020/Boletas
+	Daniela_01.pdf
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2020
+	Boletas
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2020
+3
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+6
+D/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+D/home/joo/Desktop/Stuff
+	Papers_admin
+13
 D/home/joo/Desktop
 	Stuff
-5
+9
 D/home/joo
 	Fundings
 13
 D/home/joo/Fundings
-	ICM2019
-2
-D/home/joo/Fundings/ICM2019
+	Valparaiso
+6
+D/home/joo/Fundings/Valparaiso
+	2018-Fondecyt-Regular
+4
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
+	Project
+4
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular/Project
 	..
 0
+D/home/joo/Fundings/Valparaiso/2018-Fondecyt-Regular
+	Project
+4
+D/home/joo/Fundings/Valparaiso
+	2018-Fondecyt-Regular
+4
 D/home/joo/Fundings
-	ICM2019
-2
+	Valparaiso
+6
+D/home/joo
+	Fundings
+13
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+6
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2018
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Acceptance
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018/Acceptance
+	Evaluación de Proyectos FONDECYT.pdf
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018/ETAPA_2018
+	Acceptance
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
+	ETAPA_2018
+1
+D/home/joo/Desktop/Stuff/Papers_admin/Chile
+	FONDECYT_Regular - 2018
+6
+D/home/joo/Desktop/Stuff/Papers_admin
+	Chile
+1
+D/home/joo/Desktop/Stuff
+	Papers_admin
+13
+D/home/joo/Desktop
+	Stuff
+9
+D/home/joo
+	Concours
+7
+D/home/joo/Concours
+	French stuff
+8
+D/home/joo
+	Concours
+7
+D/home
+	joo
+1
 D/home/joo
 	Desktop
 9
 D/home/joo/Desktop
-	Ticha
-9
-D/home/joo/Desktop/Ticha
-	..
-0
+	Ramon
+8
+D/home/joo/Desktop/Ramon
+	definitivo_olofsson.pdf
+7
 D/home/joo/Desktop
-	Ticha
+	Stuff
 9
-D/home/joo
-	Papers
-24
-D/home/joo/Papers
-	IAU350
-17
-D/home/joo
-	Desktop
+D/home/joo/Desktop/Stuff
+	Go
 9
-D/home/joo/Desktop
-	FRM-1-INV.docx
-16
+D/home/joo/Desktop/Stuff/Go
+	Books
+1
+D/home/joo/Desktop/Stuff/Go/Books
+	shape_up.pdf
+5
 D
 
 # Command line history (oldest to newest):
@@ -643,7 +650,6 @@ D
 :help
 :W
 :w
-:!evince %c
 :colorscheme wal
 :colorscheme
 :reload
@@ -651,13 +657,26 @@ D
 :mkdir PhD
 :!evince %c &
 :mkdir Ramon
-:!gimp %c
 :bmark
 :bmark Chile
 :bmarks
-:bmgo Chile
 :!ds9 %c
+:!evince %c
+:mkdir Books
+:mkdir liquidaciones
+:!gimp %c
+:mkdir Munsch
+:mkdir ETAPA2019
+:bmark Desktop
+:bmgo Desktop
+:mkdir ETAPA_2020
+:Mkdir Boletas
+:mkdir Boletas
+:mkdir Contracts
 :move
+:bmgo Chile
+:!evince %c ^
+:!zathura %c &
 :q
 
 # Search history (oldest to newest):
@@ -704,11 +723,14 @@ phip_bag.jpg
 pIPF_IMPF.png
 pBoleta_61_2020-03.pdf
 pObservaciones_secondround
+pTT-Tau.png
+pHD25457.png
+pDaniela_01.pdf
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/joo/.local/share/vifm/Trash/000_IMPF.md
+""/home/joo/.local/share/vifm/Trash/000_vosa_results_35266.tgz
 
 # Directory stack (oldest to newest):
 
@@ -907,6 +929,72 @@ t/home/joo/.local/share/vifm/Trash/000_2016.1.00878.S
 	/home/joo/Desktop/2016.1.00878.S
 t/home/joo/.local/share/vifm/Trash/000_IMPF.md
 	/home/joo/Desktop/IMPF.md
+t/home/joo/.local/share/vifm/Trash/000_tsm.png
+	/home/joo/Desktop/tsm.png
+t/home/joo/.local/share/vifm/Trash/000_HD121617_2018-06-19T02_03_37_Lp_rdi_pca_median.fits
+	/home/joo/Desktop/HD121617_2018-06-19T02_03_37_Lp_rdi_pca_median.fits
+t/home/joo/.local/share/vifm/Trash/000_HD121617_2019-06-26T01_54_13_Lp_rdi_pca_median.fits
+	/home/joo/Desktop/HD121617_2019-06-26T01_54_13_Lp_rdi_pca_median.fits
+t/home/joo/.local/share/vifm/Trash/000_PSF_avg_cam12_mean.fits
+	/home/joo/Desktop/PSF_avg_cam12_mean.fits
+t/home/joo/.local/share/vifm/Trash/000_Python-Data-Analytics-2nd-Edition.pdf
+	/home/joo/Desktop/Python-Data-Analytics-2nd-Edition.pdf
+t/home/joo/.local/share/vifm/Trash/000_bestmodel_v2.png
+	/home/joo/Desktop/bestmodel_v2.png
+t/home/joo/.local/share/vifm/Trash/000_matiou-steph21.sgf
+	/home/joo/Desktop/matiou-steph21.sgf
+t/home/joo/.local/share/vifm/Trash/000_phasefunction_JM.pdf
+	/home/joo/Desktop/phasefunction_JM.pdf
+t/home/joo/.local/share/vifm/Trash/000_test.png
+	/home/joo/Desktop/test.png
+t/home/joo/.local/share/vifm/Trash/000_HD25457.png
+	/home/joo/Desktop/HD25457.png
+t/home/joo/.local/share/vifm/Trash/000_liquidaciones
+	/home/joo/Desktop/liquidaciones
+t/home/joo/.local/share/vifm/Trash/000_youtube
+	/home/joo/Desktop/youtube
+t/home/joo/.local/share/vifm/Trash/000_pianoshelf-af627cf8-1d0b-11e5-8b69-040143ab4f01.pdf
+	/home/joo/Desktop/pianoshelf-af627cf8-1d0b-11e5-8b69-040143ab4f01.pdf
+t/home/joo/.local/share/vifm/Trash/000_vosa_results_35071.tgz
+	/home/joo/Desktop/vosa_results_35071.tgz
+t/home/joo/.local/share/vifm/Trash/000_HD61005_SED.png
+	/home/joo/Desktop/HD61005_SED.png
+t/home/joo/.local/share/vifm/Trash/000_1588352240063O-result.csv
+	/home/joo/Desktop/1588352240063O-result.csv
+t/home/joo/.local/share/vifm/Trash/000_Takeo Kajiwara - The Direction of Play (Intermediate to Advanced Go Books) (1998).pdf
+	/home/joo/Desktop/Takeo Kajiwara - The Direction of Play (Intermediate to Advanced Go Books) (1998).pdf
+t/home/joo/.local/share/vifm/Trash/000_Takeo Kajiwara - The Direction of Play (Intermediate to Advanced Go Books) (1998).pdf.part
+	/home/joo/Desktop/Takeo Kajiwara - The Direction of Play (Intermediate to Advanced Go Books) (1998).pdf.part
+t/home/joo/.local/share/vifm/Trash/000_Dust_growth_in_lagrangian_points_JO.pdf
+	/home/joo/Desktop/Dust_growth_in_lagrangian_points_JO.pdf
+t/home/joo/.local/share/vifm/Trash/000_Dust_growth_in_lagrangian_points_JO(1).pdf
+	/home/joo/Desktop/Dust_growth_in_lagrangian_points_JO(1).pdf
+t/home/joo/.local/share/vifm/Trash/000_Daniela_comments.md
+	/home/joo/Desktop/Daniela_comments.md
+t/home/joo/.local/share/vifm/Trash/000_1180395_Preinforme_28-04-2020_83161_ Etapa 2019.pdf
+	/home/joo/Desktop/1180395_Preinforme_28-04-2020_83161_ Etapa 2019.pdf
+t/home/joo/.local/share/vifm/Trash/000_HD61005_corner.png
+	/home/joo/Desktop/HD61005_corner.png
+t/home/joo/.local/share/vifm/Trash/000_HD145263_2005.png
+	/home/joo/Desktop/HD145263_2005.png
+t/home/joo/.local/share/vifm/Trash/000_HD145263_2007.png
+	/home/joo/Desktop/HD145263_2007.png
+t/home/joo/.local/share/vifm/Trash/000_HD145263_2009.png
+	/home/joo/Desktop/HD145263_2009.png
+t/home/joo/.local/share/vifm/Trash/000_HD181327_azimuth.pdf
+	/home/joo/Desktop/HD181327_azimuth.pdf
+t/home/joo/.local/share/vifm/Trash/000_HD181327_model_azimuth.pdf
+	/home/joo/Desktop/HD181327_model_azimuth.pdf
+t/home/joo/.local/share/vifm/Trash/000_comprobante-pagoSat Mar 28 2020 09_59_23 GMT-0300 (Chile Summer Time).pdf
+	/home/joo/Desktop/comprobante-pagoSat Mar 28 2020 09_59_23 GMT-0300 (Chile Summer Time).pdf
+t/home/joo/.local/share/vifm/Trash/000_comprobante-pagoSat Apr 11 2020 12_12_31 GMT-0400 (Chile Standard Time).pdf
+	/home/joo/Desktop/comprobante-pagoSat Apr 11 2020 12_12_31 GMT-0400 (Chile Standard Time).pdf
+t/home/joo/.local/share/vifm/Trash/000_comprobante-pagoThu Apr 23 2020 13_29_47 GMT-0400 (Chile Standard Time).pdf
+	/home/joo/Desktop/comprobante-pagoThu Apr 23 2020 13_29_47 GMT-0400 (Chile Standard Time).pdf
+t/home/joo/.local/share/vifm/Trash/000_exdd_pp7.pdf
+	/home/joo/Desktop/exdd_pp7.pdf
+t/home/joo/.local/share/vifm/Trash/000_vosa_results_35266.tgz
+	/home/joo/Desktop/vosa_results_35266.tgz
 
 # State:
 f
