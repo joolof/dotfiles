@@ -84,9 +84,9 @@ let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#close_symbol = '×'
 let g:airline#extensions#tabline#show_close_button = 0
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-"colorscheme wal
+colorscheme wal
 "colorscheme github
-colorscheme nord
+"colorscheme nord
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
@@ -210,3 +210,9 @@ endfunction
 nnoremap <leader>c :ccl<CR>
 let g:goyo_width = 100
 nnoremap <leader>g :Goyo<CR>
+
+
+noremap  <leader>t  :FloatermToggle<CR>
+noremap! <leader>t  <Esc>:FloatermToggle<CR>
+tnoremap <leader>t  <C-\><C-n>:FloatermToggle<CR>
+

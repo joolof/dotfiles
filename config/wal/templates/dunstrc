@@ -5,18 +5,20 @@
 
 [global]
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    geometry = "1000x20-29+97"
+    geometry = "800x50-465+10"
     shrink = yes
-    corner_radius = 0
+    corner_radius = 2
 
+    indicate_hidden = yes
+    show_indicators = no
     # Show multiple notifications in the same box
     separator_height = 0
 
     # Add vertical padding to the inside of the notification
-    padding = 26
+    padding = 0
 
     # Add horizontal padding for when the text gets long enough
-    horizontal_padding = 20
+    horizontal_padding = 30
 
     # The frame color and width of the notification
     frame_color = "{color4}"
@@ -27,12 +29,13 @@
 
     # Font and typography settings
     font = Iosevka Term Semibold 10
-    alignment = "center" 
-    word_wrap = yes
+    alignment = "right" 
+    word_wrap = no
 
     # Format for how notifications will be displayed
     # Usage: `notify-send 'Title' 'Summary'`
-    format = "<b>%s</b>: %b"
+    #format = "<b>%s</b>: %b"
+    format = "%s | %b"
 
     # Allow some HTML tags like <i> and <u> in notifications
     markup = full
@@ -45,15 +48,15 @@
 
 # Set the background and foreground (text) color for all notifications
 [urgency_low]
-    background = "{color7}"
+    background = "{color1}"
     foreground = "{background}"
 
 [urgency_normal]
-    background = "{color7}"
+    background = "{color1}"
     foreground = "{background}"
 
 [urgency_critical]
-    background = "{color7}"
+    background = "{color1}"
     foreground = "{background}"
 
 # vim:ft=cfg

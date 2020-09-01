@@ -150,7 +150,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 #export PATH="$HOME/.dynamic-colors/bin:$PATH"
 #source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
 #dynamic-colors init
-#(cat ~/.cache/wal/sequences &)
+
+(cat ~/.cache/wal/sequences &)
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -161,7 +162,7 @@ case $TERM in
     ;;
 esac
 
-# vi mode
+## vi mode
 #bindkey -v # already defined in the vi-mode plugins
 #export KEYTIMEOUT=1
 

@@ -1,4 +1,4 @@
-; vim:ft=dosini 
+; vim:ft=dosini
 [colors]
 fg = ${xrdb:color4}
 bg = ${xrdb:background}
@@ -46,7 +46,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=51;6
 ;modules-left = i3
 modules-left = spotify_i spotify 
 ;mpv_i mpv-polybar 
-;modules-center = date_i date
+;modules-center = date_i date 
 ;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
 modules-right = volume_i volume battery_i battery date_i date 
 ;fixed-center = true
