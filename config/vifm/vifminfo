@@ -31,7 +31,7 @@ b/home/joo/Desktop/
 	1588099483
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -40,51 +40,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/joo/Desktop/Stuff
-	Papers_admin
-13
-d/home/joo/Desktop
-	Stuff
-10
-d/home/joo
-	Pictures
-25
-d/home/joo/Pictures
-	screenshots
-15
-d/home/joo/Pictures/screenshots
-	2020-07-01_09.12.17.png
-6
-d/home/joo/Pictures
-	screenshots
-15
-d/home/joo
-	Desktop
-9
-d/home/joo/Desktop
-	GSC07396-00759_adam4.pdf
-18
-d/home/joo
-	Fundings
-13
-d/home/joo/Fundings
-	ICM2019
-2
-d/home/joo/Fundings/ICM2019
-	Milenio_bases_2019.pdf
-2
-d/home/joo/Fundings
-	ICM2019
-2
-d/home/joo
-	Desktop
-9
-d/home/joo/Desktop
-	Ramon
-11
-d/home/joo/Desktop/Ramon
-	..
-0
 d/home/joo/Desktop
 	Stuff
 12
@@ -340,6 +295,51 @@ d/home/joo/Codes/Python/Projects/Sphere
 d/home/joo/Codes/Python/Projects
 	Sphere
 5
+d/home/joo/Codes/Python/SphereDB
+	database.py
+2
+d/home/joo/Codes/Python
+	Papers2
+6
+d/home/joo/Codes/Python/Papers2
+	..
+0
+d/home/joo
+	Collaborations
+6
+d/home/joo/Collaborations
+	..
+0
+d/home/joo
+	Codes
+5
+d/home/joo/Codes
+	Python
+5
+d/home/joo/Codes/Python
+	SphereDB
+9
+d/home/joo/Codes/Python/SphereDB
+	database.py
+2
+d/home/joo/.astropy/config
+	astropy.cfg
+6
+d/home/joo/Codes/Python/SphereDB
+	spherequery.py
+5
+d/home/joo
+	Codes
+5
+d/home/joo/Codes
+	Python
+5
+d/home/joo/Codes/Python
+	SphereDB
+9
+d/home/joo/Codes/Python/SphereDB
+	database.py
+2
 d
 
 # Right window history (oldest to newest):

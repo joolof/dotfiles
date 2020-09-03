@@ -90,7 +90,7 @@ colorscheme wal
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
-set statusline+=%{gutentags#statusline()}
+"set statusline+=%{gutentags#statusline()}
 let g:gutentags_cache_dir = '~/.cache/gutentags'
 let g:gutentags_project_root = ['.root', '.git']
 let g:gutentags_generate_on_new = 1
@@ -197,7 +197,10 @@ let g:goyo_width = 100
 nnoremap <leader>g :Goyo<CR>
 
 
+noremap  <leader>o  :FloatermNew vifm<CR>
 noremap  <leader>t  :FloatermToggle<CR>
 noremap! <leader>t  <Esc>:FloatermToggle<CR>
 tnoremap <leader>t  <C-\><C-n>:FloatermToggle<CR>
+tnoremap <C-j>  <C-\><C-n>:FloatermPrev<CR>
+tnoremap <C-k>  <C-\><C-n>:FloatermNext<CR>
 
