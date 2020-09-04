@@ -77,7 +77,7 @@ source $ZSH/oh-my-zsh.sh
 #zle -N down-line-or-beginning-search
 #bindkey "^[[A" up-line-or-beginning-search # Up
 #bindkey "^[[B" down-line-or-beginning-search # Down
-bindkey '^[[A' fzf-history-widget
+#bindkey '^[[A' fzf-history-widget
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -154,7 +154,6 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 (cat ~/.cache/wal/sequences &)
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 case $TERM in
   rxvt*)
