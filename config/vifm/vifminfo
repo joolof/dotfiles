@@ -32,7 +32,7 @@ b/home/joo/Desktop/
 
 # TUI:
 al
-q0
+q1
 v2
 ov
 m-1
@@ -40,18 +40,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/joo/Desktop
-	Stuff
-12
-d/home/joo/Desktop/Stuff
-	Papers_admin
-13
-d/home/joo/Desktop/Stuff/Papers_admin
-	Chile
-1
-d/home/joo/Desktop/Stuff/Papers_admin/Chile
-	FONDECYT_Regular - 2018
-6
 d/home/joo/Desktop/Stuff/Papers_admin/Chile/FONDECYT_Regular - 2018
 	ETAPA_2020
 3
@@ -334,6 +322,18 @@ d/home/joo
 d/home/joo/Codes
 	Python
 5
+d/home/joo/Codes/Python
+	SphereDB
+9
+d/home/joo/Codes/Python/SphereDB
+	database.py
+2
+d/home/joo/Codes/Python/Projects/ddit_rt
+	..
+0
+d/home/joo/Codes/Python/Projects
+	ddit_rt
+6
 d/home/joo/Codes/Python
 	SphereDB
 9
