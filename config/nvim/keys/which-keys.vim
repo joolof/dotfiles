@@ -28,6 +28,9 @@ let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
       \ 't' : [':FloatermToggle'    , 'Toggle'],
       \ 'o' : [':FloatermNew vifm'    , 'Vifm'],
+      \ 'p' : [':FloatermNew python3 %'    , 'Python'],
+      \ 'i' : [':FloatermNew ipython'    , 'IPython'],
+      \ 'l' : [':FloatermNew latexmk -pdf %'    , 'Latex'],
       \ 'y' : [':FloatermNew lazygit'    , 'Lazygit'],
       \ }
 
