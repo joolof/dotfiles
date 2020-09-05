@@ -4,5 +4,5 @@
 let g:vimwiki_list = [{'path': '~/.notes/', 'syntax': 'markdown', 'ext': '.md'},
             \ {'path': '~/.notes/opc/', 'syntax': 'markdown', 'ext': '.md'}]
 
-nnoremap <leader>l :VimwikiToggleListItem<CR>
+nnoremap <leader>wl :VimwikiToggleListItem<CR>
 

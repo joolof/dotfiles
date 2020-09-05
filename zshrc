@@ -137,7 +137,7 @@ TZ='America/Santiago';
 export TZ
 export FZF_DEFAULT_COMMAND='fd --type f'
 
-VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
 #export BROWSER='/usr/bin/google-chrome'
 export BROWSER='/usr/bin/firefox'
 #export TERM='xterm-256color'
