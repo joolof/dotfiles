@@ -1,6 +1,6 @@
-noremap  <leader>y  :FloatermNew lazygit<CR>
-noremap  <leader>o  :FloatermNew vifm<CR>
-noremap  <leader>t  :FloatermToggle<CR>
+noremap  <leader>ty  :FloatermNew lazygit<CR>
+noremap  <leader>to  :FloatermNew vifm<CR>
+noremap  <leader>tt  :FloatermToggle<CR>
 " noremap! <leader>t  <Esc>:FloatermToggle<CR>
 tnoremap <leader>t  <C-\><C-n>:FloatermToggle<CR>
 tnoremap <C-j>  <C-\><C-n>:FloatermPrev<CR>
