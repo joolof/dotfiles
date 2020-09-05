@@ -21,7 +21,6 @@ let g:startify_bookmarks = [
             \ { 'i': '~/.dotfiles/config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
             \ ]
-" nnoremap <leader>h :Startify<cr>
 
 let g:startify_session_autoload = 1
 let g:startify_session_delete_buffers = 1

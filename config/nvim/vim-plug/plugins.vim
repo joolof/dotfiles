@@ -53,4 +53,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " startify
     Plug 'mhinz/vim-startify'
+
 call plug#end()

@@ -7,13 +7,13 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +10 .dotfiles/config/nvim/init.vim
-badd +28 .dotfiles/config/nvim/keys/mappings.vim
-badd +38 .dotfiles/config/nvim/keys/which-keys.vim
-badd +6 .dotfiles/config/nvim/plug-config/floaterm.vim
+badd +13 .dotfiles/config/nvim/init.vim
+badd +37 .dotfiles/config/nvim/keys/which-keys.vim
+badd +1 .dotfiles/config/nvim/plug-config/floaterm.vim
+badd +28 .dotfiles/config/nvim/plug-config/start-screen.vim
 argglobal
 %argdel
-edit .dotfiles/config/nvim/keys/mappings.vim
+edit .dotfiles/config/nvim/keys/which-keys.vim
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -38,18 +38,18 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 28 - ((27 * winheight(0) + 23) / 47)
+let s:l = 37 - ((29 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-28
-normal! 0
+37
+normal! 020|
 lcd ~/.dotfiles
 wincmd w
 argglobal
-if bufexists("~/.dotfiles/config/nvim/keys/which-keys.vim") | buffer ~/.dotfiles/config/nvim/keys/which-keys.vim | else | edit ~/.dotfiles/config/nvim/keys/which-keys.vim | endif
+if bufexists("~/.dotfiles/config/nvim/plug-config/start-screen.vim") | buffer ~/.dotfiles/config/nvim/plug-config/start-screen.vim | else | edit ~/.dotfiles/config/nvim/plug-config/start-screen.vim | endif
 if &buftype ==# 'terminal'
-  silent file ~/.dotfiles/config/nvim/keys/which-keys.vim
+  silent file ~/.dotfiles/config/nvim/plug-config/start-screen.vim
 endif
 setlocal fdm=manual
 setlocal fde=0
@@ -60,12 +60,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 20 - ((5 * winheight(0) + 23) / 47)
+let s:l = 1 - ((0 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-20
-normal! 039|
+1
+normal! 0
 lcd ~/.dotfiles
 wincmd w
 2wincmd w

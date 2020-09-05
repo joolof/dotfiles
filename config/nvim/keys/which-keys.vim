@@ -34,7 +34,7 @@ let g:which_key_map.t = {
 
 " s is for sessions
 let g:which_key_map.s = {
-      \ 'name' : 'Session' ,
+      \ 'name' : 'session' ,
       \ 's' : [':SSave', 'Save'],
       \ 'c' : [':SClose', 'Close'],
       \ }
