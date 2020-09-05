@@ -18,12 +18,18 @@ let g:which_key_use_floating_win = 0
 
 let g:which_key_map['/'] = [':Commentary', '(un)comment']
 let g:which_key_map['c'] = [':ccl', 'Close quickfix']
-let g:which_key_map['t'] = ['FloatermToggle', 'Toggle terminal']
+let g:which_key_map['h'] = ['Startify', 'Home screen']
 let g:which_key_map['p'] = ['opout', 'Open pdf']
 let g:which_key_map['g'] = [':Goyo', 'Zen']
-let g:which_key_map['o'] = [':FloatermNew vifm', 'Open vifm']
-let g:which_key_map['y'] = [':FloatermNew lazygit', 'Open lazygit']
 let g:which_key_map['q'] = [':bp<cr> bd#', 'Close buffer']
+
+" t is for floaterm
+let g:which_key_map.t = {
+      \ 'name' : '+terminal' ,
+      \ 't' : [':FloatermToggle'    , 'Toggle'],
+      \ 'o' : [':FloatermNew vifm'    , 'Vifm'],
+      \ 'y' : [':FloatermNew lazygit'    , 'Lazygit'],
+      \ }
 
 
 " Register which key map

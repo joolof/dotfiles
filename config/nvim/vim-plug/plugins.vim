@@ -50,4 +50,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " which-key
     Plug 'liuchengxu/vim-which-key'
+
+    " startify
+    Plug 'mhinz/vim-startify'
 call plug#end()

@@ -11,3 +11,4 @@ source $HOME/.config/nvim/plug-config/dispatch.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim 
 source $HOME/.config/nvim/plug-config/gutentags.vim 
 source $HOME/.config/nvim/plug-config/vimwiki.vim 
+source $HOME/.config/nvim/plug-config/start-screen.vim 
