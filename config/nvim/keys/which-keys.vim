@@ -12,26 +12,41 @@ let g:which_key_map =  {}
 let g:which_key_sep = '→'
 set timeoutlen=400
 
-
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
 
 let g:which_key_map['/'] = [':Commentary', '(un)comment']
-let g:which_key_map['c'] = [':ccl', 'Close quickfix']
-let g:which_key_map['h'] = ['Startify', 'Home screen']
-let g:which_key_map['p'] = ['opout', 'Open pdf']
+let g:which_key_map['h'] = [':Startify', 'Home screen']
+let g:which_key_map['p'] = [':!opout %', 'Open pdf']
 let g:which_key_map['g'] = [':Goyo', 'Zen']
 let g:which_key_map['q'] = [':bp<cr> bd#', 'Close buffer']
 
 " t is for floaterm
 let g:which_key_map.t = {
-      \ 'name' : '+terminal' ,
+      \ 'name' : 'terminal' ,
       \ 't' : [':FloatermToggle'    , 'Toggle'],
       \ 'o' : [':FloatermNew vifm'    , 'Vifm'],
       \ 'p' : [':FloatermNew python3 %'    , 'Python'],
       \ 'i' : [':FloatermNew ipython'    , 'IPython'],
       \ 'l' : [':FloatermNew latexmk -pdf %'    , 'Latex'],
       \ 'y' : [':FloatermNew lazygit'    , 'Lazygit'],
+      \ }
+
+" s is for sessions
+let g:which_key_map.s = {
+      \ 'name' : 'Session' ,
+      \ 's' : [':SSave', 'Save'],
+      \ 'c' : [':SClose', 'Close'],
+      \ }
+
+" w is for vimWiki
+let g:which_key_map.w = {
+      \ 'name' : 'vimWiki' ,
+      \ 'w' : ['vimWikiIndex'    , 'Index'],
+      \ 'l' : ['vimWikiToggleList'    , 'Toggle Item'],
+      \ 's' : ['vimWikiUISelect'    , 'UISelect'],
+      \ 'i' : ['vimWikiDiaryIndex'    , 'Diary'],
+      \ 't' : ['vimWikiTabIndex'    , 'Tab Index'],
       \ }
 
 

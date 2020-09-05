@@ -28,7 +28,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'SirVer/ultisnips'
    
     " Dispatch
-    Plug 'tpope/vim-dispatch'
+    " Plug 'tpope/vim-dispatch'
    
     " Floating terminal
     Plug 'voldikss/vim-floaterm'

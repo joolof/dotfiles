@@ -7,8 +7,12 @@ source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/goyo.vim
 source $HOME/.config/nvim/plug-config/commentary.vim
 source $HOME/.config/nvim/plug-config/ultisnips.vim 
-source $HOME/.config/nvim/plug-config/dispatch.vim 
 source $HOME/.config/nvim/plug-config/floaterm.vim 
 source $HOME/.config/nvim/plug-config/gutentags.vim 
 source $HOME/.config/nvim/plug-config/vimwiki.vim 
 source $HOME/.config/nvim/plug-config/start-screen.vim 
+
+
+" Old stuff, I may still keep the config files though
+" source $HOME/.config/nvim/plug-config/dispatch.vim 
+

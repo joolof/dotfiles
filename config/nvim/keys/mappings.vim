@@ -10,11 +10,10 @@ inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
 map <C-j> :bp<CR>
 map <C-k> :bn<CR>
-nnoremap <leader>c :ccl<CR>
 " --------------------------------------------------------------------------------
 " Shortcuts
 " --------------------------------------------------------------------------------
-map <leader>p :!opout <c-r>%<CR><CR>
+" map <leader>p :!opout <c-r>%<CR><CR>
 command! MakeTags !ctags -R .
 nnoremap <leader>q :bp<cr>:bd #<cr>
 " --------------------------------------------------------------------------------
