@@ -7,13 +7,14 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +13 .dotfiles/config/nvim/init.vim
+badd +2 .dotfiles/config/nvim/init.vim
 badd +37 .dotfiles/config/nvim/keys/which-keys.vim
 badd +1 .dotfiles/config/nvim/plug-config/floaterm.vim
-badd +28 .dotfiles/config/nvim/plug-config/start-screen.vim
+badd +23 .dotfiles/config/nvim/plug-config/start-screen.vim
+badd +52 .dotfiles/config/nvim/general/settings.vim
 argglobal
 %argdel
-edit .dotfiles/config/nvim/keys/which-keys.vim
+edit .dotfiles/config/nvim/general/settings.vim
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -38,12 +39,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 37 - ((29 * winheight(0) + 23) / 47)
+let s:l = 52 - ((38 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-37
-normal! 020|
+52
+normal! 09|
 lcd ~/.dotfiles
 wincmd w
 argglobal
@@ -60,15 +61,14 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 47)
+let s:l = 23 - ((22 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+23
+normal! 054|
 lcd ~/.dotfiles
 wincmd w
-2wincmd w
 exe 'vert 1resize ' . ((&columns * 118 + 118) / 236)
 exe 'vert 2resize ' . ((&columns * 117 + 118) / 236)
 tabnext 1

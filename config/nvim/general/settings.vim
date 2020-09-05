@@ -36,7 +36,7 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 " --------------------------------------------------------------------------------
 set incsearch           " search as characters are entered
 set ignorecase
-"set nohlsearch
+set nohlsearch
 " --------------------------------------------------------------------------------
 " For finding files more easily
 " --------------------------------------------------------------------------------
@@ -69,4 +69,3 @@ augroup END
 " --------------------------------------------------------------------------------
 autocmd FileType mail set fo-=t
 autocmd FileType mail set tw=0
-

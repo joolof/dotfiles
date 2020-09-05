@@ -18,8 +18,14 @@ let g:startify_lists = [
           \ ]
 
 let g:startify_bookmarks = [
+            \ { 't': '~/Desktop/tmp' },
             \ { 'i': '~/.dotfiles/config/nvim/init.vim' },
+            \ { 'p': '~/.dotfiles/config/polybar/config' },
             \ { 'z': '~/.zshrc' },
+            \ { 'a': '~/.bash_aliases' },
+            \ { 'x': '~/.dotfiles/Xresources' },
+            \ { 'b': '~/.dotfiles/config/bspwm/bspwmrc' },
+            \ { 's': '~/.dotfiles/config/sxhkd/sxhkdrc' },
             \ ]
 
 let g:startify_session_autoload = 1
