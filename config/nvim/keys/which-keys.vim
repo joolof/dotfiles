@@ -29,7 +29,8 @@ let g:which_key_map.t = {
       \ 'p' : [':FloatermNew python3 %'    , 'Python'],
       \ 'i' : [':FloatermNew ipython'    , 'IPython'],
       \ 'l' : [':FloatermNew latexmk -pdf %'    , 'Latex'],
-      \ 'y' : [':FloatermNew lazygit'    , 'Lazygit'],
+      \ 'g' : [':FloatermNew lazygit'    , 'Lazygit'],
+      \ 'y' : [':FloatermNew ytop'    , 'ytop'],
       \ }
 
 " s is for sessions
