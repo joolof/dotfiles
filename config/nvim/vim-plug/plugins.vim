@@ -7,7 +7,6 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-
     " wal vim
     Plug 'dylanaraps/wal.vim'
 
@@ -26,9 +25,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " Ultisnips
     Plug 'SirVer/ultisnips'
-   
-    " Dispatch
-    " Plug 'tpope/vim-dispatch'
    
     " Floating terminal
     Plug 'voldikss/vim-floaterm'
@@ -54,4 +50,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " startify
     Plug 'mhinz/vim-startify'
 
+    " Dispatch
+    " Plug 'tpope/vim-dispatch'
+   
 call plug#end()
