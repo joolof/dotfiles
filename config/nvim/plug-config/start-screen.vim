@@ -18,9 +18,9 @@ let g:startify_lists = [
           \ ]
 
 let g:startify_bookmarks = [
-            \ { 't': '~/Desktop/tmp' },
             \ { 'i': '~/.dotfiles/config/nvim/init.vim' },
             \ { 'p': '~/.dotfiles/config/polybar/config' },
+            \ { 't': '~/Desktop/tmp' },
             \ { 'z': '~/.zshrc' },
             \ { 'a': '~/.bash_aliases' },
             \ { 'x': '~/.dotfiles/Xresources' },

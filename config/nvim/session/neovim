@@ -11,7 +11,7 @@ badd +2 .dotfiles/config/nvim/init.vim
 badd +37 .dotfiles/config/nvim/keys/which-keys.vim
 badd +1 .dotfiles/config/nvim/plug-config/floaterm.vim
 badd +23 .dotfiles/config/nvim/plug-config/start-screen.vim
-badd +52 .dotfiles/config/nvim/general/settings.vim
+badd +2 .dotfiles/config/nvim/general/settings.vim
 argglobal
 %argdel
 edit .dotfiles/config/nvim/general/settings.vim
