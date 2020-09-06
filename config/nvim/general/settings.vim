@@ -18,7 +18,7 @@ set wrap
 set textwidth=0 wrapmargin=0
 set display+=lastline
 set scrolloff=5
-" set autochdir
+set autochdir
 "set cursorline
 "set ruler                           " show line and column number
 "set showcmd             " show (partial) command in status line

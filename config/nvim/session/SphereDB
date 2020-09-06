@@ -7,12 +7,12 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +214 query.py
-badd +6 database.py
-badd +14 spherequery.py
+badd +17 ~/Codes/Python/SphereDB/query.py
+badd +6 ~/Codes/Python/SphereDB/database.py
+badd +14 ~/Codes/Python/SphereDB/spherequery.py
 argglobal
 %argdel
-edit query.py
+edit ~/Codes/Python/SphereDB/query.py
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -43,7 +43,6 @@ exe s:l
 normal! zt
 17
 normal! 047|
-lcd ~/Codes/Python/SphereDB
 wincmd w
 argglobal
 if bufexists("~/Codes/Python/SphereDB/spherequery.py") | buffer ~/Codes/Python/SphereDB/spherequery.py | else | edit ~/Codes/Python/SphereDB/spherequery.py | endif

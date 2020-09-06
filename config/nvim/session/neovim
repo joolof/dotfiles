@@ -2,19 +2,16 @@ let SessionLoad = 1
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/
+cd ~/.dotfiles/config/nvim
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +2 .dotfiles/config/nvim/init.vim
-badd +37 .dotfiles/config/nvim/keys/which-keys.vim
-badd +1 .dotfiles/config/nvim/plug-config/floaterm.vim
-badd +23 .dotfiles/config/nvim/plug-config/start-screen.vim
-badd +2 .dotfiles/config/nvim/general/settings.vim
+badd +4 ~/.dotfiles/config/nvim/init.vim
+badd +37 ~/.dotfiles/config/nvim/keys/which-keys.vim
 argglobal
 %argdel
-edit .dotfiles/config/nvim/general/settings.vim
+edit ~/.dotfiles/config/nvim/init.vim
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -39,18 +36,17 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 52 - ((38 * winheight(0) + 23) / 47)
+let s:l = 4 - ((3 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-52
-normal! 09|
-lcd ~/.dotfiles
+4
+normal! 022|
 wincmd w
 argglobal
-if bufexists("~/.dotfiles/config/nvim/plug-config/start-screen.vim") | buffer ~/.dotfiles/config/nvim/plug-config/start-screen.vim | else | edit ~/.dotfiles/config/nvim/plug-config/start-screen.vim | endif
+if bufexists("~/.dotfiles/config/nvim/keys/which-keys.vim") | buffer ~/.dotfiles/config/nvim/keys/which-keys.vim | else | edit ~/.dotfiles/config/nvim/keys/which-keys.vim | endif
 if &buftype ==# 'terminal'
-  silent file ~/.dotfiles/config/nvim/plug-config/start-screen.vim
+  silent file ~/.dotfiles/config/nvim/keys/which-keys.vim
 endif
 setlocal fdm=manual
 setlocal fde=0
@@ -61,13 +57,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 23 - ((22 * winheight(0) + 23) / 47)
+let s:l = 37 - ((29 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-23
-normal! 054|
-lcd ~/.dotfiles
+37
+normal! 020|
 wincmd w
 exe 'vert 1resize ' . ((&columns * 118 + 118) / 236)
 exe 'vert 2resize ' . ((&columns * 117 + 118) / 236)
