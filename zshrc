@@ -77,7 +77,8 @@ source $ZSH/oh-my-zsh.sh
 #zle -N down-line-or-beginning-search
 #bindkey "^[[A" up-line-or-beginning-search # Up
 #bindkey "^[[B" down-line-or-beginning-search # Down
-#bindkey '^[[A' fzf-history-widget
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+bindkey '^[[A' fzf-history-widget
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -171,5 +172,6 @@ esac
 #bindkey -M menuselect 'l' vi-forward-char
 #bindkey -M menuselect 'j' vi-down-line-or-history
 #bindkey -v '^?' backward-delete-char
+
 
 
