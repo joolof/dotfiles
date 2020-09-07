@@ -24,13 +24,13 @@ let g:which_key_map['q'] = [':bp<cr> bd#', 'Close buffer']
 " t is for floaterm
 let g:which_key_map.t = {
       \ 'name' : 'terminal' ,
-      \ 't' : [':FloatermToggle'    , 'Toggle'],
-      \ 'o' : [':FloatermNew vifm'    , 'Vifm'],
-      \ 'p' : [':FloatermNew python3 %'    , 'Python'],
-      \ 'i' : [':FloatermNew ipython'    , 'IPython'],
-      \ 'l' : [':FloatermNew latexmk -pdf %'    , 'Latex'],
-      \ 'g' : [':FloatermNew lazygit'    , 'Lazygit'],
-      \ 'y' : [':FloatermNew ytop'    , 'ytop'],
+      \ 't' : [':FloatermToggle', 'Toggle'],
+      \ 'o' : [':FloatermNew vifm', 'Vifm'],
+      \ 'p' : [':w | FloatermNew python3 %', 'Python'],
+      \ 'i' : [':FloatermNew ipython', 'IPython'],
+      \ 'l' : [':w | FloatermNew latexmk -pdf %', 'Latex'],
+      \ 'g' : [':FloatermNew lazygit', 'Lazygit'],
+      \ 'y' : [':FloatermNew ytop', 'ytop'],
       \ }
 
 " s is for sessions
@@ -38,6 +38,7 @@ let g:which_key_map.s = {
       \ 'name' : 'session' ,
       \ 's' : [':SSave', 'Save'],
       \ 'c' : [':SClose', 'Close'],
+      \ 'd' : [':SDelete', 'Delete'],
       \ }
 
 " w is for vimWiki

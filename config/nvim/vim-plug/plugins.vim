@@ -50,7 +50,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " startify
     Plug 'mhinz/vim-startify'
 
+    " Coc
+    " Plug 'neoclide/coc.nvim', {'branch': 'release'} 
+
     " Dispatch
     " Plug 'tpope/vim-dispatch'
-   
 call plug#end()
