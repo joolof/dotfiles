@@ -6,16 +6,16 @@ xrdb /home/joo/.Xresources &
 compton &
 nm-applet &
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
-#feh --bg-scale /home/joo/Pictures/wallpapers/curls.png &
-#feh --bg-scale /home/joo/Pictures/wallpapers/house_lake.jpg &
 feh --bg-scale /home/joo/Pictures/wallpapers/enso_color.png &
 wal -R
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config top_padding         0
-bspc config border_width         4
+bspc config border_width         6
 bspc config window_gap          16
+
+bspc config active_border_color #FFA71A
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true

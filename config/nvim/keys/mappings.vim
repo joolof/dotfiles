@@ -26,9 +26,10 @@ map <C-x> "+p
 "  Spell checking stuff
 " --------------------------------------------------------------------------------
 map <F6> :setlocal spell! spelllang=en_us<CR>
+map <F5> :setlocal spell! spelllang=fr<CR>
 " --------------------------------------------------------------------------------
 " Better tabbing
 " --------------------------------------------------------------------------------
-vnoremap < <gv
-vnoremap > >gv
+" vnoremap < <gv
+" vnoremap > >gv
 
