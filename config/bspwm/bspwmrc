@@ -12,21 +12,24 @@ wal -R
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config top_padding         0
-bspc config border_width         6
-bspc config window_gap          16
+bspc config border_width        3
+bspc config window_gap          0
 
 bspc config active_border_color #FFA71A
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+bspc config single_monocle       true
 
+bspc rule -a Zathura state=floating rectangle=1700x1400+1000+300
 bspc rule -a Yad state=floating
 bspc rule -a feh state=floating
 bspc rule -a Ds9.tcl state=floating
 bspc rule -a lutris state=floating
 bspc rule -a blueman-manager state=floating
 bspc rule -a Matplotlib state=floating
+bspc rule -a matplotlib state=floating
 bspc rule -a herschel-ia-gui-apps-HipeStarter state=floating
 bspc rule -a " " state=floating
 bspc rule -a Firefox desktop='^1'

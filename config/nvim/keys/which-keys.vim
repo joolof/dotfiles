@@ -22,6 +22,7 @@ let g:which_key_map['g'] = [':Goyo', 'Zen']
 let g:which_key_map['q'] = [':bp<cr> bd#', 'Close buffer']
 
 " t is for floaterm
+" \ 'l' : [':w | FloatermNew latexmk -pdf %', 'Latex'],
 let g:which_key_map.t = {
       \ 'name' : 'terminal' ,
       \ 't' : [':FloatermToggle', 'Toggle'],

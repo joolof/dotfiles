@@ -53,10 +53,10 @@ modules-right = volume_i volume battery_i battery date_i date
 ;
 wm-restack = bspwm
 
-;tray-position = right
-;tray-padding = 2
-;tray-transparent = false
-;tray-background = ${colors.bg}
+; tray-position = right
+; tray-padding = 2
+; tray-transparent = false
+; tray-background = ${colors.bg}
 
 [module/decor-glyph]
 type = custom/text
