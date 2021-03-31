@@ -46,9 +46,9 @@ font-2 = Iosevka Nerd Font:style=Medium:size=51;6
 ;modules-left = i3
 modules-left = spotify_i spotify 
 ;mpv_i mpv-polybar 
-;modules-center = date_i date 
+; modules-center = taskwarrior
 ;modules-right = left-rightbar taskwarrior_i right-rightbar taskwarrior left-rightbar volume_i right-rightbar volume left-rightbar date_i right-rightbar date
-modules-right = volume_i volume battery_i battery date_i date 
+modules-right = taskwarrior_i taskwarrior volume_i volume battery_i battery date_i date 
 ;fixed-center = true
 ;
 wm-restack = bspwm
@@ -81,14 +81,15 @@ content = "%{T3}◥%{T-}"
 
 [module/taskwarrior_i]
 type = custom/text
-content = ""
+content = ""
 content-foreground = ${colors.icon-fg}
-content-background = ${colors.icon-bg}
+; content-foreground = ${colors.icon-fg}
+; content-background = ${colors.icon-bg}
 
 [module/taskwarrior]
 type = custom/script
 interval = 30
-format-prefix = " "
+; format-prefix = " "
 format-suffix = " "
 format-foreground = ${colors.fg}
 format-background = ${colors.bg}
@@ -98,7 +99,7 @@ exec = /home/joo/.scripts/polybar_taskwarrior.py
 
 [module/spotify_i]
 type = custom/text
-content = "  "
+content = " "
 content-margin-left = 0
 content-foreground = ${colors.icon-fg}
 content-background = ${colors.bg}

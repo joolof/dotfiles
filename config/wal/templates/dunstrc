@@ -5,7 +5,7 @@
 
 [global]
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    geometry = "1200x50-460+10"
+    geometry = "700+500+10"
     shrink = yes
     corner_radius = 2
 
@@ -28,8 +28,8 @@
     idle_threshold = 120
 
     # Font and typography settings
-    font = Iosevka Term Semibold 10
-    alignment = "right" 
+    font = Iosevka Term Semibold 9
+    alignment = "left" 
     word_wrap = no
 
     # Format for how notifications will be displayed

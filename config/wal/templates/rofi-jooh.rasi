@@ -1,5 +1,5 @@
 * {{
-    active-background: {color2};
+    active-background: {color1};
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
@@ -13,23 +13,23 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: {color2};
+    selected-active-background: {color3};
     selected-active-foreground: @foreground;
-    selected-normal-background: {color6};
-    selected-normal-foreground: @foreground;
-    selected-urgent-background: {color3};
+    selected-normal-background: {color1};
+    selected-normal-foreground: {color0};
+    selected-urgent-background: {color2};
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
     background: {background};
     foreground: {foreground};
-    border-color: {color6};
+    border-color: {color1};
     spacing: 2;
 }}
 
 #window {{
     background-color: @background;
-    border: 6;
+    border: 2;
     padding: 4ch;
 }}
 
@@ -39,7 +39,7 @@
 }}
 
 #message {{
-    border: 2px 0px 0px;
+    border: 1px 0px 0px;
     border-color: @border-color;
     padding: 1px;
 }}

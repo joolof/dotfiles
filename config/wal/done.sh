@@ -24,6 +24,7 @@ mkdir -p  "${HOME}/.config/zathura"
 mkdir -p  "${HOME}/.config/dunst"
 ln -sf    "${HOME}/.cache/wal/zathurarc"  "${HOME}/.config/zathura/zathurarc"
 ln -sf    "${HOME}/.cache/wal/dunstrc"    "${HOME}/.config/dunst/dunstrc"
+ln -sf    "${HOME}/.cache/wal/rofi-jooh.rasi"    "${HOME}/.config/rofi/rofi-jooh.rasi"
 
 # ===================
 # ====== dunst ======
