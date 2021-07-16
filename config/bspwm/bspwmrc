@@ -25,6 +25,8 @@ bspc config single_monocle       true
 bspc rule -a Zathura state=floating rectangle=1700x1400+1000+300
 bspc rule -a Yad state=floating
 bspc rule -a feh state=floating
+bspc rule -a zoom state=floating
+bspc rule -a uk-ac-starlink-topcat-Driver state=floating
 bspc rule -a Ds9.tcl state=floating
 bspc rule -a lutris state=floating
 bspc rule -a blueman-manager state=floating

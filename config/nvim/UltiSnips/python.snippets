@@ -11,8 +11,8 @@ endsnippet
 snippet fig "Figure" bA
 fig = plt.figure(figsize=(7,6))
 ax1 = fig.add_axes([0.16, 0.14, 0.8, 0.79])
-# ax1.set_xscale("log", nonposx='clip')
-# ax1.set_yscale("log", nonposy='clip')
+# ax1.set_xscale("log", nonpositive='clip')
+# ax1.set_yscale("log", nonpositive='clip')
 ax1.plot($1)
 ax1.set_xlim($2)
 ax1.set_ylim($3)

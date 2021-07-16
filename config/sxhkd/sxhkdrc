@@ -67,6 +67,9 @@ super + d
 Print
     scrot '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'
 
+shift + @Print
+    scrot -s '/home/joo/Pictures/screenshots/%Y-%m-%d_%H.%M.%S.png'
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
